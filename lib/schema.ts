@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_URL, PHONE_E164, CONTACT_EMAIL, LOGO_URL, OG_IMAGE_URL } from "./config/site";
+import { SITE_NAME, SITE_URL, PHONE_E164, CONTACT_EMAIL, LOGO_URL, OG_IMAGE_URL, OFFICE_ADDRESS_FULL } from "./config/site";
 import type { Service } from "./data/services";
 
 export const baseWebSiteSchema = {
@@ -22,6 +22,14 @@ export const organizationSchema = {
   image: OG_IMAGE_URL,
   email: CONTACT_EMAIL,
   telephone: PHONE_E164,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "3151 Market St",
+    addressLocality: "Philadelphia",
+    addressRegion: "PA",
+    postalCode: "19104",
+    addressCountry: "US",
+  },
   areaServed: ["Philadelphia County, PA", "Bucks County, PA", "Montgomery County, PA", "Chester County, PA", "Delaware County, PA"],
 };
 

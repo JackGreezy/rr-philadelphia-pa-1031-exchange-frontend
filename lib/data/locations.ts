@@ -39,9 +39,9 @@ export type Location = {
 const baseLocations: Omit<Location, "mainDescription" | "popularPaths" | "exampleCapability" | "layoutKey">[] = [
   {
     slug: "center-city-philadelphia-pa",
-    name: "Center City Philadelphia, PA",
+    name: "Philadelphia, PA",
     shortDescription:
-      "Exchange advisory for institutional and private investors reinvesting in Center City Philadelphia, PA.",
+      "Exchange advisory for institutional and private investors reinvesting in Philadelphia, PA.",
     summary: [
       "Center City Philadelphia, PA offers dense office, mixed use, and multifamily opportunities with steady leasing velocity and high visibility retail corridors.",
       "We coordinate exchanges involving trophy assets, redevelopment plays, and adaptive reuse strategies that leverage transit access and civic investment in Center City Philadelphia, PA.",
@@ -81,9 +81,9 @@ const baseLocations: Omit<Location, "mainDescription" | "popularPaths" | "exampl
       },
     ],
     metadata: {
-      title: "Center City Philadelphia, PA 1031 Exchange Support",
+      title: "Philadelphia, PA 1031 Exchange Support",
       description:
-        "Advisory for 1031 investors targeting Center City Philadelphia, PA, including historic assets, mixed use properties, and competitive identification timelines.",
+        "Advisory for 1031 investors targeting Philadelphia, PA, including historic assets, mixed use properties, and competitive identification timelines.",
     },
   },
   {
@@ -525,6 +525,591 @@ const baseLocations: Omit<Location, "mainDescription" | "popularPaths" | "exampl
       title: "Fort Washington, PA 1031 Exchange Support",
       description:
         "Comprehensive exchange support for office and light industrial properties in Fort Washington, PA.",
+    },
+  },
+  {
+    slug: "wynnewood-pa",
+    name: "Wynnewood, PA",
+    shortDescription:
+      "Suburban residential, multifamily, and retail exchange support in Wynnewood, PA.",
+    summary: [
+      "Wynnewood, PA offers suburban residential, multifamily, and retail assets with strong access to Philadelphia, PA and Main Line markets.",
+      "We coordinate exchanges involving stabilized multifamily communities, retail centers, and mixed use properties that benefit from proximity to Center City employment centers.",
+    ],
+    highlights: [
+      "Stable demand for multifamily and residential properties",
+      "Retail corridors with Main Line demographics",
+      "Access to SEPTA regional rail and highway corridors",
+      "Mixed use development opportunities",
+    ],
+    featuredServices: [
+      "multifamily-1031-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "three-property-rule-strategy-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "What is the leasing outlook for Wynnewood, PA multifamily?",
+        answer:
+          "Wynnewood, PA continues to benefit from strong leasing momentum due to its proximity to Philadelphia, PA and Main Line amenities.",
+      },
+      {
+        question: "Do you support retail property exchanges in Wynnewood, PA?",
+        answer:
+          "Yes. We coordinate retail identification, tenant credit analysis, and lease structure reviews for retail properties in Wynnewood, PA.",
+      },
+    ],
+    metadata: {
+      title: "Wynnewood, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for multifamily, retail, and mixed use assets in Wynnewood, PA.",
+    },
+  },
+  {
+    slug: "ardmore-pa",
+    name: "Ardmore, PA",
+    shortDescription:
+      "Suburban residential, multifamily, and retail exchange support in Ardmore, PA.",
+    summary: [
+      "Ardmore, PA offers suburban residential, multifamily, and retail assets with strong access to Philadelphia, PA and Main Line markets.",
+      "We coordinate exchanges involving stabilized multifamily communities, retail centers, and mixed use properties that benefit from proximity to Center City employment centers.",
+    ],
+    highlights: [
+      "Stable demand for multifamily and residential properties",
+      "Retail corridors with Main Line demographics",
+      "Access to SEPTA regional rail and highway corridors",
+      "Mixed use development opportunities",
+    ],
+    featuredServices: [
+      "multifamily-1031-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "three-property-rule-strategy-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "What is the leasing outlook for Ardmore, PA multifamily?",
+        answer:
+          "Ardmore, PA continues to benefit from strong leasing momentum due to its proximity to Philadelphia, PA and Main Line amenities.",
+      },
+      {
+        question: "Do you support retail property exchanges in Ardmore, PA?",
+        answer:
+          "Yes. We coordinate retail identification, tenant credit analysis, and lease structure reviews for retail properties in Ardmore, PA.",
+      },
+    ],
+    metadata: {
+      title: "Ardmore, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for multifamily, retail, and mixed use assets in Ardmore, PA.",
+    },
+  },
+  {
+    slug: "narberth-pa",
+    name: "Narberth, PA",
+    shortDescription:
+      "Walkable residential and commercial exchange support in Narberth, PA.",
+    summary: [
+      "Narberth, PA offers walkable residential and commercial corridors with strong demand for multifamily, retail, and mixed use assets.",
+      "We coordinate exchanges involving transit oriented properties, value add opportunities, and adaptive reuse projects that leverage proximity to Philadelphia, PA employment centers.",
+    ],
+    highlights: [
+      "Walkable downtown with retail corridors",
+      "Transit oriented development opportunities",
+      "Strong multifamily demand",
+      "Access to SEPTA regional rail",
+    ],
+    featuredServices: [
+      "multifamily-1031-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "three-property-rule-strategy-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "What is the leasing outlook for Narberth, PA multifamily properties?",
+        answer:
+          "Narberth, PA continues to benefit from strong leasing momentum due to its walkable downtown and proximity to Philadelphia, PA employment centers.",
+      },
+      {
+        question: "Do you support adaptive reuse projects in Narberth, PA?",
+        answer:
+          "Yes. We coordinate structural assessments, zoning reviews, and improvement exchange planning for adaptive reuse projects in Narberth, PA.",
+      },
+    ],
+    metadata: {
+      title: "Narberth, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for multifamily, retail, and mixed use assets in Narberth, PA.",
+    },
+  },
+  {
+    slug: "haverford-pa",
+    name: "Haverford, PA",
+    shortDescription:
+      "Prestigious residential and institutional exchange support in Haverford, PA.",
+    summary: [
+      "Haverford, PA features prestigious residential neighborhoods, institutional properties, and transit oriented development opportunities attractive to exchange investors.",
+      "We align exchanges with Main Line demographics, educational institutions, and healthcare facilities that drive long term value.",
+    ],
+    highlights: [
+      "Prestigious residential neighborhoods",
+      "Medical office and healthcare facilities",
+      "Institutional properties",
+      "Access to Main Line amenities",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "medical-office-1031-matching-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "lender-preflight-coordination-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "Do you support institutional property exchanges in Haverford, PA?",
+        answer:
+          "We manage documentation, financing considerations, and compliance requirements for institutional properties in Haverford, PA.",
+      },
+      {
+        question: "Can you evaluate medical office tenant credit in Haverford, PA?",
+        answer:
+          "Yes. We analyze tenant credit, regulatory compliance, and lease structures for medical office properties in Haverford, PA.",
+      },
+    ],
+    metadata: {
+      title: "Haverford, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for residential, medical office, and institutional assets in Haverford, PA.",
+    },
+  },
+  {
+    slug: "bryn-mawr-pa",
+    name: "Bryn Mawr, PA",
+    shortDescription:
+      "Historic residential and medical facility exchange support in Bryn Mawr, PA.",
+    summary: [
+      "Bryn Mawr, PA combines historic residential estates, medical facilities, and retail corridors that attract long term exchange investors.",
+      "We coordinate underwriting, zoning review, and institutional partnerships for reinvestment strategies.",
+    ],
+    highlights: [
+      "Historic residential estates",
+      "Medical facilities and healthcare demand",
+      "Retail corridors",
+      "Main Line location",
+    ],
+    featuredServices: [
+      "medical-office-1031-matching-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "lender-preflight-coordination-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "Do you support historic property exchanges in Bryn Mawr, PA?",
+        answer:
+          "We coordinate preservation approvals, structural assessments, and improvement exchange planning for historic properties in Bryn Mawr, PA.",
+      },
+      {
+        question: "Can you evaluate medical facility performance in Bryn Mawr, PA?",
+        answer:
+          "Yes. We compile occupancy, tenant credit, and regulatory compliance metrics for medical facilities in Bryn Mawr, PA.",
+      },
+    ],
+    metadata: {
+      title: "Bryn Mawr, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for residential, medical office, and retail assets in Bryn Mawr, PA.",
+    },
+  },
+  {
+    slug: "wayne-pa",
+    name: "Wayne, PA",
+    shortDescription:
+      "Affluent residential and retail exchange support in Wayne, PA.",
+    summary: [
+      "Wayne, PA offers affluent residential neighborhoods, retail corridors, and transit oriented development that attract exchange investors seeking stable cash flow.",
+      "Our team aligns exchange objectives with Main Line demographics and Philadelphia, PA employment access.",
+    ],
+    highlights: [
+      "Affluent residential neighborhoods",
+      "Retail corridors along Lancaster Avenue",
+      "Transit oriented development",
+      "Main Line location",
+    ],
+    featuredServices: [
+      "multifamily-1031-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "three-property-rule-strategy-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "What is the leasing outlook for Wayne, PA multifamily?",
+        answer:
+          "Wayne, PA continues to benefit from strong leasing momentum due to its Main Line location and proximity to Philadelphia, PA employment centers.",
+      },
+      {
+        question: "Do you support retail corridor investments in Wayne, PA?",
+        answer:
+          "Yes. We coordinate tenant credit analysis, lease structure reviews, and market analytics for retail properties in Wayne, PA.",
+      },
+    ],
+    metadata: {
+      title: "Wayne, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for residential, retail, and multifamily assets in Wayne, PA.",
+    },
+  },
+  {
+    slug: "radnor-pa",
+    name: "Radnor, PA",
+    shortDescription:
+      "Corporate headquarters and medical facility exchange support in Radnor, PA.",
+    summary: [
+      "Radnor, PA combines corporate headquarters, medical facilities, and high end residential properties that attract institutional and individual exchange investors.",
+      "We balance corporate tenant credit, healthcare demand, and residential value preservation to meet exchange goals.",
+    ],
+    highlights: [
+      "Corporate headquarters",
+      "Medical facilities and healthcare demand",
+      "High end residential properties",
+      "Institutional investment appeal",
+    ],
+    featuredServices: [
+      "medical-office-1031-matching-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "lender-preflight-coordination-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "Do you support corporate headquarters exchanges in Radnor, PA?",
+        answer:
+          "We manage documentation, tenant credit analysis, and financing considerations for corporate properties in Radnor, PA.",
+      },
+      {
+        question: "Can you evaluate medical facility tenant credit in Radnor, PA?",
+        answer:
+          "Yes. We analyze tenant credit, regulatory compliance, and lease structures for medical facilities in Radnor, PA.",
+      },
+    ],
+    metadata: {
+      title: "Radnor, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for corporate, medical office, and residential assets in Radnor, PA.",
+    },
+  },
+  {
+    slug: "media-pa",
+    name: "Media, PA",
+    shortDescription:
+      "Historic downtown retail and residential exchange support in Media, PA.",
+    summary: [
+      "Media, PA offers historic downtown retail, residential neighborhoods, and county seat institutional properties that attract long term exchange investors.",
+      "We advise on adaptive reuse projects, retail corridors, and value add opportunities that leverage walkable urban character.",
+    ],
+    highlights: [
+      "Historic downtown retail",
+      "Walkable urban character",
+      "County seat institutional properties",
+      "Adaptive reuse opportunities",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "flex-and-creative-office-identification-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+      "improvement-exchange-construction-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "Do you support historic downtown redevelopment in Media, PA?",
+        answer:
+          "We coordinate preservation approvals, zoning reviews, and improvement exchange planning for historic properties in Media, PA.",
+      },
+      {
+        question: "Can you evaluate retail corridor performance in Media, PA?",
+        answer:
+          "Yes. We compile foot traffic, tenant mix, and rent growth metrics for retail properties along State Street in Media, PA.",
+      },
+    ],
+    metadata: {
+      title: "Media, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for retail, residential, and mixed use assets in Media, PA.",
+    },
+  },
+  {
+    slug: "west-chester-pa",
+    name: "West Chester, PA",
+    shortDescription:
+      "Suburban office, multifamily, and retail exchange support in West Chester, PA.",
+    summary: [
+      "West Chester, PA offers suburban office, multifamily, and retail assets with strong access to Philadelphia, PA employment centers and Main Line markets.",
+      "We coordinate exchanges involving corporate office properties, stabilized multifamily communities, and retail centers that benefit from proximity to major employers and transit corridors.",
+    ],
+    highlights: [
+      "Corporate office properties",
+      "Stabilized multifamily communities",
+      "Retail centers",
+      "Access to major employers",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "timeline-discipline-program-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How competitive are identification timelines in West Chester, PA?",
+        answer:
+          "West Chester, PA remains competitive, so we prepare identification materials and lender preflight packages before marketing the relinquished asset to protect exchange compliance.",
+      },
+      {
+        question: "What transfer taxes apply within West Chester, PA?",
+        answer:
+          "West Chester, PA transactions remain subject to Pennsylvania realty transfer tax and Chester County transfer tax, both of which we calculate within closing statements.",
+      },
+    ],
+    metadata: {
+      title: "West Chester, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for office, multifamily, and retail assets in West Chester, PA.",
+    },
+  },
+  {
+    slug: "doylestown-pa",
+    name: "Doylestown, PA",
+    shortDescription:
+      "Suburban office, medical office, and multifamily exchange support in Doylestown, PA.",
+    summary: [
+      "Doylestown, PA features suburban office, medical office, and multifamily assets with strong access to Philadelphia, PA employment centers and Bucks County markets.",
+      "We coordinate exchanges involving medical office properties, stabilized multifamily communities, and retail centers that benefit from proximity to healthcare facilities and corporate employers.",
+    ],
+    highlights: [
+      "Medical office properties",
+      "Stabilized multifamily communities",
+      "Healthcare facilities",
+      "Bucks County location",
+    ],
+    featuredServices: [
+      "medical-office-1031-matching-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How do you assess medical office tenant credit in Doylestown, PA?",
+        answer:
+          "We coordinate tenant credit analysis, regulatory compliance reviews, and renewal probability assessments for medical office properties in Doylestown, PA.",
+      },
+      {
+        question: "What transfer taxes apply within Doylestown, PA?",
+        answer:
+          "Doylestown, PA transactions remain subject to Pennsylvania realty transfer tax and Bucks County transfer tax, both of which we calculate within closing statements.",
+      },
+    ],
+    metadata: {
+      title: "Doylestown, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for medical office, multifamily, and retail assets in Doylestown, PA.",
+    },
+  },
+  {
+    slug: "newtown-pa",
+    name: "Newtown, PA",
+    shortDescription:
+      "Suburban office, retail, and multifamily exchange support in Newtown, PA.",
+    summary: [
+      "Newtown, PA offers suburban office, retail, and multifamily assets with strong access to Philadelphia, PA employment centers and Bucks County markets.",
+      "We coordinate exchanges involving corporate office properties, stabilized multifamily communities, and retail centers that benefit from proximity to major employers and transit corridors.",
+    ],
+    highlights: [
+      "Corporate office properties",
+      "Stabilized multifamily communities",
+      "Retail centers",
+      "Bucks County location",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "triple-net-retail-identification-philadelphia",
+      "timeline-discipline-program-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How competitive are identification timelines in Newtown, PA?",
+        answer:
+          "Newtown, PA remains competitive, so we prepare identification materials and lender preflight packages before marketing the relinquished asset to protect exchange compliance.",
+      },
+      {
+        question: "What transfer taxes apply within Newtown, PA?",
+        answer:
+          "Newtown, PA transactions remain subject to Pennsylvania realty transfer tax and Bucks County transfer tax, both of which we calculate within closing statements.",
+      },
+    ],
+    metadata: {
+      title: "Newtown, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for office, multifamily, and retail assets in Newtown, PA.",
+    },
+  },
+  {
+    slug: "langhorne-pa",
+    name: "Langhorne, PA",
+    shortDescription:
+      "Suburban retail, multifamily, and office exchange support in Langhorne, PA.",
+    summary: [
+      "Langhorne, PA offers suburban retail, multifamily, and office assets with strong access to Philadelphia, PA employment centers and Bucks County markets.",
+      "We coordinate exchanges involving retail properties, stabilized multifamily communities, and office buildings that benefit from proximity to major employers and transit corridors.",
+    ],
+    highlights: [
+      "Retail properties",
+      "Stabilized multifamily communities",
+      "Office buildings",
+      "Bucks County location",
+    ],
+    featuredServices: [
+      "triple-net-retail-identification-philadelphia",
+      "replacement-property-scouting-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How do you assess retail tenant credit in Langhorne, PA?",
+        answer:
+          "We coordinate tenant credit analysis, lease structure reviews, and renewal probability assessments for retail properties in Langhorne, PA.",
+      },
+      {
+        question: "What transfer taxes apply within Langhorne, PA?",
+        answer:
+          "Langhorne, PA transactions remain subject to Pennsylvania realty transfer tax and Bucks County transfer tax, both of which we calculate within closing statements.",
+      },
+    ],
+    metadata: {
+      title: "Langhorne, PA 1031 Exchange Support",
+      description:
+        "Exchange planning for retail, multifamily, and office assets in Langhorne, PA.",
+    },
+  },
+  {
+    slug: "remote",
+    name: "Nationwide Remote",
+    shortDescription:
+      "Nationwide remote property identification support for investors across all markets.",
+    summary: [
+      "Nationwide remote property identification supports investors across all markets, including Philadelphia, PA and beyond, who need replacement property sourcing regardless of geographic location.",
+      "We coordinate exchanges involving properties nationwide, leveraging our network to identify like kind assets that satisfy exchange requirements in any market.",
+    ],
+    highlights: [
+      "Nationwide property identification",
+      "Multi state exchange coordination",
+      "Network of market experts",
+      "Compliance across all jurisdictions",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "timeline-discipline-program-philadelphia",
+      "portfolio-exit-sequencing-philadelphia",
+      "three-property-rule-strategy-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How do you coordinate nationwide property identification?",
+        answer:
+          "We leverage our network and market knowledge to identify replacement properties across all markets, including Philadelphia, PA. We coordinate nationwide property identification to expand replacement property options and ensure compliance with IRS requirements.",
+      },
+      {
+        question: "What transfer taxes apply to nationwide exchanges?",
+        answer:
+          "Nationwide transactions remain subject to state and local transfer taxes based on property location, which we calculate within closing statements. We coordinate tax planning to minimize transfer tax exposure across all jurisdictions.",
+      },
+    ],
+    metadata: {
+      title: "Nationwide Remote 1031 Exchange Support",
+      description:
+        "Nationwide property identification and exchange coordination for investors across all markets.",
+    },
+  },
+  {
+    slug: "wilmington-de",
+    name: "Wilmington, DE",
+    shortDescription:
+      "Corporate office and multifamily exchange support in Wilmington, DE.",
+    summary: [
+      "Wilmington, DE offers corporate office properties, multifamily communities, and retail assets with strong access to Philadelphia, PA and major employment centers.",
+      "We coordinate exchanges involving corporate headquarters, stabilized multifamily communities, and retail centers that benefit from Delaware's business-friendly environment and proximity to Philadelphia.",
+    ],
+    highlights: [
+      "Corporate headquarters and office properties",
+      "Stabilized multifamily communities",
+      "Retail centers",
+      "Delaware business-friendly environment",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "timeline-discipline-program-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How competitive are identification timelines in Wilmington, DE?",
+        answer:
+          "Wilmington, DE remains competitive, so we prepare identification materials and lender preflight packages before marketing the relinquished asset to protect exchange compliance.",
+      },
+      {
+        question: "What transfer taxes apply within Wilmington, DE?",
+        answer:
+          "Wilmington, DE transactions remain subject to Delaware transfer tax, which we calculate within closing statements. We coordinate tax planning to minimize transfer tax exposure.",
+      },
+    ],
+    metadata: {
+      title: "Wilmington, DE 1031 Exchange Support",
+      description:
+        "Exchange planning for office, multifamily, and retail assets in Wilmington, DE.",
+    },
+  },
+  {
+    slug: "trenton-nj",
+    name: "Trenton, NJ",
+    shortDescription:
+      "State capital office and multifamily exchange support in Trenton, NJ.",
+    summary: [
+      "Trenton, NJ offers state capital office properties, multifamily communities, and retail assets with strong access to Philadelphia, PA and New York metropolitan markets.",
+      "We coordinate exchanges involving government office properties, stabilized multifamily communities, and retail centers that benefit from state capital location and transit access.",
+    ],
+    highlights: [
+      "State capital office properties",
+      "Stabilized multifamily communities",
+      "Retail centers",
+      "Access to Philadelphia and New York markets",
+    ],
+    featuredServices: [
+      "replacement-property-scouting-philadelphia",
+      "multifamily-1031-identification-philadelphia",
+      "timeline-discipline-program-philadelphia",
+      "rent-roll-underwriting-review-philadelphia",
+    ],
+    faqs: [
+      {
+        question: "How competitive are identification timelines in Trenton, NJ?",
+        answer:
+          "Trenton, NJ remains competitive, so we prepare identification materials and lender preflight packages before marketing the relinquished asset to protect exchange compliance.",
+      },
+      {
+        question: "What transfer taxes apply within Trenton, NJ?",
+        answer:
+          "Trenton, NJ transactions remain subject to New Jersey transfer tax, which we calculate within closing statements. We coordinate tax planning to minimize transfer tax exposure.",
+      },
+    ],
+    metadata: {
+      title: "Trenton, NJ 1031 Exchange Support",
+      description:
+        "Exchange planning for office, multifamily, and retail assets in Trenton, NJ.",
     },
   },
 ];

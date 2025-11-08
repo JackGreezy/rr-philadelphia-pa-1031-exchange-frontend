@@ -9,7 +9,7 @@ type CTASectionProps = {
 
 export function CTASection({ serviceName, locationName, variant = "default" }: CTASectionProps) {
   const projectType = serviceName || locationName || "";
-  const contactHref = projectType ? `/contact?projectType=${encodeURIComponent(projectType)}#lead-form` : "/contact#lead-form";
+  const contactHref = projectType ? `/contact?projectType=${encodeURIComponent(projectType)}#contact-form` : "/contact#contact-form";
 
   if (variant === "dark") {
     return (

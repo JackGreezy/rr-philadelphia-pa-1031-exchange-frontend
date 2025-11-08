@@ -3,7 +3,7 @@ import type { LocationItem } from "./types";
 export const locationsData: LocationItem[] = [
   {
     slug: "center-city-philadelphia-pa",
-    name: "Center City Philadelphia, PA",
+    name: "Philadelphia, PA",
     route: "/locations/center-city-philadelphia-pa",
     type: "district",
   },
@@ -138,6 +138,18 @@ export const locationsData: LocationItem[] = [
     name: "Nationwide Remote",
     route: "/locations/remote",
     type: "remote",
+  },
+  {
+    slug: "wilmington-de",
+    name: "Wilmington, DE",
+    route: "/locations/wilmington-de",
+    type: "city",
+  },
+  {
+    slug: "trenton-nj",
+    name: "Trenton, NJ",
+    route: "/locations/trenton-nj",
+    type: "city",
   },
 ];
 

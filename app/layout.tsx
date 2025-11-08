@@ -13,6 +13,7 @@ import {
   HUBSPOT_FORM_ID,
   HUBSPOT_PORTAL_ID,
 } from "../lib/config/site";
+import { organizationSchema } from "../lib/schema";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { StickyCTA } from "../components/sticky-cta";
@@ -47,8 +48,20 @@ export const metadata: Metadata = {
   description:
     "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes, identification strategy, and deadline discipline.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { rel: "android-chrome-192x192", url: "/favicon/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { rel: "android-chrome-512x512", url: "/favicon/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
   },
+  manifest: "/favicon/site.webmanifest",
   openGraph: {
     title: `${SITE_NAME} | Qualified Intermediary Network Pennsylvania`,
     description:
@@ -105,14 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         ) : null}
         <Script id="organization-schema" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: SITE_NAME,
-            url: SITE_URL,
-            logo: LOGO_URL,
-            telephone: PHONE_E164,
-          })}
+          {JSON.stringify(organizationSchema)}
         </Script>
       </body>
     </html>

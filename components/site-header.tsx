@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { servicesData } from "../data/services";
 import { locationsData } from "../data/locations";
@@ -19,15 +20,15 @@ const FEATURED_SERVICE_SLUGS = [
   "timeline-discipline-program-philadelphia",
 ];
 
+// Featured locations: Philadelphia first, then most populous cities (7 total)
 const FEATURED_LOCATION_SLUGS = [
-  "center-city-philadelphia-pa",
-  "university-city-philadelphia-pa",
-  "fishtown-philadelphia-pa",
-  "manayunk-philadelphia-pa",
-  "king-of-prussia-pa",
-  "conshohocken-pa",
-  "bala-cynwyd-pa",
-  "old-city-philadelphia-pa",
+  "center-city-philadelphia-pa", // Philadelphia - main location
+  "wilmington-de", // Wilmington, DE - ~70k population
+  "trenton-nj", // Trenton, NJ - ~90k population
+  "west-chester-pa", // West Chester, PA - major suburban city
+  "king-of-prussia-pa", // King of Prussia, PA - major commercial hub
+  "conshohocken-pa", // Conshohocken, PA - major office market
+  "bala-cynwyd-pa", // Bala Cynwyd, PA - Main Line
 ];
 
 const TOOLS = [
@@ -79,21 +80,25 @@ export function SiteHeader() {
   );
 
   const featuredLocations = useMemo(() => {
-    const centerCity = locationsData.find((loc) => loc.slug === "center-city-philadelphia-pa");
-    const others = FEATURED_LOCATION_SLUGS.filter((slug) => slug !== "center-city-philadelphia-pa")
-      .map((slug) => locationsData.find((location) => location.slug === slug))
+    return FEATURED_LOCATION_SLUGS.map((slug) => locationsData.find((location) => location.slug === slug))
       .filter((location): location is NonNullable<typeof location> => Boolean(location));
-    return centerCity ? [centerCity, ...others] : others;
   }, []);
 
   const toggleMobile = () => setMobileOpen((prev) => !prev);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-outline/20 bg-[#F9F9F8]/95 backdrop-blur">
+    <header className="!sticky !top-0 z-[9999] border-b border-outline/20 bg-[#F9F9F8]/95 backdrop-blur" style={{ position: 'sticky', top: 0, zIndex: 9999 }}>
       <div className="container flex items-center justify-between py-4">
         <div className="flex items-center gap-6">
-          <Link href="/" className="text-base font-semibold text-heading focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-            1031 Exchange Philadelphia
+          <Link href="/" className="flex items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            <Image
+              src="/1031-exchange-philadelphia-logo.png"
+              alt="1031 Exchange Philadelphia"
+              width={180}
+              height={49}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
           <nav className="hidden items-center gap-6 text-sm text-[#1B1B1B] lg:flex">
             <div
@@ -112,28 +117,35 @@ export function SiteHeader() {
                 <span aria-hidden>{openMenu === "services" ? "▴" : "▾"}</span>
               </button>
               {openMenu === "services" ? (
-                <div className="absolute left-0 top-full mt-3 w-[460px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg">
-                  <div className="grid gap-3">
-                    {featuredServices.map((service) => (
-                      <Link
-                        key={service.slug}
-                        href={`/services/${service.slug}`}
-                        className="block rounded-xl p-3 transition-colors hover:bg-panel"
-                      >
-                        <p className="font-semibold text-heading">{service.name}</p>
-                        <p className="mt-1 text-xs text-[#3F3F3F]">{service.short}</p>
+                <>
+                  <div className="absolute left-0 top-full h-3 w-full" onMouseEnter={() => setOpenMenu("services")} />
+                  <div
+                    className="absolute left-0 top-full mt-3 w-[460px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg"
+                    onMouseEnter={() => setOpenMenu("services")}
+                    onMouseLeave={() => setOpenMenu(null)}
+                  >
+                    <div className="grid gap-3">
+                      {featuredServices.map((service) => (
+                        <Link
+                          key={service.slug}
+                          href={`/services/${service.slug}`}
+                          className="block rounded-xl p-3 transition-colors hover:bg-panel"
+                        >
+                          <p className="font-semibold text-heading">{service.name}</p>
+                          <p className="mt-1 text-xs text-[#3F3F3F]">{service.short}</p>
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="mt-4 flex justify-between text-xs font-semibold text-primary">
+                      <Link href="/services" className="underline underline-offset-4">
+                        View all services
                       </Link>
-                    ))}
+                      <Link href="/resources/timeline" className="underline underline-offset-4">
+                        Timeline reminders
+                      </Link>
+                    </div>
                   </div>
-                  <div className="mt-4 flex justify-between text-xs font-semibold text-primary">
-                    <Link href="/services" className="underline underline-offset-4">
-                      View all services
-                    </Link>
-                    <Link href="/resources/timeline" className="underline underline-offset-4">
-                      Timeline reminders
-                    </Link>
-                  </div>
-                </div>
+                </>
               ) : null}
             </div>
             <div
@@ -152,25 +164,32 @@ export function SiteHeader() {
                 <span aria-hidden>{openMenu === "locations" ? "▴" : "▾"}</span>
               </button>
               {openMenu === "locations" ? (
-                <div className="absolute left-0 top-full mt-3 w-[420px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg">
-                  <div className="grid gap-3">
-                    {featuredLocations.map((location) => (
-                      <Link
-                        key={location.slug}
-                        href={`/locations/${location.slug}`}
-                        className="block rounded-xl p-3 transition-colors hover:bg-panel"
-                      >
-                        <p className="font-semibold text-heading">{location.name}</p>
-                        {location.short ? <p className="mt-1 text-xs text-[#3F3F3F]">{location.short}</p> : null}
+                <>
+                  <div className="absolute left-0 top-full h-3 w-full" onMouseEnter={() => setOpenMenu("locations")} />
+                  <div
+                    className="absolute left-0 top-full mt-3 w-[420px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg"
+                    onMouseEnter={() => setOpenMenu("locations")}
+                    onMouseLeave={() => setOpenMenu(null)}
+                  >
+                    <div className="grid gap-3">
+                      {featuredLocations.map((location) => (
+                        <Link
+                          key={location.slug}
+                          href={`/locations/${location.slug}`}
+                          className="block rounded-xl p-3 transition-colors hover:bg-panel"
+                        >
+                          <p className="font-semibold text-heading">{location.name}</p>
+                          {location.short ? <p className="mt-1 text-xs text-[#3F3F3F]">{location.short}</p> : null}
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="mt-4 text-xs font-semibold text-primary">
+                      <Link href="/locations" className="underline underline-offset-4">
+                        View all {locationsData.length} locations
                       </Link>
-                    ))}
+                    </div>
                   </div>
-                  <div className="mt-4 text-xs font-semibold text-primary">
-                    <Link href="/locations" className="underline underline-offset-4">
-                      View all locations
-                    </Link>
-                  </div>
-                </div>
+                </>
               ) : null}
             </div>
             <div
@@ -189,24 +208,31 @@ export function SiteHeader() {
                 <span aria-hidden>{openMenu === "tools" ? "▴" : "▾"}</span>
               </button>
               {openMenu === "tools" ? (
-                <div className="absolute left-0 top-full mt-3 w-[380px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg">
-                  <div className="grid gap-3">
-                    {TOOLS.map((tool) => (
-                      <Link
-                        key={tool.href}
-                        href={tool.href}
-                        className="block rounded-xl p-3 transition-colors hover:bg-panel"
-                      >
-                        <p className="font-semibold text-heading">{tool.name}</p>
+                <>
+                  <div className="absolute left-0 top-full h-3 w-full" onMouseEnter={() => setOpenMenu("tools")} />
+                  <div
+                    className="absolute left-0 top-full mt-3 w-[380px] rounded-2xl border border-outline/15 bg-white p-4 shadow-lg"
+                    onMouseEnter={() => setOpenMenu("tools")}
+                    onMouseLeave={() => setOpenMenu(null)}
+                  >
+                    <div className="grid gap-3">
+                      {TOOLS.map((tool) => (
+                        <Link
+                          key={tool.href}
+                          href={tool.href}
+                          className="block rounded-xl p-3 transition-colors hover:bg-panel"
+                        >
+                          <p className="font-semibold text-heading">{tool.name}</p>
+                        </Link>
+                      ))}
+                    </div>
+                    <div className="mt-4 text-xs font-semibold text-primary">
+                      <Link href="/tools" className="underline underline-offset-4">
+                        View all tools
                       </Link>
-                    ))}
+                    </div>
                   </div>
-                  <div className="mt-4 text-xs font-semibold text-primary">
-                    <Link href="/tools" className="underline underline-offset-4">
-                      View all tools
-                    </Link>
-                  </div>
-                </div>
+                </>
               ) : null}
             </div>
             <Link
@@ -298,7 +324,7 @@ export function SiteHeader() {
                     onClick={() => setMobileOpen(false)}
                     className="block rounded-xl border border-outline/15 px-3 py-2 font-semibold text-primary"
                   >
-                    View all locations
+                    View all {locationsData.length} locations
                   </Link>
                 </li>
               </ul>

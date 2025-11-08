@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { locations } from "../../../lib/data/locations";
 import { services } from "../../../lib/data/services";
@@ -7,6 +8,7 @@ import { Breadcrumbs } from "../../../components/breadcrumbs";
 import { CTASection } from "../../../components/cta-section";
 import { SITE_URL } from "../../../lib/config/site";
 import { createBreadcrumbSchema, faqPageSchema } from "../../../lib/schema";
+import { getLocationImagePath } from "../../../lib/utils/images";
 
 type LocationPageProps = {
   params: Promise<{
@@ -52,6 +54,8 @@ export default async function LocationPage({ params }: LocationPageProps) {
 
   const faqSchema = faqPageSchema(location.faqs);
 
+  const imagePath = getLocationImagePath(location.slug);
+
   return (
     <div className="bg-[#F4F3EE]">
       <section className="container space-y-6 py-16">
@@ -62,6 +66,18 @@ export default async function LocationPage({ params }: LocationPageProps) {
             { label: location.name },
           ]}
         />
+        {imagePath && (
+          <div className="relative -mx-6 mb-8 h-64 overflow-hidden rounded-2xl sm:-mx-8 sm:rounded-3xl md:h-80 lg:h-96">
+            <Image
+              src={imagePath}
+              alt={location.name}
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+          </div>
+        )}
         <div className="max-w-3xl space-y-4">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Service Area</p>
           <h1 className="text-4xl font-semibold text-heading">{location.name}</h1>
@@ -194,7 +210,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
         </section>
         <div className="text-center">
           <Link href="/locations" className="inline-flex rounded-full border border-primary px-5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white">
-            View all locations
+            View all {locations.length} locations
           </Link>
         </div>
         <CTASection locationName={location.name} />

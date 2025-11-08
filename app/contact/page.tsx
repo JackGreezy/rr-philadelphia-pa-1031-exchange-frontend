@@ -6,6 +6,7 @@ import {
   SITE_URL,
   PRIMARY_CITY,
   PRIMARY_STATE_ABBR,
+  OFFICE_ADDRESS_FULL,
 } from "../../lib/config/site";
 
 export const metadata: Metadata = {
@@ -50,9 +51,9 @@ export default function ContactPage() {
           </p>
           <div className="mt-4 overflow-hidden rounded-3xl border border-outline/15">
             <iframe
-              title={`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR} Exchange Coverage`}
-              aria-label={`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR} Exchange Coverage`}
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR}`)}&output=embed`}
+              title="1031 Exchange Philadelphia Location"
+              aria-label="1031 Exchange Philadelphia location map"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(OFFICE_ADDRESS_FULL)}&output=embed`}
               loading="lazy"
               className="h-64 w-full"
             />

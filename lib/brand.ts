@@ -6,6 +6,7 @@ import {
   SITE_URL,
   PRIMARY_CITY,
   PRIMARY_STATE_ABBR,
+  LOGO_URL,
 } from "./config/site";
 
 export function getBrand() {
@@ -20,7 +21,7 @@ export function getBrand() {
     preheader:
       "Thanks for your inquiry, we have received your 1031 exchange request and will contact you within one business day.",
     company_name: SITE_NAME,
-    logo_url: `${SITE_URL}/logo.png`,
+    logo_url: LOGO_URL,
     city_state: `${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR}`,
     brand_accent: COLORS.primary,
     cta_dark_bg: COLORS.dark,

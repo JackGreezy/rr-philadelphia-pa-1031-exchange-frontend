@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Script from "next/script";
+import { Suspense } from "react";
 import { services } from "../lib/data/services";
 import { locations } from "../lib/data/locations";
 import { HomeServiceGrid } from "../components/home/home-service-grid";
 import { HomeLocationGrid } from "../components/home/home-location-grid";
+import { ContactForm } from "../components/contact/contact-form";
+import { getPropertyTypeImagePath } from "../lib/utils/images";
 import {
   SITE_NAME,
   SITE_URL,
@@ -144,7 +148,7 @@ const PROPERTY_TYPES: PropertyType[] = [
 
 const HOME_LOCATION_CARDS: FeaturedLocationCard[] = [
   {
-    name: "Center City Philadelphia, PA",
+    name: "Philadelphia, PA",
     description: "Class A mixed use, office-to-residential conversions, and institutional retail corridors.",
     slug: "center-city-philadelphia-pa",
   },
@@ -182,6 +186,16 @@ const HOME_LOCATION_CARDS: FeaturedLocationCard[] = [
     name: "King of Prussia, PA",
     description: "Destination retail, hospitality, and industrial logistics along the turnpike corridor.",
     slug: "king-of-prussia-pa",
+  },
+  {
+    name: "Conshohocken, PA",
+    description: "Transit oriented office and multifamily exchange support with regional rail access.",
+    slug: "conshohocken-pa",
+  },
+  {
+    name: "Fort Washington, PA",
+    description: "Office park and light industrial exchange guidance with Pennsylvania Turnpike access.",
+    slug: "fort-washington-pa",
   },
 ];
 
@@ -279,7 +293,7 @@ export default function HomePage() {
               >
                 Philadelphia skyline silhouette for 1031 Exchange Philadelphia hero.
               </span>
-              <p className="ui-font text-sm uppercase tracking-[0.24em] text-[#B68F40]">Federal Trust Confidence</p>
+              <p className="ui-font text-sm uppercase tracking-[0.24em] text-[#B68F40]">Philadelphia Trusted Advisors</p>
               <h1 className="text-4xl font-semibold text-[#F9F9F8] sm:text-5xl">Philadelphia 1031 Exchange Advisors.</h1>
               <p className="max-w-2xl text-lg leading-relaxed text-[#E8E9ED]">
                 Helping investors defer capital gains tax through compliant 1031 exchanges across Pennsylvania. Our team guides every milestone with meticulous documentation, trusted intermediaries, and local expertise grounded in Philadelphia financial tradition.
@@ -466,28 +480,45 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {PROPERTY_TYPES.map((property, index) => (
-                <div
-                  key={property.slug}
-                  className="group flex h-full flex-col justify-between rounded-2xl border border-[#D8D2C4] bg-white p-6 text-left shadow-sm transition-transform duration-200 hover:-translate-y-1"
-                  data-motion="fade-up"
-                  data-motion-delay={(index * 0.08).toFixed(2)}
-                >
-                  <div>
-                    <h3 className="text-xl font-semibold text-[#14213D]">{property.title}</h3>
-                    <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">{property.description}</p>
-                  </div>
-                  <span className="ui-font mt-6 inline-flex items-center text-sm font-semibold text-[#B68F40] transition-colors group-hover:text-[#8A6B2F]">
-                    View details &gt;
-                  </span>
-                </div>
-              ))}
+              {PROPERTY_TYPES.map((property, index) => {
+                const imagePath = getPropertyTypeImagePath(property.slug);
+                return (
+                  <Link
+                    key={property.slug}
+                    href={`/property-types/${property.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#D8D2C4] bg-white text-left shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+                    data-motion="fade-up"
+                    data-motion-delay={(index * 0.08).toFixed(2)}
+                  >
+                    {imagePath && (
+                      <div className="relative h-48 w-full overflow-hidden">
+                        <Image
+                          src={imagePath}
+                          alt={property.title}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col justify-between p-6">
+                      <div>
+                        <h3 className="text-xl font-semibold text-[#14213D]">{property.title}</h3>
+                        <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">{property.description}</p>
+                      </div>
+                      <span className="ui-font mt-6 inline-flex items-center text-sm font-semibold text-[#B68F40] transition-colors group-hover:text-[#8A6B2F]">
+                        View details &gt;
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
 
         <section id="coverage" className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
-          <div className="grid gap-12 lg:grid-cols-[1.1fr,1fr]">
+          <div className="space-y-12">
             <div data-motion="fade-up">
               <h2 className="text-3xl font-semibold text-[#14213D] sm:text-4xl">Serving Philadelphia and All of Pennsylvania.</h2>
               <p className="mt-6 text-lg leading-relaxed text-[#353535]">
@@ -497,7 +528,7 @@ export default function HomePage() {
                 See locations
               </Link>
             </div>
-            <div className="grid gap-4 rounded-3xl border border-[#D8D2C4] bg-white p-6 md:grid-cols-2" data-motion="fade-up" data-motion-delay="0.12">
+            <div className="rounded-3xl border border-[#D8D2C4] bg-white p-6 lg:p-8" data-motion="fade-up" data-motion-delay="0.12">
               <HomeLocationGrid featuredSlugs={HOME_LOCATION_SLUGS} locations={locations} featuredCards={HOME_LOCATION_CARDS} />
             </div>
           </div>
@@ -594,79 +625,11 @@ export default function HomePage() {
                 Provide your transaction details and a Philadelphia exchange advisor will schedule a 30 minute consultation within one business day.
               </p>
             </div>
-            <form className="mt-12 grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur" method="post" action="/api/lead" id="lead-form" data-motion="fade-up" data-motion-delay="0.12" noValidate>
-              <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="name">
-                    Name
-                  </label>
-                  <input id="name" name="name" type="text" required aria-describedby="helper-name error-name" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="First and last name" data-input />
-                  <p id="helper-name" className="mt-2 text-xs text-[#E8E9ED]">
-                    Enter the primary decision maker for this exchange.
-                  </p>
-                  <p id="error-name" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="email">
-                    Email
-                  </label>
-                  <input id="email" name="email" type="email" required inputMode="email" aria-describedby="helper-email error-email" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="name@example.com" data-input />
-                  <p id="helper-email" className="mt-2 text-xs text-[#E8E9ED]">We use this email to deliver timeline checklists and closing updates.</p>
-                  <p id="error-email" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-              </div>
-              <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="phone">
-                    Phone
-                  </label>
-                  <input id="phone" name="phone" type="tel" required inputMode="tel" aria-describedby="helper-phone error-phone" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="(###) ###-####" data-input />
-                  <p id="helper-phone" className="mt-2 text-xs text-[#E8E9ED]">Provide the best number for deadline questions during the exchange.</p>
-                  <p id="error-phone" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="property">
-                    Property Being Sold
-                  </label>
-                  <input id="property" name="property" type="text" required aria-describedby="helper-property error-property" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="Asset type, address, estimated sale price" data-input />
-                  <p id="helper-property" className="mt-2 text-xs text-[#E8E9ED]">Include property type, location, and target closing month.</p>
-                  <p id="error-property" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-              </div>
-              <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="closeDate">
-                    Estimated Close Date
-                  </label>
-                  <input id="closeDate" name="closeDate" type="date" required aria-describedby="helper-closeDate error-closeDate" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" data-input />
-                  <p id="helper-closeDate" className="mt-2 text-xs text-[#E8E9ED]">Use the scheduled settlement date for the relinquished property.</p>
-                  <p id="error-closeDate" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-                <div>
-                  <label className="ui-font block text-sm font-medium text-white" htmlFor="city">
-                    City
-                  </label>
-                  <input id="city" name="city" type="text" required aria-describedby="helper-city error-city" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="City or county for the property" data-input />
-                  <p id="helper-city" className="mt-2 text-xs text-[#E8E9ED]">Note the jurisdiction that requires transfer tax compliance.</p>
-                  <p id="error-city" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-                </div>
-              </div>
-              <div>
-                <label className="ui-font block text-sm font-medium text-white" htmlFor="message">
-                  Message
-                </label>
-                <textarea id="message" name="message" required minLength={20} rows={5} aria-describedby="helper-message error-message" aria-invalid="false" className="mt-2 w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-base text-white shadow-sm outline-none transition focus:border-[#B68F40]" placeholder="Outline replacement goals, financing considerations, and stakeholders." data-input />
-                <p id="helper-message" className="mt-2 text-xs text-[#E8E9ED]">Share priorities for replacement properties, financing, and timeline support.</p>
-                <p id="error-message" className="mt-2 hidden text-xs text-[#FECACA]" data-error />
-              </div>
-              <div className="flex flex-col gap-4 text-left sm:flex-row sm:items-center sm:justify-between">
-                <button type="submit" className="ui-font inline-flex items-center justify-center rounded-full bg-[#B68F40] px-8 py-3 text-sm font-semibold text-[#F9F9F8] transition-colors hover:bg-[#8A6B2F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F9F9F8]">
-                  Submit request
-                </button>
-                <p className="text-xs text-[#E8E9ED]">Educational content only. Not tax or legal advice.</p>
-              </div>
-              <p id="lead-form-status" role="status" aria-live="polite" className="ui-font text-sm font-semibold text-[#E8E9ED]" />
-            </form>
+            <div className="mt-12" data-motion="fade-up" data-motion-delay="0.12">
+              <Suspense fallback={<div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur text-white">Loading form...</div>}>
+                <ContactForm variant="dark" />
+              </Suspense>
+            </div>
           </div>
         </section>
 
@@ -801,131 +764,6 @@ export default function HomePage() {
               });
             };
             initialise();
-          })();
-        `}
-      </Script>
-      <Script id="lead-form-handler" strategy="afterInteractive">
-        {`
-          (function () {
-            var form = document.getElementById("lead-form");
-            if (!form) return;
-            var status = document.getElementById("lead-form-status");
-            var fieldNames = ["name", "email", "phone", "property", "closeDate", "city", "message"];
-            var errorElements = {};
-            var inputElements = {};
-            fieldNames.forEach(function (field) {
-              errorElements[field] = document.getElementById("error-" + field);
-              inputElements[field] = form.querySelector('[name="' + field + '"]');
-            });
-
-            var emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-            var phonePattern = /^[+]?[-() 0-9]{7,}$/;
-
-            var setFieldError = function (field, message) {
-              var errorEl = errorElements[field];
-              var inputEl = inputElements[field];
-              if (!errorEl || !inputEl) return;
-              if (message) {
-                errorEl.textContent = message;
-                errorEl.classList.remove("hidden");
-                inputEl.setAttribute("aria-invalid", "true");
-                inputEl.classList.add("border-[#FECACA]");
-              } else {
-                errorEl.textContent = "";
-                errorEl.classList.add("hidden");
-                inputEl.setAttribute("aria-invalid", "false");
-                inputEl.classList.remove("border-[#FECACA]");
-              }
-            };
-
-            var resetStatus = function () {
-              if (!status) return;
-              status.textContent = "";
-              status.classList.remove("text-[#FECACA]", "text-[#B2F2BB]");
-              status.classList.add("text-[#E8E9ED]");
-            };
-
-            form.addEventListener("submit", function (event) {
-              event.preventDefault();
-              resetStatus();
-
-              var formData = new FormData(form);
-              var payload = {
-                name: (formData.get("name") || "").toString().trim(),
-                email: (formData.get("email") || "").toString().trim(),
-                phone: (formData.get("phone") || "").toString().trim(),
-                property: (formData.get("property") || "").toString().trim(),
-                closeDate: (formData.get("closeDate") || "").toString(),
-                city: (formData.get("city") || "").toString().trim(),
-                message: (formData.get("message") || "").toString().trim()
-              };
-
-              var hasError = false;
-              fieldNames.forEach(function (field) {
-                setFieldError(field, "");
-                if (!payload[field]) {
-                  setFieldError(field, "This field is required.");
-                  hasError = true;
-                }
-              });
-
-              if (payload.email && !emailPattern.test(payload.email)) {
-                setFieldError("email", "Enter a valid email address.");
-                hasError = true;
-              }
-              if (payload.phone && !phonePattern.test(payload.phone)) {
-                setFieldError("phone", "Enter a valid phone number.");
-                hasError = true;
-              }
-              if (payload.message && payload.message.length < 20) {
-                setFieldError("message", "Provide at least 20 characters of context.");
-                hasError = true;
-              }
-
-              if (hasError) {
-                if (status) {
-                  status.textContent = "Please resolve the highlighted fields before submitting.";
-                  status.classList.remove("text-[#B2F2BB]");
-                  status.classList.add("text-[#FECACA]");
-                }
-                return;
-              }
-
-              if (status) {
-                status.textContent = "Submitting...";
-              }
-
-              fetch(form.action, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload),
-              })
-                .then(function (response) {
-                  if (response.ok) {
-                    form.reset();
-                    fieldNames.forEach(function (field) {
-                      setFieldError(field, "");
-                    });
-                    if (status) {
-                      status.textContent = "Thank you. A Philadelphia exchange advisor will contact you shortly.";
-                      status.classList.remove("text-[#FECACA]");
-                      status.classList.add("text-[#B2F2BB]");
-                    }
-                  } else {
-                    return response.json().then(function (data) {
-                      throw new Error(data && data.message ? data.message : "Submission failed.");
-                    });
-                  }
-                  return null;
-                })
-                .catch(function (error) {
-                  if (status) {
-                    status.textContent = error.message || "We could not submit your request. Please try again.";
-                    status.classList.remove("text-[#B2F2BB]");
-                    status.classList.add("text-[#FECACA]");
-                  }
-                });
-            });
           })();
         `}
       </Script>

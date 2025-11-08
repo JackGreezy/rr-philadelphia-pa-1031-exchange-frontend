@@ -7,9 +7,13 @@ import { services } from "../../lib/data/services";
 import { PHONE_DISPLAY, CONTACT_EMAIL } from "../../lib/config/site";
 import { isTurnstileEnabled, TURNSTILE_SITE_KEY } from "../../lib/turnstile";
 
-const serviceNames = services.map((service) => service.name);
+const serviceNames = services.map((service) => service.name).sort((a, b) => a.localeCompare(b));
 
-export function ContactForm() {
+type ContactFormProps = {
+  variant?: "default" | "dark";
+};
+
+export function ContactForm({ variant = "default" }: ContactFormProps) {
   const searchParams = useSearchParams();
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState("");
@@ -167,73 +171,90 @@ export function ContactForm() {
     }
   };
 
+  const isDark = variant === "dark";
+  const formClassName = isDark
+    ? "space-y-6 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur"
+    : "space-y-6 rounded-3xl border border-outline/15 bg-white p-8 shadow-xl";
+  const labelClassName = isDark
+    ? "flex flex-col text-sm font-semibold text-white"
+    : "flex flex-col text-sm font-semibold text-heading";
+  const inputClassName = (hasError: boolean) =>
+    isDark
+      ? `mt-2 rounded-xl border px-3 py-2 text-sm text-white outline-none transition focus:border-[#B68F40] focus:ring-2 focus:ring-[#B68F40]/20 ${
+          hasError ? "border-red-400 bg-white/10" : "border-white/20 bg-white/10"
+        }`
+      : `mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
+          hasError ? "border-red-400" : "border-outline/20"
+        }`;
+  const errorClassName = isDark ? "mt-2 text-xs text-red-300" : "mt-2 text-xs text-red-500";
+  const statusClassName = (isSuccess: boolean) =>
+    isDark
+      ? `text-sm font-semibold ${isSuccess ? "text-green-300" : "text-red-300"}`
+      : `text-sm font-semibold ${isSuccess ? "text-green-600" : "text-red-600"}`;
+
   return (
     <form
       id="contact-form"
       ref={formRef}
-      className="space-y-6 rounded-3xl border border-outline/15 bg-white p-8 shadow-xl"
+      className={formClassName}
       onSubmit={handleSubmit}
       noValidate
     >
       <div className="grid gap-6 md:grid-cols-2">
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Name
           <input
             type="text"
             value={formData.name}
             onChange={updateField("name")}
-            className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-              errors.name ? "border-red-400" : "border-outline/20"
-            }`}
+            className={inputClassName(!!errors.name)}
             placeholder="Full name"
           />
-          {errors.name ? <span className="mt-2 text-xs text-red-500">{errors.name}</span> : null}
+          {errors.name ? <span className={errorClassName}>{errors.name}</span> : null}
         </label>
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Company
           <input
             type="text"
             value={formData.company}
             onChange={updateField("company")}
-            className="mt-2 rounded-xl border border-outline/20 px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+            className={inputClassName(false)}
             placeholder="Entity or advisory firm"
           />
         </label>
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Email
           <input
             type="email"
             value={formData.email}
             onChange={updateField("email")}
-            className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-              errors.email ? "border-red-400" : "border-outline/20"
-            }`}
+            className={inputClassName(!!errors.email)}
             placeholder="name@example.com"
           />
-          {errors.email ? <span className="mt-2 text-xs text-red-500">{errors.email}</span> : null}
+          {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
         </label>
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Phone
           <input
             type="tel"
             value={formData.phone}
-            onChange={updateField("phone")}
-            className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-              errors.phone ? "border-red-400" : "border-outline/20"
-            }`}
+            onChange={(e) => {
+              // Only allow numbers, spaces, parentheses, hyphens, and plus sign
+              const value = e.target.value.replace(/[^\d\s()\-+]/g, "");
+              setFormData((prev) => ({ ...prev, phone: value }));
+            }}
+            className={inputClassName(!!errors.phone)}
             placeholder="(###) ###-####"
           />
-          {errors.phone ? <span className="mt-2 text-xs text-red-500">{errors.phone}</span> : null}
+          {errors.phone ? <span className={errorClassName}>{errors.phone}</span> : null}
         </label>
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Project type
           <input
             list="project-types"
             value={formData.projectType}
             onChange={updateField("projectType")}
-            className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-              errors.projectType ? "border-red-400" : "border-outline/20"
-            }`}
+            className={inputClassName(!!errors.projectType)}
             placeholder="Replacement property focus"
           />
           <datalist id="project-types">
@@ -241,57 +262,53 @@ export function ContactForm() {
               <option key={name} value={name} />
             ))}
           </datalist>
-          {errors.projectType ? <span className="mt-2 text-xs text-red-500">{errors.projectType}</span> : null}
+          {errors.projectType ? <span className={errorClassName}>{errors.projectType}</span> : null}
         </label>
-        <label className="flex flex-col text-sm font-semibold text-heading">
+        <label className={labelClassName}>
           Target timeline
           <input
             type="text"
             value={formData.timeline}
             onChange={updateField("timeline")}
-            className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-              errors.timeline ? "border-red-400" : "border-outline/20"
-            }`}
+            className={inputClassName(!!errors.timeline)}
             placeholder="Example: Identification underway, closing in 120 days"
           />
-          {errors.timeline ? <span className="mt-2 text-xs text-red-500">{errors.timeline}</span> : null}
+          {errors.timeline ? <span className={errorClassName}>{errors.timeline}</span> : null}
         </label>
       </div>
-      <label className="flex flex-col text-sm font-semibold text-heading">
+      <label className={labelClassName}>
         Project details
         <textarea
           value={formData.details}
           onChange={updateField("details")}
           rows={6}
-          className={`mt-2 rounded-xl border px-3 py-2 text-sm text-[#1B1B1B] outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20 ${
-            errors.details ? "border-red-400" : "border-outline/20"
-          }`}
+          className={inputClassName(!!errors.details)}
           placeholder="Outline property types, exchange status, stakeholders, financing details, and deadlines."
         />
-        {errors.details ? <span className="mt-2 text-xs text-red-500">{errors.details}</span> : null}
+        {errors.details ? <span className={errorClassName}>{errors.details}</span> : null}
       </label>
       {isTurnstileEnabled() && (
         <div className="flex justify-center">
           <div ref={turnstileRef} />
         </div>
       )}
-      <div className="flex flex-col gap-3 text-sm text-[#3F3F3F] md:flex-row md:items-center md:justify-between">
+      <div className={`flex flex-col gap-3 text-sm md:flex-row md:items-center md:justify-between ${isDark ? "text-[#E8E9ED]" : "text-[#3F3F3F]"}`}>
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex rounded-full bg-primary px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#0f1c33] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-70 disabled:cursor-not-allowed"
+          className={`inline-flex rounded-full px-6 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-70 disabled:cursor-not-allowed ${
+            isDark
+              ? "bg-[#B68F40] text-[#F9F9F8] hover:bg-[#8A6F2F] focus-visible:outline-[#F9F9F8]"
+              : "bg-primary text-white hover:bg-[#0f1c33] focus-visible:outline-primary"
+          }`}
         >
           {isSubmitting ? "Submitting..." : "Submit request"}
         </button>
-        <p className="text-xs text-[#6B6B6B]">
+        <p className={isDark ? "text-xs text-[#E8E9ED]" : "text-xs text-[#6B6B6B]"}>
           Educational content only. Not tax or legal advice. You may also reach us at {PHONE_DISPLAY} or {CONTACT_EMAIL}.
         </p>
       </div>
-      {status ? (
-        <p className={`text-sm font-semibold ${status.includes("Thank you") ? "text-green-600" : "text-red-600"}`}>
-          {status}
-        </p>
-      ) : null}
+      {status ? <p className={statusClassName(status.includes("Thank you"))}>{status}</p> : null}
       {isTurnstileEnabled() && (
         <>
           <Script

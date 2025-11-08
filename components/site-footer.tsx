@@ -9,6 +9,7 @@ import {
   BUSINESS_HOURS,
   HAS_STAFFED_OFFICE,
   OFFICE_ADDRESS,
+  OFFICE_ADDRESS_FULL,
   SITE_URL,
   PRIMARY_CITY,
   PRIMARY_STATE_ABBR,
@@ -66,7 +67,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-[#3F3F3F]">
             <li>
               <Link className="transition-colors hover:text-primary" href="/locations">
-                View all locations
+                View all {locationLinks.length} locations
               </Link>
             </li>
             {locationLinks.map((location) => (
@@ -136,9 +137,9 @@ export function SiteFooter() {
           </p>
           <div className="overflow-hidden rounded-2xl border border-outline/15">
             <iframe
-              title={`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR} Exchange Coverage Map`}
-              aria-label={`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR} map`}
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(`${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR}`)}&output=embed`}
+              title={`${SITE_NAME} Location Map`}
+              aria-label={`${SITE_NAME} location map`}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(OFFICE_ADDRESS_FULL)}&output=embed`}
               loading="lazy"
               className="h-48 w-full"
             />
