@@ -133,12 +133,12 @@ export function SiteFooter() {
         </div>
         <div className="space-y-4">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            {PRIMARY_CITY} Map
+            Our Location
           </p>
           <div className="overflow-hidden rounded-2xl border border-outline/15">
             <iframe
-              title={`${SITE_NAME} Location Map`}
-              aria-label={`${SITE_NAME} location map`}
+              title={`${SITE_NAME} Office Location - ${OFFICE_ADDRESS_FULL}`}
+              aria-label={`${SITE_NAME} office location at ${OFFICE_ADDRESS_FULL}`}
               src={`https://maps.google.com/maps?q=${encodeURIComponent(OFFICE_ADDRESS_FULL)}&output=embed`}
               loading="lazy"
               className="h-48 w-full"
