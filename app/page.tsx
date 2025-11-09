@@ -245,7 +245,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/`,
   },
   openGraph: {
-    title: "1031 Exchange Philadelphia | Qualified Intermediary Network Pennsylvania",
+    title: "1031 Exchange Philadelphia | Best Property Identification Experts in Philadelphia",
     description:
       "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes and deadline discipline.",
     url: `${SITE_URL}/`,
@@ -263,7 +263,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Philadelphia | Qualified Intermediary Network Pennsylvania",
+    title: "1031 Exchange Philadelphia | Best Property Identification Experts in Philadelphia",
     description:
       "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes and deadline discipline.",
     images: [OG_IMAGE_URL],
