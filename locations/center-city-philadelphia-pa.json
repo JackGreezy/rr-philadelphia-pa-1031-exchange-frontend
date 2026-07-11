@@ -1,0 +1,70 @@
+{
+ "slug": "center-city-philadelphia-pa",
+ "taxonomy": "locations",
+ "title": "Center City Philadelphia",
+ "name": "Center City Philadelphia",
+ "metaTitle": "1031 Exchange Services in Center City Philadelphia, PA",
+ "metaDescription": "Center City Philadelphia 1031 exchange coordination for office, rowhouse conversion, and mixed-use property between Broad Street and the Rittenhouse core.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Most of the exchange work we run out of Center City starts with a seller who owns office space along Market Street West or a rowhouse-to-multifamily conversion near Rittenhouse Square or Washington Square West. The identification clock moves the same forty-five days it does anywhere else, but the buyer pool here is dense enough that a well-priced replacement candidate can draw competing offers before that window closes.</p>"
+  },
+  {
+   "heading": "Office and Mixed-Use Along Market and Broad",
+   "html": "<p>Sellers exchanging out of Market Street West office space are usually reacting to a shift in tenant demand rather than a distressed building, and the replacement search often runs toward smaller, fully-leased floor plates along Broad Street's Avenue of the Arts corridor instead of another large tower. Ground-floor retail beneath residential conversions is a separate and increasingly common exchange candidate, since the retail component can be carved out and sold or replaced independently of the residential floors above it.</p><p>Investors coming out of Rittenhouse-adjacent office frequently look at Jefferson-anchored medical office nearby as a replacement, trading leasing risk for a longer-term healthcare lease structure.</p>"
+  },
+  {
+   "heading": "Rowhouse-to-Multifamily Conversion Product",
+   "html": "<p>Converted rowhouse buildings in Washington Square West and Fitler Square remain one of the most common relinquished-property types we handle downtown. These deals carry two wrinkles that don't come up in suburban exchanges: confirming the building's use-and-occupancy history matches its current rental configuration, and verifying the improvement tax abatement status transfers correctly to the new owner rather than resetting.</p>"
+  },
+  {
+   "heading": "Search Radius Around the Center City Grid",
+   "html": "<p>A typical Center City identification list draws from a short set of corridors rather than the whole downtown grid:</p><ul><li>Market Street West's office and mixed-use towers</li><li>Broad Street's Avenue of the Arts frontage</li><li>Rittenhouse Square's retail and boutique office</li><li>Washington Square West's converted rowhouse stock</li><li>JFK Boulevard's transit-adjacent office</li></ul><p>Properties fronting Broad or Market command a premium tied to foot traffic and transit access, while comparable product one block off the grid often prices meaningfully lower for a nearly identical tenant profile.</p>"
+  },
+  {
+   "heading": "Use-and-Occupancy Sequencing During Identification",
+   "html": "<p>Philadelphia's Department of Licenses and Inspections requires a use-and-occupancy certificate whenever a commercial property changes hands or its use changes, and that certificate review can take longer than an out-of-town investor expects. We confirm the U&O timeline for any Center City candidate during the forty-five day identification window itself, not after it's already on the identification notice, so an L&I backlog never becomes the reason a closing slips past day 170.</p>"
+  },
+  {
+   "heading": "180-Day Closing Discipline Downtown",
+   "html": "<p>Center City's dense buyer pool cuts both ways: it makes replacement candidates easier to find but harder to close quickly once a competing offer appears. We build lender preflight and title work around the assumption that a downtown seller may need to move to a backup candidate on the identification list, and we keep that second candidate's paperwork current throughout the exchange period rather than shelving it until it's needed.</p>"
+  },
+  {
+   "heading": "Watchouts for This Submarket",
+   "html": "<p>Improvement tax abatement status, condominium or party-wall agreements on rowhouse conversions, and the building's most recent U&O certificate are the three items most likely to surface late in a Center City search. Pulling the abatement record and the U&O history before the identification notice is filed is what keeps those items from turning into a closing-week surprise.</p><p>For office and mixed-use candidates, confirming which floors carry active leases versus vacant space also matters, since Center City lenders underwrite occupied and vacant floor plates very differently. A party-wall agreement on a rowhouse conversion also deserves a careful read, since maintenance and repair obligations shared with a neighboring building can affect an investor's future carrying costs in ways a standalone office purchase never would.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why do Center City identification lists often include a backup candidate off the main corridors?",
+   "a": "Because Broad Street and Market Street product draws competing offers quickly, we typically identify one primary downtown candidate plus a second option one or two blocks off the main grid, keeping the list within the three-property rule."
+  },
+  {
+   "q": "Does a Center City rowhouse conversion's tax abatement transfer to the buyer?",
+   "a": "It can, but the transfer isn't automatic. We confirm the abatement's remaining term and filing status with the city during due diligence so the number the investor is underwriting matches what actually carries forward."
+  },
+  {
+   "q": "How does the use-and-occupancy requirement affect a Center City exchange timeline?",
+   "a": "A U&O certificate is required whenever a commercial property changes ownership or use, and L&I review can take time. We check the expected turnaround during identification so it doesn't collide with the 180-day closing deadline."
+  },
+  {
+   "q": "What creates boot on a Center City office or rowhouse exchange?",
+   "a": "Boot typically shows up when the replacement property's price or debt level is lower than the relinquished property's, leaving cash exposure. We flag the calculation early so the investor's tax advisor can confirm it before closing."
+  },
+  {
+   "q": "Can a Center City investor exchange into suburban Philadelphia property and still qualify?",
+   "a": "Yes. Like-kind scope for real property isn't limited by neighborhood or municipal boundary, so a downtown office seller can replace into King of Prussia or Conshohocken product without issue."
+  },
+  {
+   "q": "Who holds the sale proceeds during a Center City exchange?",
+   "a": "A qualified intermediary holds the funds between the relinquished sale and the replacement purchase. We coordinate the QI paperwork and closing documents throughout both the identification and closing periods."
+  },
+  {
+   "q": "Does the three-property rule limit a Center City investor to downtown replacement candidates?",
+   "a": "No. An investor can identify up to three properties of any fair market value regardless of location under the three-property rule, or use the 200 percent rule to identify more candidates if their combined value stays within that limit. We help the investor pick whichever identification rule fits the downtown search best."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 912
+}

@@ -1,0 +1,70 @@
+{
+ "slug": "university-city-pa",
+ "taxonomy": "locations",
+ "title": "University City",
+ "name": "University City",
+ "metaTitle": "1031 Exchange Services in University City, PA",
+ "metaDescription": "University City 1031 exchange coordination for medical office, lab, and mixed-use property anchored by Penn, Drexel, and CHOP demand near 30th Street.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>University City runs on a different tenant logic than the rest of Philadelphia's exchange market: demand here is pulled by Penn, Drexel, and Children's Hospital of Philadelphia rather than general office leasing, and that anchor keeps replacement candidates in steadier demand even when downtown office softens. The identification math still runs on the same forty-five day clock, but the pool of eds-meds tenants narrows what actually qualifies as a comparable replacement.</p>"
+  },
+  {
+   "heading": "Medical Office and Lab Space Near the Anchors",
+   "html": "<p>Sellers exchanging out of medical office or lab-adjacent space near Penn and CHOP are typically trading a single-tenant institutional lease for either a similar healthcare-anchored building elsewhere or a diversified multi-tenant medical office portfolio. Lab and life-science conversion space, driven by Schuylkill Yards and Science Center-area development, has become a more frequent replacement target for investors who previously held straight office and want exposure to the tighter life-science leasing market.</p>"
+  },
+  {
+   "heading": "Mixed-Use Along Walnut and Chestnut",
+   "html": "<p>Student and faculty housing over ground-floor retail on Walnut and Chestnut runs on an academic-year leasing calendar that doesn't match the standard commercial cycle, which matters when timing a sale against the 45-day identification window. We flag lease turnover dates early so a seller isn't forced to identify a replacement mid-lease-cycle when better options are still a few weeks out.</p>"
+  },
+  {
+   "heading": "Access Around 30th Street and the Schuylkill",
+   "html": "<p>University City exchange searches typically stay inside a compact perimeter:</p><ul><li>30th Street Station's transit-oriented office and lab development</li><li>Walnut Street's mixed-use retail corridor</li><li>Chestnut Street's student and faculty housing stock</li><li>Spruce Street's medical office cluster near CHOP</li><li>Schuylkill Avenue's river-facing lab and flex space</li></ul><p>Proximity to 30th Street Station carries the clearest premium in this submarket, since Amtrak and SEPTA regional rail access matters as much to life-science tenants as it does to office tenants.</p>"
+  },
+  {
+   "heading": "Identification Sequencing Around Academic Leasing",
+   "html": "<p>Because so much University City product ties back to Penn, Drexel, or CHOP lease terms, we confirm each replacement candidate's underlying lease expiration and renewal option dates before it goes on the identification list. A candidate with a lease expiring inside the exchange period needs a different underwriting conversation than one with five years of term remaining, and that distinction is easy to miss under a compressed forty-five day timeline.</p>"
+  },
+  {
+   "heading": "180-Day Closing Discipline for Institutional Tenants",
+   "html": "<p>Institutional tenants like Penn and CHOP often require estoppel certificates and lease assignment consents that move slower than a standard commercial tenant's paperwork. We start that request the same week a candidate is identified rather than waiting for the purchase agreement to be signed, since a delayed estoppel is one of the more common reasons a University City closing pushes toward the 180-day deadline.</p>"
+  },
+  {
+   "heading": "Watchouts for This Submarket",
+   "html": "<p>Ground lease terms tied to university-affiliated land, lab-space build-out costs that don't transfer cleanly between tenants, and academic-calendar lease turnover are the items most likely to complicate a University City exchange. Confirming whether a lab or medical office candidate sits on university-owned ground versus fee-simple land is worth doing before the identification notice is filed, not after.</p><p>For retail beneath student housing, checking the current occupancy against the academic calendar also matters, since a summer-vacant storefront can look weaker on paper than it performs during the school year. Build-out costs for wet lab space, in particular, rarely transfer cleanly between an outgoing tenant and an incoming one, so we confirm who owns the fume hoods and specialized mechanical systems before an investor counts on that infrastructure carrying into the next lease.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why does University City's identification list often narrow to fewer property types than other Philadelphia submarkets?",
+   "a": "Because so much demand is tied to Penn, Drexel, and CHOP leasing, comparable replacement candidates are a smaller set. Investors typically identify two or three qualifying properties well within the three-property rule rather than a longer speculative list."
+  },
+  {
+   "q": "Does a ground lease on university-affiliated land affect exchange eligibility?",
+   "a": "A leasehold interest with 30 years or more remaining, including renewal options, generally qualifies as like-kind real property, but we confirm the remaining term and any transfer restrictions with the investor's tax advisor before relying on it."
+  },
+  {
+   "q": "How do institutional tenant estoppels affect the 180-day closing period?",
+   "a": "Estoppel certificates from tenants like Penn or CHOP can take longer to process than a standard commercial tenant's paperwork, so we request them as soon as a candidate is identified rather than waiting until the purchase agreement stage."
+  },
+  {
+   "q": "What typically creates boot on a University City exchange?",
+   "a": "Boot most often appears when the replacement property's price or debt is lower than the relinquished property's, leaving cash exposure. We surface that calculation early so the investor's tax advisor can confirm it before the purchase closes."
+  },
+  {
+   "q": "Can a University City investor exchange into non-medical replacement property?",
+   "a": "Yes, like-kind scope for real property doesn't require matching the same tenant type. A University City medical office seller can replace into general office, retail, or multifamily elsewhere and still qualify."
+  },
+  {
+   "q": "Who holds the proceeds from a University City sale during the exchange?",
+   "a": "A qualified intermediary holds the funds between the relinquished sale and the replacement purchase, and we coordinate the QI's paperwork alongside the university-affiliated lease documentation throughout the process."
+  },
+  {
+   "q": "How does the 200 percent rule apply to a University City search with limited comparable inventory?",
+   "a": "When the pool of qualifying medical office or lab replacements is small, the 200 percent rule lets an investor identify more than three candidates as long as their combined fair market value doesn't exceed twice the relinquished property's value. We use it when a strict eds-meds match narrows the field more than the standard three-property rule allows."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 890
+}

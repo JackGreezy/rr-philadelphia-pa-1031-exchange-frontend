@@ -1,0 +1,58 @@
+{
+ "slug": "market-comparable-analysis",
+ "taxonomy": "services",
+ "title": "Market Comparable Analysis",
+ "name": "Market Comparable Analysis",
+ "metaTitle": "Market Comparable Analysis in Philadelphia, PA",
+ "metaDescription": "Market comparable analysis for Philadelphia 1031 exchange investors, supporting identification valuations and lender underwriting across the metro's distinct submarkets.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>An identification list, a boot calculation, and a lender's appraisal all depend on the same underlying number: what a Philadelphia property is actually worth against real, recent comparable sales. Getting that number wrong at any stage of an exchange creates problems that surface later, usually at the point where there is the least time to fix them.</p>"
+  },
+  {
+   "heading": "Why Comparable Analysis Sits Underneath Every Other Step",
+   "html": "<p>The 200% and 95% identification rules both depend on accurate valuations of every property named on the list, and a boot calculation depends on knowing the true value exchanged on both sides of the transaction. A lender's own appraisal will use its own comparable set regardless of what an investor's broker provided, so a valuation built on outdated or mismatched comparables can create a gap between what the investor expected and what the lender is willing to finance, right when there is little time left to close that gap. That gap tends to surface at the worst possible point in the calendar, once a property is already under contract and the appraisal has come back lower than expected.</p>"
+  },
+  {
+   "heading": "Why Philadelphia's Submarkets Do Not Share One Comparable Set",
+   "html": "<p>A Center City office building, a rowhouse-to-multifamily conversion, a Navy Yard industrial parcel, and a University City medical office building near Penn or CHOP each trade against a different pool of comparable sales, with different buyer pools and different underwriting norms behind each one. Pulling a comparable from the wrong submarket, even one that seems similar on the surface, can distort a valuation enough to matter when it is checked against an identification cap or a lender's own appraisal. Two buildings that look alike from the street can trade at meaningfully different values once the buyer pool, financing environment, and underlying tenant demand for each submarket are accounted for.</p>"
+  },
+  {
+   "heading": "What A Defensible Comparable Analysis Actually Includes",
+   "html": "<p>A valuation that holds up under later scrutiny is built from verified, recent data rather than a quick estimate.</p><ul><li>Closed sales within the same submarket and asset class, adjusted for size, condition, and timing</li><li>Current broker opinions of value for properties still under negotiation, not stale listing prices</li><li>Recorded tax-abatement status factored into any comparable where improvement value is affected</li><li>Cap rate context specific to the submarket, since Center City office and port-corridor industrial trade on different rate expectations</li><li>Documentation showing how each comparable was selected, in case a valuation is later questioned</li></ul><p>Skipping this level of detail to save time during the identification window tends to show up later as a mismatch during lender underwriting.</p>"
+  },
+  {
+   "heading": "Where Conversion Projects Complicate The Comparable Set",
+   "html": "<p>A rowhouse-to-multifamily conversion does not have a clean comparable pool, since it sits between a residential sale and a completed multifamily asset, and its value depends heavily on the assumed completion scope and timeline. Comparable analysis for a conversion candidate has to separate the as-is value from the projected completed value, and be explicit about which figure is being used for identification purposes versus which figure a construction lender will actually underwrite. Conflating the two figures, even unintentionally, is one of the more common ways a conversion project's valuation ends up disputed later in the process, whether the challenge comes from a lender's appraiser during underwriting or from a qualified intermediary reviewing the identification notice for accuracy before it goes out the door and is filed. Keeping the two figures clearly labeled from the start, rather than sorting them out only when a question actually arises, saves real time later in the exchange.</p>"
+  },
+  {
+   "heading": "Keeping The Analysis Current Through The Exchange",
+   "html": "<p>A comparable set pulled at the start of the 45-day window can be stale by the time a lender orders its own appraisal weeks later, particularly in a market with as much transaction volume as Philadelphia's. Refreshing the analysis at key points, rather than relying on the original numbers through the entire exchange, keeps the investor's expectations aligned with what the lender and the closing process will actually support. A comparable analysis is a working document through the life of the exchange, not a single deliverable produced once and then filed away. Treating it as a living record, updated whenever a new closed sale becomes public in a relevant submarket, keeps the investor's expectations grounded in current conditions rather than in conditions from the week the exchange first started moving through its earliest planning stages.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why can't one comparable set cover both office and industrial properties?",
+   "a": "<p>Each asset class trades against its own buyer pool, cap rate expectations, and underwriting norms, so a comparable pulled from a different asset class can misstate a property's actual market value.</p>"
+  },
+  {
+   "q": "How is a rowhouse conversion valued for identification purposes?",
+   "a": "<p>Its value should separate the as-is condition from the projected completed value, with clear documentation showing which figure is being used and why.</p>"
+  },
+  {
+   "q": "Does the ten-year tax abatement affect comparable analysis?",
+   "a": "<p>It can, since a property's recorded abatement status affects its net income and resulting value relative to comparables that do not carry the same benefit.</p>"
+  },
+  {
+   "q": "How often should a comparable analysis be updated during an exchange?",
+   "a": "<p>At minimum, once at identification and again before the lender's own appraisal is ordered, since market activity in Philadelphia can shift values meaningfully within a single exchange window.</p>"
+  },
+  {
+   "q": "What happens if a lender's appraisal comes in below the identified value?",
+   "a": "<p>The financing gap has to be covered with additional cash or a revised structure, which is why aligning the comparable analysis with realistic lender expectations early on matters.</p>"
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 874
+}

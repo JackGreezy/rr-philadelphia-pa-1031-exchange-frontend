@@ -1,0 +1,58 @@
+{
+ "slug": "multifamily-replacement-sourcing",
+ "taxonomy": "services",
+ "title": "Multifamily Replacement Sourcing",
+ "name": "Multifamily Replacement Sourcing",
+ "metaTitle": "Multifamily Replacement Sourcing in Philadelphia, PA",
+ "metaDescription": "Sourcing rowhouse conversions, courtyard buildings, and suburban garden complexes as 1031 replacement property before the 45-day window runs out.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Philadelphia's multifamily stock runs from converted rowhouse triplexes in Fishtown and Manayunk to garden-style complexes out past Norristown, and that range means an exchanger's identification list can look completely different depending on unit count and management appetite. We sort candidates by those two variables first, since a self-managing exchanger coming out of a rowhouse portfolio usually wants a different asset than one rolling proceeds out of a larger managed complex.</p>"
+  },
+  {
+   "heading": "The Rowhouse-to-Multifamily Conversion Wrinkle",
+   "html": "<p>A large share of Philadelphia's smaller multifamily stock started as single-family rowhouses converted into two, three, or four units, and the quality of that conversion varies block by block even within the same neighborhood. We check whether the conversion was permitted and reflected in the certificate of occupancy, since an unpermitted third unit can complicate financing and insurance even when the building has operated that way for years without incident.</p><p>Fishtown and Manayunk both carry meaningful rowhouse-conversion inventory, and buyers moving proceeds into that product need the permit history pulled before it lands on an identification list, not after.</p>"
+  },
+  {
+   "heading": "Use and Occupancy Certificates on Multifamily Purchases",
+   "html": "<p>Philadelphia requires a use and occupancy certificate on most multifamily transfers, and the inspection tied to that certificate can surface code items, egress, smoke detection, or electrical, that the seller has to resolve before closing. We flag any use and occupancy contingency early in the timeline, since a building that fails inspection on the first pass needs a second inspection scheduled, and that second pass has to fit inside whatever's left of the 180-day closing period.</p>"
+  },
+  {
+   "heading": "The 10-Year Tax Abatement and What It Actually Means for Underwriting",
+   "html": "<p>Philadelphia's construction tax abatement phases out over ten years on newer multifamily buildings, and a candidate three or four years into that phase-out carries a rising property tax line that has to be modeled forward rather than underwritten off the current year's bill. We pull the abatement schedule on any qualifying building so the exchanger is comparing real forward cash flow, not a snapshot that looks better than it will read in year six.</p><ul><li>Confirm exactly how many years remain on the abatement schedule rather than simply confirming one exists</li><li>Model the stepped tax increase forward against projected rent growth, not against current rent</li><li>Check whether the abatement transfers with the sale or resets basis for the new owner</li><li>Verify the building's use and occupancy history, since abated new construction still needs a valid certificate</li><li>Compare net yield in year one against net yield once the abatement fully phases out</li></ul><p>A building in year two of the abatement schedule presents a very different forward picture than one in year nine, even if both show an identical net operating income on this year's operating statement, and we present that year-by-year trajectory to the exchanger rather than a single blended number.</p>"
+  },
+  {
+   "heading": "Suburban Garden Complexes as an Alternative Path",
+   "html": "<p>An exchanger who wants fewer conversion and abatement variables sometimes moves proceeds out toward Norristown or the corridors near King of Prussia, where garden-style complexes built as multifamily from the start carry simpler title and inspection histories. That trade usually comes with a lower per-unit basis and different management demands, and we lay out both paths rather than assuming urban product is the default answer for every exchanger.</p><p>Garden complexes in these suburban corridors typically carry surface parking built to a fixed ratio per unit, which removes the parking-availability guesswork that comes with an urban rowhouse conversion where street parking is the only option for tenants. That difference matters more to some exchangers evaluating long-term tenant retention than the basis difference does.</p>"
+  },
+  {
+   "heading": "Keeping the List Inside the Identification Rule",
+   "html": "<p>Multifamily candidates, whether a rowhouse triplex or a hundred-unit garden complex, still count against whichever identification rule governs the exchange, and a strong lead does not override the count or value ceiling under the three-property, 200 percent, or 95 percent test. We keep the sourcing list mapped against that framework as candidates get added or dropped.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does an unpermitted rowhouse conversion disqualify a property as replacement real estate?",
+   "a": "No, the like-kind test doesn't turn on permit status. But an unpermitted unit can complicate financing, insurance, and the use and occupancy inspection, so we surface it during sourcing rather than at the closing table."
+  },
+  {
+   "q": "Does the 10-year tax abatement affect exchange eligibility?",
+   "a": "No. The abatement is a city property tax program, unrelated to the federal exchange rules. It affects the building's forward cash flow, which is why we model the phase-out before it goes on an identification list."
+  },
+  {
+   "q": "What happens if a multifamily building fails its use and occupancy inspection during the exchange window?",
+   "a": "The seller typically has to correct the items and schedule a re-inspection, which can eat into the closing timeline. We flag any known code issues early so the re-inspection doesn't become a last-minute scramble against day 180."
+  },
+  {
+   "q": "Is suburban garden-style multifamily a safer replacement than urban rowhouse conversions?",
+   "a": "Not inherently safer, just different in risk profile. Garden complexes usually have simpler permit and title histories, while rowhouse conversions can offer a lower basis and stronger urban rent growth."
+  },
+  {
+   "q": "How does multifamily sourcing interact with the identification deadline?",
+   "a": "Every candidate we source still has to fit inside the count or value limit of whichever identification rule the exchanger is using, so the sourcing list and the identification math get checked together, not separately."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 851
+}

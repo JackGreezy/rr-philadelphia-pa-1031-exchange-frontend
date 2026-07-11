@@ -1,0 +1,58 @@
+{
+ "slug": "tax-advisor-and-cpa-coordination",
+ "taxonomy": "services",
+ "title": "Tax Advisor and CPA Coordination",
+ "name": "Tax Advisor and CPA Coordination",
+ "metaTitle": "Tax Advisor and CPA Coordination in Philadelphia, PA",
+ "metaDescription": "Keeping a Philadelphia exchanger's CPA looped into deal terms and closing figures throughout the exchange, without offering tax advice ourselves.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>We coordinate the transaction side of a Philadelphia exchange, sourcing, identification, closing sequencing, and we keep the exchanger's CPA or tax advisor informed of the deal terms as they develop, but we don't tell anyone what their tax position should be. Every exchanger works with their own advisor to confirm basis, gain calculation, and filing treatment, and our job is making sure that advisor has accurate numbers early enough to weigh in before decisions get locked in, well before the closing table rather than after.</p>"
+  },
+  {
+   "heading": "What Gets Shared With the Advisor and When",
+   "html": "<p>As soon as a relinquished sale goes under contract, we send the CPA the purchase price, estimated closing costs, and existing debt payoff figures so basis and projected gain can be modeled before the identification clock even starts. Once replacement candidates narrow, we share the same detail on each one, since a CPA who only sees final numbers at closing has no real opportunity to flag a concern while there's still time to address it. We follow the same practice regardless of whether the exchanger's advisor is a solo practitioner or part of a larger firm, since the timing gap matters more than the advisor's size or structure.</p>"
+  },
+  {
+   "heading": "Where Boot Actually Shows Up",
+   "html": "<p>Boot, the taxable portion of an exchange, most commonly shows up here as either cash taken out of the transaction or a reduction in debt on the replacement property relative to the relinquished property, and we flag both scenarios to the advisor as soon as the numbers suggest either might be in play. A Philadelphia exchanger trading out of a rowhouse-conversion multifamily property with modest debt into a larger net-leased asset with a bigger mortgage, for instance, needs the debt-relief comparison run early, not discovered at the closing table.</p>"
+  },
+  {
+   "heading": "Coordinating the Closing Statement Handoff",
+   "html": "<p>The closing statement on both sides of the exchange, relinquished sale and replacement purchase, needs to reach the CPA in a form that actually supports Form 8824 preparation, with clear line-item detail rather than a generic settlement summary, and we confirm the qualified intermediary's closing documentation is complete enough for that purpose before the file gets handed off.</p><ul><li>Send the CPA relinquished sale terms as soon as that contract is signed, rather than waiting until closing</li><li>Share replacement candidate terms as the identification list narrows, before an offer is finalized</li><li>Flag any debt-relief gap between relinquished and replacement properties as soon as it's visible</li><li>Confirm both closing statements are complete and reach the CPA promptly after each closing</li><li>Route any tax-treatment question directly to the advisor rather than answering it ourselves</li></ul><p>A closing statement that arrives weeks after closing, with no advance notice of the terms, leaves the CPA reconstructing the transaction from scratch at filing time, which is exactly the situation this coordination exists to prevent.</p>"
+  },
+  {
+   "heading": "What This Coordination Is Not",
+   "html": "<p>We don't calculate the exchanger's final tax liability, recommend a filing position, or substitute for the advisor's judgment on anything tax-related, since that's squarely the CPA's role and getting it right depends on the exchanger's full financial picture, well beyond this one transaction alone. Our coordination exists to make sure the advisor has real numbers early, so their guidance is based on the actual deal rather than a rough estimate assembled after the fact.</p><p>An exchanger who owns other Philadelphia holdings, or property outside the region, needs an advisor weighing this transaction against that whole portfolio, and we stay in our lane by feeding accurate transaction detail into that broader picture rather than trying to assess it ourselves.</p>"
+  },
+  {
+   "heading": "Why Timing This Matters More Than It Seems",
+   "html": "<p>An advisor who sees deal terms for the first time at closing has no room left to suggest a structural adjustment, adding a partial cash-out with eyes open, restructuring debt differently, that could have changed the outcome. Looping them in during sourcing, well before signing rather than only afterward, is what actually gives that advice room to matter.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does this coordination replace the need for a separate CPA or tax advisor?",
+   "a": "No. We coordinate deal terms and timing with the exchanger's own advisor throughout the transaction, but every tax position, basis calculation, and filing decision remains entirely theirs to make."
+  },
+  {
+   "q": "When should the CPA first see numbers on a potential exchange?",
+   "a": "As early as the relinquished sale goes under contract, so gain and basis can be modeled before the identification clock starts, rather than only after replacement candidates have already been narrowed down considerably."
+  },
+  {
+   "q": "What triggers a boot conversation with the tax advisor?",
+   "a": "Any cash taken out of the transaction or a meaningful reduction in debt on the replacement property compared with the relinquished property involved in the exchange. We flag both to the advisor as soon as the deal terms suggest either is possible."
+  },
+  {
+   "q": "Do we prepare Form 8824 for the exchanger?",
+   "a": "No, that's the CPA's role. We make sure the closing statements and transaction detail they need to prepare it accurately reach them in usable form promptly after each closing takes place."
+  },
+  {
+   "q": "What happens if the advisor raises a concern late in the process?",
+   "a": "It depends how late. Concerns raised during sourcing or identification usually leave room to adjust the plan, while concerns raised after closing may have fewer options, which is why we push for early, not last-minute, coordination throughout the whole exchange."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 853
+}

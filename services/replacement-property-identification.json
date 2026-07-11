@@ -1,0 +1,58 @@
+{
+ "slug": "replacement-property-identification",
+ "taxonomy": "services",
+ "title": "Replacement Property Identification",
+ "name": "Replacement Property Identification",
+ "metaTitle": "Replacement Property Identification in Philadelphia, PA",
+ "metaDescription": "Building a real candidate pipeline across Philadelphia asset classes so the written identification filed at day 45 reflects properties that can actually close.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Identification is a paperwork deadline, but the paperwork is only as good as the pipeline behind it, and Philadelphia's buyer pool is dense enough that a candidate worth naming on day 20 can be under contract to someone else by day 35. We start building the candidate pipeline the week the relinquished sale goes under contract, across whatever asset classes the exchanger is actually willing to buy, rather than waiting until the clock is already running to start looking.</p>"
+  },
+  {
+   "heading": "Building a Pipeline Wide Enough to Survive Losses",
+   "html": "<p>A pipeline of one or two candidates in a market with this much competing capital is fragile, since losing a single deal to a faster buyer can leave an exchanger scrambling with days left on the identification window. We build toward a working list across a few submarkets and asset types, industrial near the Navy Yard and I-95 corridor, medical office around University City, suburban retail and office out toward Conshohocken or Plymouth Meeting, so a lost deal doesn't collapse the whole plan.</p><p>The goal isn't to identify every property on the list; it's to have enough real candidates in motion that whichever ones survive to day 45 are still worth naming.</p><p>We check in on the pipeline roughly weekly during the identification window rather than once at the start and once again near the deadline, since a candidate's status, still available, under contract elsewhere, price reduced, can change meaningfully in the space of a few days in a market moving this fast.</p>"
+  },
+  {
+   "heading": "Matching the Pipeline to an Identification Rule",
+   "html": "<p>Once the pipeline narrows, the written identification has to fit inside the three-property rule, the 200 percent rule, or the 95 percent rule, and which one applies shapes how the pipeline gets trimmed. An exchanger following the three-property rule needs the pipeline narrowed to the three strongest candidates regardless of combined value, while one using the 200 percent rule can carry more candidates as long as their combined fair market value stays under twice the relinquished property's sale price.</p>"
+  },
+  {
+   "heading": "What Actually Slows Down Identification in This Market",
+   "html": "<p>Philadelphia's dense buyer pool means desirable candidates, well-located medical office, net-leased retail with strong guarantors, stabilized multifamily, often go under contract to other buyers before an exchanger has finished diligence, which is why we track backup candidates alongside primary ones rather than treating the pipeline as a single ranked list.</p><ul><li>Track at least one backup candidate for every primary candidate under active pursuit</li><li>Confirm seller timeline and competing offers before spending diligence time on any single deal</li><li>Verify title and use classification early, since Philadelphia parcels sometimes carry older recorded restrictions that surface late</li><li>Check whether any candidate requires zoning or use approval that could run past the closing deadline</li><li>Keep the written identification draft updated as candidates fall away, not assembled from scratch on day 44</li></ul>"
+  },
+  {
+   "heading": "The Written Identification Itself",
+   "html": "<p>The identification document has to unambiguously describe each property, typically a legal description or street address, delivered in writing to the qualified intermediary or another party to the exchange, before midnight on day 45. We prepare that document in parallel with the pipeline work so it's ready to send the moment the final candidate list is set, rather than drafted under pressure in the last days of the window.</p><p>We keep a running draft that updates as the pipeline narrows, so the version ready to send on day 43 or 44 already reflects the strongest surviving candidates rather than requiring a scramble to assemble legal descriptions and addresses from scratch in the final days.</p>"
+  },
+  {
+   "heading": "After Identification Is Filed",
+   "html": "<p>Once the list is filed, the exchanger generally cannot add new candidates, only revoke and replace before the deadline passes, so the pipeline work that matters most happens before day 45, not after. We keep pursuing the named candidates toward closing rather than treating the identification filing as the end of the sourcing effort, since the same market pressure that made sourcing competitive in the first place can still complicate closing on a named property.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How early should replacement property sourcing start relative to the relinquished sale closing?",
+   "a": "As early as the relinquished sale goes under contract. Waiting until after closing to start looking leaves less runway inside the fixed 45-day identification window."
+  },
+  {
+   "q": "What happens if a top candidate goes under contract to another buyer before day 45?",
+   "a": "It gets dropped from the list and a backup candidate takes its place, assuming one has been tracked in parallel. This is why we build a pipeline wider than the final identification list."
+  },
+  {
+   "q": "Can identified candidates be changed after the 45-day deadline passes?",
+   "a": "No. Once the deadline passes, the written identification is locked, which is why the pipeline and backup candidates need to be resolved before day 45, not after."
+  },
+  {
+   "q": "Does the identification document need a full legal description for each property?",
+   "a": "It needs to unambiguously identify the property, which is usually satisfied by a legal description or a clear street address. We confirm the specific description standard with the qualified intermediary handling the exchange."
+  },
+  {
+   "q": "How many candidates should be on the identification list?",
+   "a": "That depends on which identification rule applies. The three-property rule caps the count at three regardless of value, while the 200 percent rule allows more candidates as long as combined value stays under the cap, and we choose based on the actual pipeline in hand."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 859
+}

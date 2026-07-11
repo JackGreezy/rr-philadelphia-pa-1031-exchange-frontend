@@ -1,0 +1,58 @@
+{
+ "slug": "t12-financial-review",
+ "taxonomy": "services",
+ "title": "T12 Financial Review",
+ "name": "T12 Financial Review",
+ "metaTitle": "T12 Financial Review in Philadelphia, PA",
+ "metaDescription": "Normalizing trailing-twelve-month operating statements on Philadelphia replacement candidates before an offer commits an identification slot.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A trailing-twelve operating statement handed over in a marketing package is rarely the same document an underwriter would produce independently, and the gap between the two is usually where a candidate's real yield lives. We rebuild the T12 line by line against source documents, actual invoices, tax bills, insurance renewals, before a candidate stays on the identification list, since a purchase priced off an inflated net operating income number creates a problem that surfaces long after the 45-day window has closed and there is little room left to renegotiate.</p>"
+  },
+  {
+   "heading": "Separating Recurring Income From One-Time Items",
+   "html": "<p>Sellers sometimes include a one-time insurance settlement, a lease termination fee, or a single large late-fee collection inside a T12 without flagging it as non-recurring, and that inclusion can push a stated cap rate to look meaningfully better than the property's ongoing performance actually supports. We isolate every line that isn't likely to repeat and rerun the yield calculation without it, so the exchanger is deciding based on ongoing income, not a number inflated by something that happened once.</p><p>The same applies on the expense side, a year with unusually low repairs and maintenance spending because a major capital item was deferred, not because the building genuinely runs cheap, tells the opposite kind of misleading story.</p>"
+  },
+  {
+   "heading": "Checking Expenses Against What Philadelphia Actually Costs",
+   "html": "<p>Real estate tax lines need particular attention on any candidate carrying a construction tax abatement, since a T12 built off an abated tax bill understates what the property will actually cost once the abatement phases out, and insurance costs on older Philadelphia building stock, especially anything with older electrical or roof systems, sometimes run above what a generic per-square-foot benchmark would suggest. We pull the actual current tax and insurance bills rather than trusting a T12 line that may already be a year or two stale.</p><p>Water and sewer billing on older multifamily buildings can also carry surprises, particularly on properties still metered as a single account rather than sub-metered by unit, and we confirm which billing structure a candidate actually uses rather than assuming the T12's utility line reflects a stable ongoing cost.</p>"
+  },
+  {
+   "heading": "Reconciling the T12 Against the Rent Roll",
+   "html": "<p>A T12 and a rent roll covering the same period should tell a consistent story, and when they don't, that mismatch usually points to either uncollected income being counted as earned or a unit-level detail the rent roll hasn't caught up to.</p><ul><li>Confirm total rental income on the T12 reconciles against the rent roll for the same trailing period</li><li>Isolate one-time income items, settlements, termination fees, unusual collections, and rerun yield without them</li><li>Check whether real estate tax reflects an abated or a stabilized bill, especially on newer construction</li><li>Verify repairs and maintenance spending isn't unusually low due to deferred capital work</li><li>Confirm management fee and reserve assumptions match what a new owner would actually incur, not the seller's in-house arrangement</li></ul>"
+  },
+  {
+   "heading": "What This Means for the Purchase Price Conversation",
+   "html": "<p>Once the T12 is normalized, we bring the adjusted yield back to the exchanger before an offer goes out, since it's a far easier conversation to have before a purchase agreement is signed than after a lender's own underwriting turns up the same gaps during the closing process.</p><p>Sellers don't always agree with a normalized number, and that's fine, the point isn't to force a price renegotiation on every candidate but to make sure the exchanger is offering based on real performance rather than a marketing package's best-case framing of the same building.</p>"
+  },
+  {
+   "heading": "Why This Has to Happen Before Identification, Not After",
+   "html": "<p>A candidate whose real yield collapses once the T12 is normalized isn't worth spending one of a limited number of identification slots on, so this review happens during sourcing, before the property is named in the written identification, rather than as a closing-stage formality. Waiting until after identification to normalize the numbers leaves an exchanger with far fewer options if the reconciled yield turns out to be meaningfully weaker than the marketing package suggested.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does a normalized T12 change whether a property qualifies as replacement real estate?",
+   "a": "No, financial performance has no bearing on like-kind eligibility. It affects whether the candidate is worth committing to, which is why we normalize the numbers before it takes up one of a limited number of identification slots."
+  },
+  {
+   "q": "What's the most common way a T12 overstates income?",
+   "a": "Including one-time items, an insurance settlement, a lease termination payment, or an unusual collection, inside the recurring income line without flagging them as non-recurring, which inflates the apparent yield significantly."
+  },
+  {
+   "q": "Why does a tax abatement matter for T12 review specifically?",
+   "a": "A T12 built off an abated tax bill can significantly understate future expenses once the abatement phases out, so we check whether the current tax line reflects an abated or a stabilized assessment."
+  },
+  {
+   "q": "What happens if the T12 and rent roll don't reconcile?",
+   "a": "It usually means either income is being counted that wasn't actually collected, or the rent roll hasn't caught up to a recent change on the property. Either way, we resolve the mismatch before treating the candidate as a serious option worth pursuing further."
+  },
+  {
+   "q": "How does T12 review affect the timeline inside a 45-day identification window?",
+   "a": "It happens during sourcing, in parallel with pipeline building, so weak candidates get dropped before they ever compete for a spot on the written identification filed at day 45 with the qualified intermediary handling the exchange."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 860
+}

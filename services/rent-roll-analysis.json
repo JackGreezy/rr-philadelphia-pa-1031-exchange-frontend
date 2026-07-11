@@ -1,0 +1,58 @@
+{
+ "slug": "rent-roll-analysis",
+ "taxonomy": "services",
+ "title": "Rent Roll Analysis",
+ "name": "Rent Roll Analysis",
+ "metaTitle": "Rent Roll Analysis in Philadelphia, PA",
+ "metaDescription": "Checking rent rolls on Philadelphia replacement candidates against lease files and delinquency history before an offer goes out inside the exchange window.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A rent roll handed over during a Philadelphia marketing package is a snapshot, and snapshots hide things that only surface once someone pulls the actual lease files behind each line. We reconcile every rent roll against the underlying leases before a candidate stays on the identification list, since a purchase agreement signed off a stale or optimistic rent roll creates problems well after the 45-day deadline has already passed and there is no more room to negotiate the price down.</p>"
+  },
+  {
+   "heading": "What the Rent Roll Usually Leaves Out",
+   "html": "<p>A clean-looking rent roll can still hide a tenant on a verbal month-to-month arrangement, a unit occupied by an owner's relative at a below-market rate, or a commercial tenant whose lease expired and was never formally renewed. Rowhouse-conversion multifamily around Fishtown and Manayunk sees this pattern often, where a longtime tenant's original lease lapsed years ago and occupancy has continued informally ever since.</p><p>We flag any unit without a current signed lease as a separate line item during review, since it changes both the income projection and the transferability of that tenancy to a new owner.</p>"
+  },
+  {
+   "heading": "Delinquency and Concession History",
+   "html": "<p>A rent roll showing full occupancy at market rent can still sit on top of meaningful delinquency, either chronic late payment that a seller has tolerated or concessions baked into effective rent that the trailing rent roll doesn't disclose on its face. We ask for the aged receivables report alongside the rent roll specifically because the two documents rarely tell the same story, and the gap between them is where real risk lives.</p><p>A tenant who has been thirty or sixty days behind for the better part of a year but never formally defaulted still appears as a paying tenant on the rent roll, and that pattern tends to repeat under new ownership rather than resolve itself simply because the building changed hands.</p>"
+  },
+  {
+   "heading": "Sorting Retail and Multifamily Rolls Differently",
+   "html": "<p>A retail rent roll along a Northeast Philadelphia or Bensalem corridor needs a different read than a multifamily roll, since retail carries percentage rent clauses, common-area reimbursement true-ups, and co-tenancy triggers that don't appear on a simple per-unit rent line. We build a separate checklist for each asset type rather than running every candidate through the same generic rent roll template.</p><ul><li>Confirm every unit or suite has a current signed lease, not an expired or verbal arrangement</li><li>Pull the aged receivables report and reconcile it against stated occupancy</li><li>Check for rent concessions or free-rent periods not reflected in the trailing rent line</li><li>Verify common-area maintenance and tax reimbursement billing matches what leases actually require</li><li>Flag any related-party tenancy, family members or affiliated businesses at below-market rent</li></ul>"
+  },
+  {
+   "heading": "Turning the Rent Roll Into Underwriting",
+   "html": "<p>Once the rent roll is reconciled against the lease files and receivables, we rebuild the income line the way an underwriter would rather than accepting the marketing package's projected number, since the difference between an optimistic proforma and a reconciled rent roll can be the difference between a candidate that closes cleanly and one that stalls during lender review with weeks left on the exchange period.</p><p>We present the reconciled number alongside the marketing package's original figure so the exchanger sees exactly where and why the two diverge, rather than simply receiving a lower final estimate with no explanation of what changed underneath it.</p>"
+  },
+  {
+   "heading": "How This Feeds the Identification Decision",
+   "html": "<p>A rent roll that doesn't hold up under review gets dropped from the candidate list before it ever counts against the three-property, 200 percent, or 95 percent identification limit, since there is no reason to spend one of a limited number of identification slots on a property whose income can't be verified in time. When two candidates otherwise look comparable, the one with the cleaner rent roll and fewer unresolved receivables typically earns the stronger position on the list.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does rent roll accuracy affect whether a purchase qualifies as replacement property?",
+   "a": "No, like-kind eligibility doesn't depend on rent roll accuracy. But a rent roll that doesn't hold up under review can make a candidate a poor use of a limited identification slot, so we vet it before committing."
+  },
+  {
+   "q": "What's the difference between a rent roll and an aged receivables report?",
+   "a": "The rent roll shows stated occupancy and rent as of a given date. The aged receivables report shows what's actually been collected, which can reveal chronic delinquency the rent roll alone doesn't disclose."
+  },
+  {
+   "q": "How do related-party tenancies get handled in a rent roll review?",
+   "a": "We flag them separately, since a family member or affiliated business paying below-market rent doesn't reflect what an arm's-length tenant would pay, and that gap needs to be underwritten as a real vacancy risk rather than counted as stable ongoing income."
+  },
+  {
+   "q": "Are retail and multifamily rent rolls reviewed the same way?",
+   "a": "No. Retail rolls carry percentage rent, CAM reimbursement, and co-tenancy clauses that a per-unit multifamily roll doesn't have, so we use separate checklists tailored to each asset type."
+  },
+  {
+   "q": "What happens if a rent roll issue surfaces after identification is already filed?",
+   "a": "It depends on the identification rule in use. Under the three-property rule there's little room to substitute, which is why we push for reconciled rent rolls before a candidate is added to the list at all, not after the written notice has already gone out."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 850
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "retail-replacement-sourcing",
+ "taxonomy": "services",
+ "title": "Retail Replacement Sourcing",
+ "name": "Retail Replacement Sourcing",
+ "metaTitle": "Retail Replacement Sourcing in Philadelphia, PA",
+ "metaDescription": "Sourcing grocery-anchored, strip, and storefront retail candidates across Philadelphia corridors and suburbs before the 45-day identification window closes.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Retail in Philadelphia splits cleanly into a few distinct patterns, dense pedestrian storefront near Center City, grocery-anchored strip centers out through Northeast Philadelphia and Bensalem, and suburban pad sites along the corridors past Willow Grove, and each pattern carries different lease structures and different buyer competition. We sort candidates by pattern first, since comparing a Chestnut Street storefront lease against a grocery-anchored strip center lease is comparing two different businesses wearing the same asset label.</p>"
+  },
+  {
+   "heading": "Storefront Retail Near Center City",
+   "html": "<p>Storefront space along corridors like Chestnut and Walnut leases to independent operators far more often than to national credit tenants, which means underwriting leans harder on the individual operator's track record and less on a standardized lease form. Turnover risk is real in this pattern, and we weigh a candidate's actual leasing history rather than only its current occupancy, since a storefront that has cycled through several tenants in recent years tells a different story than one with a single long-tenured operator.</p><p>Foot traffic on these corridors also varies block by block in ways a citywide retail report won't capture, and a storefront two blocks off the strongest pedestrian stretch can carry meaningfully different rent support than one directly on it, so we walk the actual block before treating a candidate as comparable to a stronger address nearby.</p>"
+  },
+  {
+   "heading": "Grocery-Anchored Centers Out Toward the Northeast",
+   "html": "<p>Grocery-anchored strip centers around Northeast Philadelphia and Bensalem tend to hold occupancy better through downturns because the anchor drives consistent foot traffic for the smaller shop tenants around it, but that stability depends heavily on the anchor's own lease term and any co-tenancy clause tying smaller leases to the anchor staying open. We pull the anchor lease first on any center under consideration, since a strong-looking rent roll can unravel quickly if the anchor's own term is shorter than it appears.</p><p>Co-tenancy clauses in particular deserve a close read, since some allow smaller tenants to reduce rent or terminate outright if the anchor closes, which changes the real income picture even while occupancy looks full on paper.</p>"
+  },
+  {
+   "heading": "Screening the Retail Pipeline Against the Clock",
+   "html": "<p>With identification due in 45 days, we prioritize lease abstracts and anchor terms over the marketing package's summary numbers, since retail is the asset class where the gap between advertised and actual lease terms tends to be widest.</p><ul><li>Pull the anchor lease term and renewal options before evaluating any smaller shop tenant</li><li>Check co-tenancy language that could allow shop tenants to reduce rent if the anchor vacates</li><li>Verify actual operator tenure on storefront retail rather than relying on current occupancy status alone</li><li>Confirm common-area maintenance and tax reimbursement billing against what leases actually specify</li><li>Flag any pad site or outparcel with a separate ground lease structure</li></ul><p>A candidate that fails any one of these checks isn't automatically disqualified, but it moves down the priority list, since the exchanger's limited identification slots are better spent on properties where the abstract confirms what the marketing package claims.</p>"
+  },
+  {
+   "heading": "Suburban Pad Sites Near Willow Grove and Horsham",
+   "html": "<p>Pad sites along the retail corridors near Willow Grove and Horsham often carry single-tenant net leases with corporate guarantees, and that structure trades more like the net lease category than like traditional multi-tenant retail. We flag these separately during sourcing since the diligence checklist for a net-leased pad site looks closer to a single-tenant lease abstract review than to a shopping center analysis.</p>"
+  },
+  {
+   "heading": "Keeping Retail Candidates Inside the Identification Framework",
+   "html": "<p>Whether the candidate is a Center City storefront or a grocery-anchored center, it still counts as a single line against the three-property rule or as part of the combined value under the 200 percent rule, and we keep the retail pipeline tracked against whichever framework the exchanger is using as the list narrows toward day 45. A mixed list spanning storefront, grocery-anchored, and pad site product often gives an exchanger the most realistic shot at landing at least one strong candidate before the deadline.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does storefront retail with high tenant turnover disqualify it as replacement property?",
+   "a": "No, turnover history has no bearing on like-kind eligibility. It affects the income risk we underwrite, which is why we look at actual leasing history rather than just current occupancy."
+  },
+  {
+   "q": "How important is the anchor lease term in a grocery-anchored center?",
+   "a": "Very. Co-tenancy clauses can let smaller shop tenants reduce rent or leave if the anchor's lease ends, so the anchor term often matters more to the center's real income than any of the individual shop tenant leases do."
+  },
+  {
+   "q": "Are pad sites underwritten like shopping centers or like single-tenant net lease deals?",
+   "a": "Closer to single-tenant net lease, since most pad sites carry one corporate-guaranteed tenant on a long-term lease rather than a mix of smaller shop tenants sharing common areas."
+  },
+  {
+   "q": "How many retail candidates typically go on an identification list?",
+   "a": "It depends on the identification rule chosen. Under the three-property rule, only three total properties can be named regardless of type, so retail candidates compete for those slots against any other asset class under active consideration at the time."
+  },
+  {
+   "q": "Does co-tenancy language get checked before or after an offer is made?",
+   "a": "Before. We pull co-tenancy and anchor lease terms during initial screening, since discovering a weak co-tenancy clause after an offer is out wastes time the identification window doesn't have to spare and can force a late substitution."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 852
+}

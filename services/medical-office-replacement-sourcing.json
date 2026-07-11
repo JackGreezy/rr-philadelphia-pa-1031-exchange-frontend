@@ -1,0 +1,58 @@
+{
+ "slug": "medical-office-replacement-sourcing",
+ "taxonomy": "services",
+ "title": "Medical Office Replacement Sourcing",
+ "name": "Medical Office Replacement Sourcing",
+ "metaTitle": "Medical Office Replacement Sourcing in Philadelphia, PA",
+ "metaDescription": "Locating physician-leased and hospital-affiliated medical office candidates near Penn, Drexel, and CHOP before the 45-day identification deadline closes.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Philadelphia's eds-and-meds base gives an exchanger a genuinely deep pool of medical office candidates, but a deep pool still runs on the same clock as anywhere else, and the 45-day identification window does not stretch to accommodate a slow physician-group lease review. We start pulling comparable medical office stock the day the relinquished sale goes under contract, not after closing, because University City and the hospital-adjacent corridors around it move fast once a clean asset hits the market.</p>"
+  },
+  {
+   "heading": "What University City Actually Offers",
+   "html": "<p>The concentration of Penn, Drexel, and Children's Hospital of Philadelphia creates steady demand for medical office space that leases to physician practices, diagnostic groups, and outpatient services tied to those anchors, and that demand tends to hold up better through rate cycles than generic office product does. A building leased to an independent physician group carries different underwriting than one leased to a hospital-system affiliate, since the system's credit and renewal behavior reads differently than a private practice's, and we sort candidates on that distinction early rather than treating every medical office as one asset class.</p><p>Space that was built out for a specific specialty, imaging, dialysis, ambulatory surgery, often carries costly reconversion risk if that tenant leaves, so we flag build-out specificity as part of the initial screen rather than as a surprise during diligence.</p>"
+  },
+  {
+   "heading": "Screening Candidates Against the Clock",
+   "html": "<p>With 45 days to identify, we rank candidates by lease term remaining, tenant credit, and parking ratio, in that order, since medical office tenants and their patients are unusually sensitive to parking access compared with standard office users. A building that scores well on lease term but poorly on parking tends to underperform once a competing outpatient facility with better access opens nearby, so we weigh the three factors together rather than letting a strong lease term paper over a genuine access problem.</p><ul><li>Confirm remaining lease term against the tenant's renewal history rather than relying only on the stated expiration date</li><li>Check parking ratio per exam room or suite, since medical tenants need more spaces than a typical office lease assumes</li><li>Verify whether the tenant is a hospital-system affiliate or an independent practice, since the two carry different credit profiles</li><li>Pull any specialty build-out detail, imaging suites and surgical space cost more to re-tenant if vacated</li><li>Check certificate-of-occupancy status on any recent build-out, since medical use classifications can trigger separate inspection requirements</li></ul><p>We also check whether the building's parking arrangement is owned outright, leased from an adjacent lot, or shared under a reciprocal agreement with a neighboring property, since a shared arrangement can be renegotiated or terminated by the other party in ways a dedicated lot cannot.</p>"
+  },
+  {
+   "heading": "Center City and the Suburban Medical Corridors",
+   "html": "<p>Center City carries a different medical office profile than the suburban corridors running out toward Plymouth Meeting and Fort Washington, where practices often lease newer, single-story buildings built specifically for outpatient use rather than converted office floors. An exchanger open to either geography widens the pool meaningfully, and we present both sets of candidates side by side rather than defaulting to whichever submarket happens to have the most current listings.</p><p>Older Center City medical office stock sometimes occupies floors within a mixed-use building where condominium documents govern shared systems and common-area costs, which adds a layer of diligence a freestanding suburban building doesn't carry. We pull the condominium documents on any Center City candidate before it advances past initial screening.</p>"
+  },
+  {
+   "heading": "Coordinating the Purchase Against 180 Days",
+   "html": "<p>A medical office purchase involving a hospital-system tenant sometimes requires estoppel and consent paperwork that moves slower than a standard commercial lease estoppel, and that lag has to be built into the closing schedule rather than assumed away. We flag any system-affiliated tenant early so the closing timeline accounts for that paperwork instead of discovering the delay with thirty days left on the exchange period.</p><p>Independent-practice tenants tend to move faster on estoppel paperwork, since there's usually one decision-maker rather than a system's legal department routing the request through several layers of internal review, and we weigh that practical difference alongside credit quality when two candidates otherwise look similar.</p>"
+  },
+  {
+   "heading": "Where This Fits in the Larger Exchange",
+   "html": "<p>Medical office sourcing runs alongside the identification rules rather than replacing them, meaning candidates still count against whichever of the three-property, 200 percent, or 95 percent tests the exchanger is using, and a strong medical office lead does not exempt anyone from that math. We keep the sourcing list mapped to the identification framework in use so a good candidate never quietly pushes the count or value over a limit nobody is watching.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is medical office treated differently than regular office for like-kind purposes?",
+   "a": "No. Both are real property held for investment, so the like-kind test is satisfied the same way. The difference is in underwriting the tenant and build-out, not in exchange eligibility."
+  },
+  {
+   "q": "Does a hospital-system-affiliated tenant make a building a safer replacement?",
+   "a": "Often, but not automatically. System affiliates can carry strong credit, but consent and estoppel processes on system leases sometimes move slower, which matters when the purchase has to close inside 180 days."
+  },
+  {
+   "q": "Can specialty build-out like imaging or surgical suites hurt the exchange?",
+   "a": "It doesn't affect exchange eligibility, but it changes the practical risk if that tenant vacates, since reconversion cost is higher. We flag it during sourcing so it's priced into the decision, not discovered later."
+  },
+  {
+   "q": "How many medical office candidates should be on the identification list?",
+   "a": "That depends on which identification rule is in use. We build the medical office list to fit inside whatever count or value limit applies under the three-property, 200 percent, or 95 percent framework."
+  },
+  {
+   "q": "Do suburban medical buildings close faster than Center City buildings?",
+   "a": "Not inherently, but suburban outpatient buildings are sometimes newer construction with simpler title and fewer condominium or easement layers, which can shorten diligence relative to an older Center City building."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 945
+}

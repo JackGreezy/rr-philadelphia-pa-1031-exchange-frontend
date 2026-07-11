@@ -1,0 +1,70 @@
+{
+ "slug": "media-pa",
+ "taxonomy": "locations",
+ "title": "Media",
+ "name": "Media",
+ "metaTitle": "1031 Exchange Coordination in Media, PA",
+ "metaDescription": "1031 exchange coordination for State Street mixed-use buildings and courthouse-district retail and office space in Media, Pennsylvania.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Media is the Delaware County seat, and its courthouse and county offices support a walkable downtown along State Street built almost entirely of small two- and three-story mixed-use buildings, retail or restaurant space at grade with office or apartment space above. An investor exchanging into Media is buying into a market of small, individually owned buildings rather than large multi-tenant centers, and that scale shapes both the diligence process and the pool of realistic comparables.</p>"
+  },
+  {
+   "heading": "State Street Storefronts Carry Apartments and Offices Upstairs",
+   "html": "<p>Because most State Street buildings mix residential or office use above ground-floor retail, an investor needs to separate the valuation and insurance treatment of the upper floors from the commercial space at grade. Confirming each floor's actual permitted use and inspection history before identification avoids assuming a use that the building's permit record does not actually support, and a buyer should request the borough's own permit file rather than relying solely on the seller's description of how each floor is currently occupied.</p>"
+  },
+  {
+   "heading": "County Government Traffic Anchors Weekday Retail and Office Demand",
+   "html": "<p>Proximity to the courthouse and county offices supports a steady weekday tenant base, law offices, title companies, and small professional services firms in particular, but evening and weekend traffic depends more on the borough's own restaurant and entertainment draw than on county business. Underwriting a State Street property should weigh both patterns rather than assuming courthouse traffic alone, since a property's actual income mix often splits meaningfully between the two.</p>"
+  },
+  {
+   "heading": "Small Building Stock Means Careful Comparable Selection",
+   "html": "<p>Because Media's commercial buildings trade in small increments, an appraiser needs comparables drawn from similarly sized county-seat downtowns rather than larger suburban shopping centers. Insisting on the right comparable set matters more here than in a submarket with a deeper pool of similar recent sales, and an investor should be prepared to push back on an appraisal that leans too heavily on a single large-format comparable simply because it was the most recent sale on file.</p>"
+  },
+  {
+   "heading": "Diligence for a Small, Individually Owned Downtown",
+   "html": "<p>Given Media's mixed-use building stock, a diligence file for replacement property here typically includes:</p><ul><li>Permit and use history for each floor of a mixed-use building</li><li>Condition assessment for older storefront structures</li><li>Zoning confirmation with Media Borough for any proposed use change</li><li>Rent roll separated by residential and commercial unit</li><li>Parking availability review near the State Street corridor</li></ul><p>Separating the residential and commercial rent roll is a small step that avoids a larger problem later, since financing terms and insurance treatment often differ between the two uses even within the same building.</p>"
+  },
+  {
+   "heading": "What a Careful Media Exchange Looks Like",
+   "html": "<p>Investors who do well here confirm the permitted use of every floor in a mixed-use building rather than trusting the seller's description, weigh weekday courthouse traffic separately from weekend restaurant demand, and insist on comparables from similarly scaled downtowns rather than accepting whatever an appraiser pulls first. That combination of patience and specificity is what keeps a small-town deal on schedule through the 180-day period, and it tends to matter more here than in a larger submarket where a wider pool of similar recent sales makes each individual comparable less consequential to the final valuation.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Do I need to check the permitted use of every floor in a Media mixed-use building?",
+   "a": "Yes. A building's ground-floor retail permit does not automatically extend to upper-floor residential or office use, and confirming each floor's actual permit and inspection history before identification avoids relying on an assumed use the record does not support."
+  },
+  {
+   "q": "Is Media's downtown retail dependent on courthouse traffic?",
+   "a": "Weekday retail and office demand benefits from courthouse and county-office activity, but evening and weekend performance depends more on the borough's own restaurant and entertainment draw, so a property's income should be underwritten against both patterns."
+  },
+  {
+   "q": "How should an appraiser select comparables for a small Media commercial building?",
+   "a": "Comparables should come from similarly sized county-seat downtowns rather than larger suburban shopping centers, since building scale and tenant mix differ significantly between the two."
+  },
+  {
+   "q": "Does Media follow Philadelphia's realty transfer tax rate?",
+   "a": "No. Media Borough follows the standard state-plus-local transfer tax combination used across most Delaware County municipalities, which runs lower than Philadelphia's higher combined city rate."
+  },
+  {
+   "q": "Why should residential and commercial rent rolls be reviewed separately in a Media mixed-use building?",
+   "a": "Financing terms, insurance treatment, and even permit status often differ between residential and commercial floors of the same building, so combining them into a single figure can obscure a problem that only shows up once a lender reviews the two uses separately."
+  },
+  {
+   "q": "Can this service confirm my Media property qualifies as 1031 replacement property?",
+   "a": "No. This service coordinates identification and advisor communication. A qualifying determination is made by the investor's own CPA, tax attorney, and qualified intermediary."
+  },
+  {
+   "q": "How does Media's small deal size affect my identification strategy?",
+   "a": "Because most State Street buildings trade at a modest price point, an investor redeploying a larger exchange value may need to name more than three properties, which makes the 200% rule a more practical option than the three-property rule in this submarket."
+  },
+  {
+   "q": "Does Media's proximity to other Delaware County boroughs affect its commercial market?",
+   "a": "Media functions largely as its own self-contained downtown given its role as county seat, so an investor should underwrite it on its own tenant base and foot-traffic patterns rather than assuming it behaves like a satellite of a larger neighboring commercial center."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 855
+}

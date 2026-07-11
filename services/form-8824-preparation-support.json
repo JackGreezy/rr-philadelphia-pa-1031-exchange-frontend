@@ -1,0 +1,58 @@
+{
+ "slug": "form-8824-preparation-support",
+ "taxonomy": "services",
+ "title": "Form 8824 Preparation Support",
+ "name": "Form 8824 Preparation Support",
+ "metaTitle": "Form 8824 Preparation Support in Philadelphia, PA",
+ "metaDescription": "Form 8824 preparation support for Philadelphia 1031 exchange investors, organizing closing figures and basis records for the tax advisor who files the return.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Form 8824 is where every deadline an investor tracked all year turns into numbers on a tax return, and a Philadelphia exchange involving a rowhouse conversion or a Navy Yard industrial parcel tends to generate more line items than a simple like-kind swap. This work organizes those figures for the tax advisor who actually prepares and files the form; it does not replace that advisor's judgment.</p>"
+  },
+  {
+   "heading": "What Form 8824 Actually Reports",
+   "html": "<p>The form requires a description of both the relinquished and replacement properties, dates of transfer, fair market values, adjusted basis in the relinquished property, any liabilities assumed or relieved, and recognized gain if boot was involved. It is filed with the tax return for the year the exchange closed, and the figures on it need to reconcile with the closing statements from both transactions. A gap between the reported numbers and the closing file is the kind of detail that draws a second look. Getting these figures right the first time avoids an amended filing later, which is a slower and more visible process than getting the original numbers reconciled before the return goes out. Small discrepancies, like a debt figure that shifted between the closing statement and a later loan modification, are worth catching in this reconciliation stage rather than after the form has already been submitted.</p>"
+  },
+  {
+   "heading": "Where Philadelphia Deals Add Extra Line Items",
+   "html": "<p>A rowhouse-to-multifamily conversion often has a basis history that includes acquisition cost, capital improvements tied to the conversion, and financing costs, all of which need to be reconciled before the adjusted basis figure goes onto the form. A property carrying the ten-year tax abatement does not get a special basis treatment because of the abatement itself, but the recorded improvement value tied to the abatement should match what is reported as the property's cost basis. Getting these figures organized before the tax advisor sits down to prepare the return saves a round of back-and-forth during filing season. A conversion project that involved multiple draws also needs a running total of capital improvement costs, since that figure feeds directly into the adjusted basis calculation and is easy to undercount if receipts were not tracked consistently through construction.</p>"
+  },
+  {
+   "heading": "Organizing The Inputs Before Filing Season",
+   "html": "<p>The goal is a single reconciled packet the tax advisor can work from directly.</p><ul><li>Closing statements from both the relinquished and replacement property transactions</li><li>Adjusted basis calculation, including any capital improvements made before the sale</li><li>Debt figures from both sides of the transaction, to support any boot calculation already performed</li><li>Recorded tax-abatement documentation where the improvement value is relevant to basis</li><li>The qualified intermediary's final settlement statement showing funds held and disbursed</li></ul><p>Handing over a complete packet rather than a stack of individual documents is what actually saves time once the filing deadline is close, and it gives the tax advisor a chance to flag a question weeks in advance of the deadline rather than the night before the return is due.</p>"
+  },
+  {
+   "heading": "Coordinating With The Investor's Tax Advisor, Not Replacing Them",
+   "html": "<p>This support role gathers, organizes, and reconciles the numbers behind the exchange; it does not determine how those numbers should be reported or offer tax advice on the investor's specific situation. Every figure that goes onto Form 8824 should be reviewed and confirmed by the investor's own tax advisor or CPA before the return is filed, since that professional is the one accountable for the position taken on the return. Handing that advisor a reconciled packet, rather than a folder of individual closing documents, frees their time to focus on judgment calls instead of basic data assembly.</p>"
+  },
+  {
+   "heading": "What Happens When The Numbers Do Not Reconcile",
+   "html": "<p>A mismatch between the closing statement and the figures assembled for the form usually traces back to a document that was never assigned to the qualified intermediary correctly, or a boot calculation that was not updated after a late financing change. Catching that gap while there is still time to correct the underlying paperwork is far better than discovering it after the return has already been filed with the IRS. Working backward from a reconciliation problem to its source document is much easier while the exchange file is still organized than months later once records have been scattered across different desks and email threads have gone cold.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "When is Form 8824 filed for a Philadelphia exchange?",
+   "a": "<p>It is filed with the federal tax return for the year the exchange closed, typically the year the replacement property purchase was completed.</p>"
+  },
+  {
+   "q": "Does the ten-year tax abatement change how basis is reported on Form 8824?",
+   "a": "<p>The abatement itself does not change basis treatment, but the recorded improvement value tied to it should match what is reported as cost basis on the form.</p>"
+  },
+  {
+   "q": "Is preparation support the same as filing the tax return?",
+   "a": "<p>No. This work organizes and reconciles the figures the tax advisor needs. The advisor or CPA reviews and files the actual return, including Form 8824.</p>"
+  },
+  {
+   "q": "What documents does an investor need for Form 8824 preparation support?",
+   "a": "<p>Closing statements from both properties, adjusted basis records, debt figures from each transaction, and the qualified intermediary's final settlement statement.</p>"
+  },
+  {
+   "q": "What causes the most common reconciliation problems on Form 8824?",
+   "a": "<p>An unassigned purchase contract or an outdated boot calculation are the most frequent sources of numbers that do not match the closing statements when the form is prepared.</p>"
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 852
+}

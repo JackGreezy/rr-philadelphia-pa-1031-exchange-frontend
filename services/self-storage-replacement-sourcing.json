@@ -1,0 +1,58 @@
+{
+ "slug": "self-storage-replacement-sourcing",
+ "taxonomy": "services",
+ "title": "Self-Storage Replacement Sourcing",
+ "name": "Self-Storage Replacement Sourcing",
+ "metaTitle": "Self-Storage Replacement Sourcing in Philadelphia, PA",
+ "metaDescription": "Sourcing self-storage candidates near Philadelphia's dense rowhouse housing stock and the I-95 industrial corridor before the 45-day identification deadline.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Philadelphia's rowhouse-heavy housing stock, most of it built without a garage, basement storage, or meaningful yard space, keeps self-storage demand steady in ways that don't show up as clearly in cities with more single-family square footage per household. We build the candidate list around that structural demand driver first, then layer in operator quality and unit-mix efficiency, rather than treating every storage facility as a commodity asset interchangeable with the next one on the list.</p>"
+  },
+  {
+   "heading": "Why the Housing Stock Matters Here",
+   "html": "<p>A rowhouse in Fishtown or a converted triplex in Manayunk simply doesn't have the storage space a suburban single-family home does, and that gap pushes a meaningful share of Philadelphia renters and owners toward off-site storage as a routine, not occasional, expense. Facilities positioned near the densest rowhouse neighborhoods tend to carry more resilient occupancy than ones built on the assumption of destination or seasonal use, and we weigh that positioning heavily during screening.</p>"
+  },
+  {
+   "heading": "Industrial-Adjacent Storage Near the Port and I-95",
+   "html": "<p>The Navy Yard and the broader I-95 industrial corridor support a second, distinct storage demand pool made up of small businesses and contractors needing overflow inventory or equipment space rather than household goods, and facilities in that corridor often carry a mix of unit sizes skewed larger than a typical residential-facing property. We separate industrial-adjacent facilities from residential-facing ones on the candidate list, since their tenant base, lease term patterns, and rate sensitivity don't behave the same way.</p><p>A facility drawing mostly from contractors tied to Navy Yard redevelopment work carries a different renewal pattern than one serving stable, longer-term small businesses, and we ask for tenant type detail beyond the rent roll's line items to understand which pattern a given candidate actually reflects.</p>"
+  },
+  {
+   "heading": "What the Rent Roll Actually Needs to Show",
+   "html": "<p>Self-storage rent rolls run on month-to-month tenancy far more than other commercial asset classes, which means the trailing occupancy number matters less than the trailing twelve months of move-in and move-out activity, since a facility sitting at 90 percent today can still be bleeding tenants if move-outs have been outpacing move-ins for months.</p><ul><li>Pull trailing twelve-month move-in and move-out counts rather than relying on a single point-in-time occupancy snapshot</li><li>Check the unit-mix breakdown against local demand, since an oversupply of one unit size drags down realized rate</li><li>Verify how much of stated income comes from tenant insurance or admin fees versus base rent</li><li>Confirm climate-controlled unit count and condition, since that segment commands a real rate premium here</li><li>Check for any pending competitive supply nearby that could pressure rates after closing</li></ul><p>Facilities that lean heavily on tenant insurance or administrative fee income can look more profitable on paper than their base rental rate actually supports, so we separate those revenue lines out before comparing yield across candidates.</p>"
+  },
+  {
+   "heading": "Operator Quality as Its Own Screen",
+   "html": "<p>A third-party managed facility with a national platform behind it tends to carry more consistent revenue management than an owner-operated facility running on manual rate changes, and we flag which category a candidate falls into early, since the gap between the two can explain a meaningful part of the difference between two facilities with similar physical size and location. An owner-operated facility isn't necessarily a worse candidate, but its rate discipline and record-keeping usually need a closer look before its trailing performance can be trusted at face value.</p>"
+  },
+  {
+   "heading": "Keeping Storage Candidates Inside the Identification Count",
+   "html": "<p>A self-storage facility, however strong its occupancy trend, still counts as one property against the three-property rule or one value line under the 200 percent rule, and we keep the storage pipeline tracked against whichever framework governs the exchange as the broader candidate list narrows toward the 45-day deadline. Storage often pairs well on a mixed identification list alongside multifamily or retail candidates, since its demand drivers don't move in lockstep with either of those asset classes.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does month-to-month tenancy make self-storage a riskier replacement property than a leased asset?",
+   "a": "It changes the operating profile, since income can shift faster than with longer commercial leases, but it doesn't affect like-kind eligibility. We underwrite the trailing move-in and move-out trend specifically because of that shorter tenancy structure, rather than trusting a single snapshot number."
+  },
+  {
+   "q": "Why does Philadelphia's housing stock matter for self-storage demand?",
+   "a": "A large share of the city's rowhouse and converted multifamily stock has little or no on-site storage, which supports steadier off-site storage demand than in markets with more single-family square footage per household to begin with."
+  },
+  {
+   "q": "How is industrial-adjacent storage different from residential-facing storage?",
+   "a": "Facilities near the Navy Yard and I-95 corridor often serve small businesses and contractors needing larger units for equipment or inventory, while residential-facing facilities skew toward smaller units serving nearby rowhouse and apartment tenants living close by."
+  },
+  {
+   "q": "What matters more, current occupancy or the move-in and move-out trend?",
+   "a": "The trend matters more for underwriting, since a facility can show high current occupancy while actually losing tenants faster than it's gaining them, which a single occupancy snapshot won't reveal on its own without the supporting move-in and move-out detail behind it."
+  },
+  {
+   "q": "How many self-storage candidates typically make it onto an identification list?",
+   "a": "That depends on the identification rule in use and how many other asset classes are being considered alongside storage, since every candidate competes for the same limited count or value allowance across the entire exchange under consideration."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 852
+}

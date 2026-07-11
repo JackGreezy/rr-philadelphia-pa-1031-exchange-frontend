@@ -1,0 +1,58 @@
+{
+ "slug": "nnn-and-stnl-property-sourcing",
+ "taxonomy": "services",
+ "title": "NNN and STNL Property Sourcing",
+ "name": "NNN and STNL Property Sourcing",
+ "metaTitle": "NNN and STNL Property Sourcing in Philadelphia, PA",
+ "metaDescription": "Sourcing single-tenant net lease candidates along Philadelphia's suburban corridors, with lease abstracts pulled before the identification deadline.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Single-tenant net lease product along the corridors running through King of Prussia, Conshohocken, and Horsham tends to trade on lease term and guarantor strength more than on location alone, which makes it a common landing spot for exchangers who want a passive replacement without a local management burden. We build the candidate list around remaining lease term first, since a strong tenant on a short lease creates a different risk than a mid-tier tenant on fifteen years remaining.</p>"
+  },
+  {
+   "heading": "Reading the Guarantee Behind the Rent",
+   "html": "<p>A single-tenant lease is only as strong as the entity actually obligated to pay it, and that is not always the parent brand printed on the sign. Some net lease deals carry a corporate guarantee from the parent company, others sit on a franchisee guarantee with weaker credit, and the difference matters more than the tenant's name recognition. We pull the actual guarantor entity on every candidate before it goes on an identification list, not after an offer is out.</p><p>Corridors like Route 202 near King of Prussia and the retail nodes around Horsham and Willow Grove carry a mix of both structures, sometimes on buildings that look identical from the parking lot.</p>"
+  },
+  {
+   "heading": "Ground Leases and Fee Simple, Sorted Separately",
+   "html": "<p>Some net lease candidates sit on land the tenant leases separately from the improvements, meaning the investor owns a ground lease position rather than the underlying land, and that structure changes both the depreciation picture and the exit profile compared with fee simple ownership. We flag ground-leased candidates distinctly on the sourcing list rather than mixing them in with fee simple deals as if the underlying rights were the same.</p><p>A ground lease position with decades of term remaining and healthy renewal options can still function as a strong replacement asset, but the buyer pool for that position is thinner than for fee simple product, which matters if the exchanger expects to sell again within a normal holding period. We surface that resale liquidity difference during sourcing rather than leaving the exchanger to discover it later.</p>"
+  },
+  {
+   "heading": "Screening the List Against the Clock",
+   "html": "<p>With identification due in 45 days, we prioritize lease abstract review over broker marketing packages, since the abstract, not the flyer, is where renewal options, co-tenancy clauses, and early termination rights actually live.</p><ul><li>Pull the lease abstract directly rather than relying on the marketing package summary</li><li>Confirm the actual guarantor entity and its relationship to the parent brand</li><li>Check renewal option terms and whether rent steps are fixed or tied to an index</li><li>Verify real estate tax responsibility under the lease, since some net structures leave gaps the landlord absorbs</li><li>Flag any co-tenancy or exclusive-use clause that could affect future re-leasing</li></ul>"
+  },
+  {
+   "heading": "Conshohocken and the Office-Adjacent Retail Pattern",
+   "html": "<p>The corporate office presence around Conshohocken and Plymouth Meeting supports a retail pattern that runs on lunch and service traffic rather than destination shopping, and net lease candidates in that pattern behave differently in a downturn than a highway-facing pad site further out. We separate office-adjacent retail from highway corridor retail on the sourcing list so the exchanger is comparing candidates with similar demand drivers rather than treating every net lease deal as interchangeable.</p><p>A quick-service tenant leasing space near the Conshohocken office cluster depends on weekday lunch volume tied to occupancy in the surrounding office buildings, which means a candidate's real strength is tied to that office market's own health rather than to the tenant's brand name on the sign alone.</p>"
+  },
+  {
+   "heading": "Where Net Lease Sourcing Meets the Identification Rule",
+   "html": "<p>A net lease candidate, regardless of guarantor strength or corridor, still counts as one property against the three-property rule or one value line against the 200 percent test, and we keep the running list mapped to whichever framework governs the exchange as candidates are added or removed from consideration. A single strong net lease deal can sometimes carry an entire exchange under the three-property rule when the other two named candidates are held mainly as backups.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does a franchisee-guaranteed lease disqualify a property as replacement real estate?",
+   "a": "No, guarantor strength has no bearing on like-kind eligibility. It affects the tenant credit risk the investor is taking on, which is why we surface the actual guarantor before a candidate goes on the identification list."
+  },
+  {
+   "q": "Is a ground lease position treated the same as fee simple ownership for exchange purposes?",
+   "a": "A leasehold interest of 30 years or more, including renewal options, generally qualifies as like-kind real property, but the depreciation and exit mechanics differ from fee simple, so we flag the distinction separately during sourcing."
+  },
+  {
+   "q": "How fast can single-tenant net lease deals close relative to other asset types?",
+   "a": "Often faster, since diligence centers on the lease abstract and guarantor rather than physical inspection issues. But that speed only helps if the lease abstract is pulled early, not left until an offer is already out."
+  },
+  {
+   "q": "Do all net lease properties along a given corridor carry similar risk?",
+   "a": "No. Office-adjacent retail and highway pad sites respond differently to demand shifts even along the same road, which is why we separate them by demand driver rather than treating corridor location as the deciding factor."
+  },
+  {
+   "q": "How many net lease candidates fit on a typical identification list?",
+   "a": "That depends entirely on which identification rule applies. Each candidate counts as one property under the three-property rule or contributes to the value total under the 200 percent test, so we track both as the list is built."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 868
+}

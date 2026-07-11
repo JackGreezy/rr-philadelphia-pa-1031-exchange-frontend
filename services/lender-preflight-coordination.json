@@ -1,0 +1,58 @@
+{
+ "slug": "lender-preflight-coordination",
+ "taxonomy": "services",
+ "title": "Lender Preflight Coordination",
+ "name": "Lender Preflight Coordination",
+ "metaTitle": "Lender Preflight Coordination in Philadelphia, PA",
+ "metaDescription": "Lender preflight coordination for Philadelphia 1031 exchange investors, lining up financing terms before identification so the 180-day window is not lost to underwriting.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The fastest way to lose a Philadelphia exchange to the calendar is not a bad property choice; it is starting the financing conversation after a candidate is already identified. Lender preflight coordination gets the underwriting questions answered before day 45, so the replacement property closing is a formality by the time it reaches the title company instead of a scramble.</p>"
+  },
+  {
+   "heading": "What Preflight Actually Means In Practice",
+   "html": "<p>Preflight coordination means approaching lenders with the investor's financial profile and likely asset class before a specific property is under contract, getting a realistic sense of loan-to-value, rate, and timeline expectations in advance. It is not a formal loan application, since there is no property to underwrite yet, but it narrows the range of financing outcomes so an investor is not discovering a lender's appetite for the first time after a property is already identified and the clock is running. A short conversation at this stage can rule out a lender entirely for a given asset class, which is far more useful to know before identification than after.</p>"
+  },
+  {
+   "heading": "Why Philadelphia's Asset Mix Requires Separate Conversations",
+   "html": "<p>A lender comfortable financing a Center City office building may have a completely different view of a Navy Yard industrial parcel, a rowhouse-to-multifamily conversion still needing construction draws, or a medical office building tied to Penn, Drexel, or CHOP tenants. Each asset class has its own underwriting norms, and an investor who assumes one lender relationship covers all of them can lose weeks discovering that the lender who financed a prior office deal will not touch a conversion project without a different loan product entirely. Building separate relationships, or at least separate conversations, for each likely asset class before identification removes that surprise from the middle of the exchange.</p>"
+  },
+  {
+   "heading": "What Preflight Coordination Should Confirm Before Identification",
+   "html": "<p>The goal is to remove financing as an unknown before a property is locked into the identification list.</p><ul><li>Realistic loan-to-value range for the intended asset class, not a generic market average</li><li>Approximate timeline from application to closing for that lender and asset type</li><li>Whether construction or improvement financing is available for a conversion project, and on what terms</li><li>Rate-lock policies and how long a lock can realistically hold against the exchange's closing timeline</li><li>Documentation the lender will require, so it can be gathered before the clock is running rather than during it</li></ul><p>Confirming these details ahead of time turns financing into a known quantity instead of a variable that surfaces mid-exchange.</p>"
+  },
+  {
+   "heading": "Where Preflight Work Saves The Most Time",
+   "html": "<p>A rowhouse conversion project benefits the most from preflight coordination, since construction financing terms vary widely and a lender unfamiliar with use-and-occupancy timing can misjudge how long the draw schedule needs to run, sometimes underestimating it by a month or more. Industrial and eds-meds product, by contrast, often has more standardized underwriting, but even there, confirming appetite before identification avoids losing a week to a lender who ultimately declines the deal.</p>"
+  },
+  {
+   "heading": "How Preflight Coordination Fits Into The Larger Timeline",
+   "html": "<p>Preflight work should wrap up before or during the early days of the 45-day identification window, so that by the time a property is named on the list, the investor already knows which lender is likely to finance it and roughly how long that process will take. Waiting until the identification list is already drafted to start these conversations puts the financing question on the same clock as the closing itself, with far less room to adjust course if a lender's answer turns out to be disappointing or slower than expected. This does not replace formal underwriting once a specific property is under contract, but it removes the risk of discovering a fundamental financing mismatch after the identification deadline has already passed. Investors who skip this step often assume financing will simply follow from a strong property choice, and most of the time it does, until it does not, on the one deal where the timeline had no room left to absorb a surprise. That single exception is usually enough on its own to justify the extra conversations at the start of every future exchange an investor undertakes in this market, regardless of how routine or straightforward the property choice happens to seem at first glance.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is lender preflight the same as a loan application?",
+   "a": "<p>No. Preflight is an early conversation to gauge financing terms and appetite before a specific property is identified. A formal loan application follows once a property is under contract.</p>"
+  },
+  {
+   "q": "Why does a rowhouse conversion need different lender preflight work?",
+   "a": "<p>Construction and draw-schedule financing works differently than a standard purchase loan, and not every lender offers it on terms that fit the exchange's 180-day deadline.</p>"
+  },
+  {
+   "q": "Can preflight coordination happen before an investor sells the relinquished property?",
+   "a": "<p>Yes, and doing so is preferable, since it gives the investor a realistic financing picture before the identification clock starts running on the replacement side.</p>"
+  },
+  {
+   "q": "Does one lender relationship typically cover every Philadelphia asset class?",
+   "a": "<p>Rarely. A lender comfortable with Center City office financing may have a very different appetite for industrial, medical office, or conversion projects, which is why asset-specific preflight matters.</p>"
+  },
+  {
+   "q": "What happens if financing is not confirmed before identification?",
+   "a": "<p>The investor risks identifying a property that a lender later declines to finance on workable terms, forcing a scramble for a replacement lender with little time left in the window.</p>"
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 851
+}

@@ -1,0 +1,58 @@
+{
+ "slug": "reverse-exchange-coordination",
+ "taxonomy": "services",
+ "title": "Reverse Exchange Coordination",
+ "name": "Reverse Exchange Coordination",
+ "metaTitle": "Reverse Exchange Coordination in Philadelphia, PA",
+ "metaDescription": "Structuring the exchange accommodation titleholder parking arrangement when a Philadelphia replacement property has to close before the relinquished sale.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A reverse exchange runs the sequence backward, the replacement property closes first, and it comes up more often in Philadelphia's competitive submarkets than most exchangers expect, since a strong candidate near University City or along the Navy Yard corridor sometimes won't wait for a relinquished sale to finish first. We set up the accommodation structure before the replacement purchase closes, since there is no way to retroactively park title once the exchanger has already taken it directly.</p>"
+  },
+  {
+   "heading": "How the Parking Arrangement Actually Works",
+   "html": "<p>An exchange accommodation titleholder, a special-purpose entity set up for this purpose, takes and holds title to either the replacement property or the relinquished property while the other side of the transaction catches up, and the exchanger never holds both properties in their own name at the same time during the parking period. Under the safe harbor framework, the property has to be parked with the EAT within 45 days of the replacement closing if that's the side being identified, and the whole exchange has to complete within 180 days of whichever property was parked first.</p>"
+  },
+  {
+   "heading": "Why This Comes Up in a Competitive Buyer Pool",
+   "html": "<p>Philadelphia's dense buyer pool means a well-priced medical office building or a clean industrial parcel near the port can draw multiple offers within days, and an exchanger still waiting on their relinquished sale to close has no leverage to ask a seller to wait. A reverse structure lets that exchanger close on the replacement property on the seller's timeline while the relinquished sale proceeds separately, which is often the only way to actually land the stronger asset.</p><p>An exchanger sitting on a relinquished property that's taking longer to sell than expected, perhaps a rowhouse-conversion multifamily building needing more marketing time than a stabilized suburban complex would, faces the same pressure whenever a strong replacement candidate surfaces on someone else's schedule rather than their own.</p>"
+  },
+  {
+   "heading": "What Has to Be Lined Up Before Closing",
+   "html": "<p>Setting up the EAT structure takes real lead time, the qualifying accommodation agreement, financing arranged in the EAT's name or through a related structure since most lenders won't lend directly to the exchanger for a property they don't yet own, and a clear plan for identifying which relinquished property will complete the exchange.</p><ul><li>Confirm the EAT entity is properly formed and independent before any property is parked with it</li><li>Arrange financing early, since most lenders need extra lead time to lend into an EAT structure</li><li>Identify the relinquished property being exchanged within 45 days of the parking arrangement starting</li><li>Confirm the qualifying accommodation agreement is signed before the parked property closes, not after</li><li>Set a realistic timeline for the relinquished sale, since the full reverse exchange still has to complete within 180 days</li></ul>"
+  },
+  {
+   "heading": "Coordinating the Two Sides Without Losing Track of Either",
+   "html": "<p>Once a property is parked, the exchange still runs on the same 180-day outer boundary as a standard exchange, and the relinquished sale has to actually close inside that window for the structure to complete cleanly. We track both the parked property's status and the relinquished sale's progress on the same calendar, since treating them as two unrelated transactions is how a reverse exchange quietly runs past its deadline.</p>"
+  },
+  {
+   "heading": "When a Reverse Structure Isn't the Right Call",
+   "html": "<p>A reverse exchange costs more to set up than a standard forward exchange and depends on financing that's willing to work with the EAT arrangement, so it isn't the default answer just because a good property surfaced early. We weigh the added cost and complexity against how much competitive pressure the specific deal is actually under before recommending the structure.</p><p>If a comparable replacement candidate is likely to surface again within the exchanger's realistic timeline, waiting for the relinquished sale to close first and running a standard forward exchange is often the simpler and cheaper path, and we say so plainly rather than defaulting to the more complex structure by habit.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can the exchanger hold title to both the replacement and relinquished property at the same time in a reverse exchange?",
+   "a": "No. One of the two properties has to be held by the exchange accommodation titleholder throughout the parking period, so the exchanger never holds both in their own name simultaneously."
+  },
+  {
+   "q": "How long can a property stay parked with the EAT?",
+   "a": "Under the standard safe harbor, the full reverse exchange, from the first property parked to the relinquished sale closing, has to complete within 180 days, with the relinquished property identified within the first 45 of those days."
+  },
+  {
+   "q": "Why would an exchanger use a reverse exchange instead of waiting to sell first?",
+   "a": "Usually because a strong replacement property won't wait on financing or closing contingencies tied to the relinquished sale, which comes up often in competitive submarkets where good candidates draw multiple offers quickly."
+  },
+  {
+   "q": "Do regular lenders finance a property held by an exchange accommodation titleholder?",
+   "a": "Not all of them, and the ones that do typically need more lead time and different loan documentation than a standard purchase, so financing has to be arranged well before the parked closing date."
+  },
+  {
+   "q": "Is a reverse exchange more expensive than a standard forward exchange?",
+   "a": "Generally yes, since it requires setting up and maintaining the EAT entity plus additional legal and accommodation fees, which is why we weigh it against the specific competitive pressure on the deal rather than defaulting to it as a routine solution."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 851
+}

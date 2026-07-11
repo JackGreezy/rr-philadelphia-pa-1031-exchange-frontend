@@ -1,0 +1,58 @@
+{
+ "slug": "qualified-intermediary-coordination",
+ "taxonomy": "services",
+ "title": "Qualified Intermediary Coordination",
+ "name": "Qualified Intermediary Coordination",
+ "metaTitle": "Qualified Intermediary Coordination in Philadelphia, PA",
+ "metaDescription": "Coordinating exchange agreement paperwork, escrow timing, and closing instructions with the qualified intermediary before Philadelphia sale proceeds move.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The qualified intermediary has to be in place and the exchange agreement signed before the relinquished property closes, not sometime after, because once sale proceeds pass through the seller's hands or a Philadelphia title company's escrow account without the QI structure documented first, constructive receipt has already happened and the exchange is dead. We coordinate that paperwork against the actual closing date on the calendar, not against a general sense of when the sale might happen.</p>"
+  },
+  {
+   "heading": "Choosing a QI Before the Clock Starts",
+   "html": "<p>A qualified intermediary cannot be the exchanger's attorney, accountant, real estate agent, or anyone who has acted as the exchanger's agent within the prior two years, and that disqualification rule catches people off guard when a longtime advisor assumes they can simply take on the QI role. We confirm the intended intermediary's independence early, since discovering a disqualifying relationship after the relinquished property has already closed leaves no way to fix it.</p><p>We also confirm how the QI holds exchange funds, whether in a qualified escrow account, a qualified trust, or under a separate custody arrangement, since the holding structure affects both security and how quickly funds can move when a replacement purchase is ready to close.</p><p>Some exchangers default to whichever QI a closing attorney or lender happens to recommend without checking the intermediary's bonding, insurance coverage, or how exchange funds are actually held, and we treat that verification as a required step rather than a formality, since the exchanger bears the risk if a QI's own financial trouble ever puts parked funds at risk.</p>"
+  },
+  {
+   "heading": "The Paperwork That Has to Exist Before Closing",
+   "html": "<p>Beyond the core exchange agreement, the closing package typically needs an assignment of the purchase and sale contract to the QI, notice of assignment to the buyer and seller, and closing instructions to the title company directing sale proceeds to the QI rather than to the exchanger. Philadelphia title companies handling exchange closings are generally familiar with this sequence, but we confirm the specific instructions are attached to the file before the closing date, not assumed to be standard practice.</p>"
+  },
+  {
+   "heading": "Coordinating Fund Release for the Replacement Purchase",
+   "html": "<p>When a replacement property is ready to close, the QI releases funds directly to the title company or escrow holding the purchase, and the exchanger never has signature authority or direct access to those funds at any point in between. We coordinate the release timing against the replacement closing date so funds arrive when needed rather than sitting in a queue behind other transactions the QI's office is processing.</p><p>A closing scheduled for a Friday afternoon with a QI that needs two business days' notice to release funds can quietly slip past its own target date if that lead time isn't confirmed in advance, so we get the QI's release timeline in writing early in the replacement closing process rather than assuming standard wire timing applies.</p>"
+  },
+  {
+   "heading": "What Breaks the Structure Mid-Exchange",
+   "html": "<p>Constructive receipt can happen in ways that feel minor at the time, an exchanger directing funds toward a personal expense, gaining signature authority on the escrow account, or receiving even a partial disbursement before the exchange completes.</p><ul><li>Confirm the exchanger has no signature authority on the QI's escrow or trust account at any point</li><li>Verify no funds are released for personal use, repairs, or unrelated expenses during the exchange</li><li>Check that the exchange agreement language restricts the exchanger's rights to funds as required under the safe harbor rules</li><li>Confirm identification is filed in writing with the QI within 45 days, not communicated informally</li><li>Verify the QI's fee and disbursement schedule is documented before, not renegotiated during, the exchange</li></ul>"
+  },
+  {
+   "heading": "Coordinating With the Rest of the Team",
+   "html": "<p>The QI's paperwork has to line up with what the closing attorney, lender, and tax advisor are each doing, and a gap between those parties, an outdated exchange agreement draft, a lender unaware of the QI structure, tends to surface at the worst possible moment in the closing timeline. We keep those parties on the same document version and the same closing date rather than letting each work from its own assumption.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can a Philadelphia real estate agent involved in the sale also serve as the qualified intermediary?",
+   "a": "No. Anyone who has acted as the exchanger's agent, attorney, accountant, employee, or real estate agent within the two years before the exchange is disqualified from serving as QI. That relationship has to be checked before the paperwork is drafted."
+  },
+  {
+   "q": "What happens if sale proceeds briefly pass through the exchanger's own account?",
+   "a": "That generally triggers constructive receipt, and the deferral is lost even if the funds are moved to the QI shortly after. Closing instructions have to route proceeds directly to the QI's account, never through the exchanger."
+  },
+  {
+   "q": "Does the exchange agreement need to be signed before or after the relinquished property closes?",
+   "a": "Before. The QI structure and exchange agreement must be in place at or before closing so the exchanger never has rights to receive the sale proceeds directly."
+  },
+  {
+   "q": "Can the exchanger direct the QI to pay a personal expense out of exchange funds?",
+   "a": "No, doing so is treated as constructive receipt of that amount and can jeopardize the exchange. Exchange funds are restricted to funding the replacement purchase and permitted transaction costs."
+  },
+  {
+   "q": "How does identification get communicated to the qualified intermediary?",
+   "a": "Identification has to be delivered in writing to the QI, or another party to the exchange, within 45 days of the relinquished closing. A verbal mention to the closing attorney does not satisfy the requirement."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 882
+}

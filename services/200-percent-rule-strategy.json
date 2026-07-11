@@ -1,0 +1,58 @@
+{
+ "slug": "200-percent-rule-strategy",
+ "taxonomy": "services",
+ "title": "200% Rule Strategy",
+ "name": "200% Rule Strategy",
+ "metaTitle": "200% Rule Strategy in Philadelphia, PA",
+ "metaDescription": "200% rule strategy for Philadelphia 1031 exchanges, structuring identification lists across Center City office, Navy Yard industrial, and rowhouse conversion targets.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>An investor selling one Philadelphia asset and chasing four or five replacement candidates runs into a hard limit under the standard three-property rule, which only allows three names regardless of how the search is going. The 200% rule is the alternative that makes a longer list legal, and getting the math right during the 45-day window matters more than most investors expect until they are staring at a spreadsheet three days before the deadline, watching a single added candidate push the total over the line.</p>"
+  },
+  {
+   "heading": "What The 200% Rule Actually Allows",
+   "html": "<p>The 200% rule lets an investor identify any number of replacement properties, with no cap on the count, as long as the combined fair market value of every property on the list does not exceed 200% of the value of the relinquished property. There is no requirement to close on all of them, or even most of them; the rule only governs what can appear on the identification notice sent to the qualified intermediary before day 45. Miss the cap by even a small margin and the entire list can be disqualified, including candidates that had nothing to do with pushing the total over the line.</p>"
+  },
+  {
+   "heading": "Why Philadelphia Investors Reach For This Rule",
+   "html": "<p>The three-property rule works fine when an investor has one clear target and a backup. It runs out of room fast in a metro where a Center City office assignment, a Navy Yard industrial parcel, and a University City medical office building near Penn or CHOP might all be live at once, each with its own closing risk. The 200% rule lets an investor carry more candidates into the window without betting the whole exchange on three names, which matters in a market with as many competing buyers as Philadelphia has for well-located product. It also gives an investor room to name a longshot candidate alongside a stronger one, since the rule cares about total value rather than which specific properties eventually close.</p>"
+  },
+  {
+   "heading": "Running The Math Across Different Asset Classes",
+   "html": "<p>The valuation work behind a 200% list has to hold up under review, which means every figure needs a defensible basis rather than a rough guess.</p><ul><li>Use signed purchase contracts or current broker opinions of value, not stale listing prices</li><li>Recalculate the running total every time a candidate is added or dropped from the list</li><li>Treat a rowhouse-to-multifamily conversion project as its completed value only if the contract prices it that way</li><li>Keep documentation showing how each valuation was reached, in case the identification is ever questioned</li><li>Confirm the 200% ceiling against the relinquished property's actual sale price, not an estimate made before closing</li></ul><p>A list built on soft numbers can look compliant on day 44 and fall apart on day 46 once a valuation gets challenged.</p>"
+  },
+  {
+   "heading": "Center City Compression Versus Port-Corridor Scale",
+   "html": "<p>Center City office and rowhouse-conversion product tends to trade in a narrower price band, which makes a three-property list easier to keep under 200% without much room to diversify. Port-corridor and Navy Yard industrial assets carry a wider range of values, so pairing one large logistics parcel with two smaller in-town properties can push a list over the cap faster than an investor expects. Matching asset scale to the rule an investor actually plans to use is part of building the list, not an afterthought once the numbers are in. An investor mixing submarkets on one list should run the combined total early, well before the identification notice is drafted, rather than assuming a diversified list will automatically stay under the ceiling.</p>"
+  },
+  {
+   "heading": "Where The 200% Rule Goes Wrong",
+   "html": "<p>The most common failure is treating the 200% figure as a target instead of a ceiling, then adding one more Philadelphia candidate late in the window without rerunning the total. The second is relying on outdated valuations for a property that has moved in price since it was first added to the list. The identification notice has to be filed with the qualified intermediary in writing before day 45, and once it is filed, the math behind it should already be settled rather than still in progress.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How is the 200% rule different from the three-property rule?",
+   "a": "<p>The three-property rule caps the list at three properties regardless of value. The 200% rule allows unlimited properties on the list as long as their combined value stays within 200% of the relinquished property's sale price.</p>"
+  },
+  {
+   "q": "Does an investor have to close on every property identified under the 200% rule?",
+   "a": "<p>No. The rule governs what can be identified, not what must close. An investor can identify a longer list and still close on only one or two of the properties on it.</p>"
+  },
+  {
+   "q": "What valuation should be used for a rowhouse conversion still under construction?",
+   "a": "<p>Use the value stated in the signed purchase contract for that property's condition at the intended closing date, and keep the supporting documentation in case the identification is later reviewed.</p>"
+  },
+  {
+   "q": "What happens if the identified list exceeds 200% of the relinquished value?",
+   "a": "<p>Exceeding the cap can disqualify the entire identification, including candidates that were not responsible for pushing the total over the limit, which is why the running total needs to be checked every time the list changes.</p>"
+  },
+  {
+   "q": "Can the 200% rule and the three-property rule be combined on one list?",
+   "a": "<p>An investor picks one rule for a given identification. Mixing the frameworks on a single notice creates ambiguity that a qualified intermediary should resolve before the notice is filed, not after.</p>"
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 876
+}
