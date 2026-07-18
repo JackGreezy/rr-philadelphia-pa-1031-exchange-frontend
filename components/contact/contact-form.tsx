@@ -203,9 +203,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
       id="contact-form"
       ref={formRef}
       className={formClassName}
-      onSubmit={handleSubmit}
-      noValidate
-    >
+      noValidate action="/api/contact" method="post">
       <div className="grid gap-6 md:grid-cols-2">
         <label className={labelClassName}>
           Name
@@ -214,19 +212,12 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
             value={formData.name}
             onChange={updateField("name")}
             className={inputClassName(!!errors.name)}
-            placeholder="Full name"
-          />
+            placeholder="Full name" name="name" required/>
           {errors.name ? <span className={errorClassName}>{errors.name}</span> : null}
         </label>
         <label className={labelClassName}>
-          Company
-          <input
-            type="text"
-            value={formData.company}
-            onChange={updateField("company")}
-            className={inputClassName(false)}
-            placeholder="Entity or advisory firm"
-          />
+          Previously Completed a 1031 Exchange?
+          <select className={inputClassName(false)} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
         </label>
         <label className={labelClassName}>
           Email
@@ -235,8 +226,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
             value={formData.email}
             onChange={updateField("email")}
             className={inputClassName(!!errors.email)}
-            placeholder="name@example.com"
-          />
+            placeholder="name@example.com" name="email" required/>
           {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
         </label>
         <label className={labelClassName}>
@@ -250,89 +240,26 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
               setFormData((prev) => ({ ...prev, phone: value }));
             }}
             className={inputClassName(!!errors.phone)}
-            placeholder="(###) ###-####"
-          />
+            placeholder="(###) ###-####" name="phone" required/>
           {errors.phone ? <span className={errorClassName}>{errors.phone}</span> : null}
         </label>
-        <label className={labelClassName}>
-          Project type
-          <input
-            list="project-types"
-            value={formData.projectType}
-            onChange={updateField("projectType")}
-            className={inputClassName(!!errors.projectType)}
-            placeholder="Replacement property focus"
-          />
-          <datalist id="project-types">
-            {serviceNames.map((name) => (
-              <option key={name} value={name} />
-            ))}
-          </datalist>
-          {errors.projectType ? <span className={errorClassName}>{errors.projectType}</span> : null}
-        </label>
-        <label className={labelClassName}>
-          Property Being Sold
-          <input
-            type="text"
-            value={formData.property}
-            onChange={updateField("property")}
-            placeholder="Include property type, location, and estimated value (optional)"
-            className={inputClassName(false)}
-          />
-        </label>
+
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <label className={labelClassName}>
-            Estimated Close Date
-            <input
-              type="date"
-              value={formData.estimatedCloseDate}
-              onChange={updateField("estimatedCloseDate")}
-              className={inputClassName(false)}
-            />
-          </label>
-          <label className={labelClassName}>
-            City
-            <input
-              type="text"
-              value={formData.city}
-              onChange={updateField("city")}
-              placeholder="Primary metro or submarket (optional)"
-              className={inputClassName(false)}
-            />
-          </label>
+
+
         </div>
-        <label className={labelClassName}>
-          Target timeline
-          <input
-            type="text"
-            value={formData.timeline}
-            onChange={updateField("timeline")}
-            className={inputClassName(!!errors.timeline)}
-            placeholder="Example: Identification underway, closing in 120 days"
-          />
-          {errors.timeline ? <span className={errorClassName}>{errors.timeline}</span> : null}
-        </label>
+
       </div>
       <label className={labelClassName}>
-        Project details
-        <textarea
-          value={formData.details}
-          onChange={updateField("details")}
-          rows={6}
-          className={inputClassName(!!errors.details)}
-          placeholder="Outline property types, exchange status, stakeholders, financing details, and deadlines."
-        />
+        What Should We Know?
+        <textarea className={inputClassName(!!errors.details)} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
         {errors.details ? <span className={errorClassName}>{errors.details}</span> : null}
       </label>
-      {isTurnstileEnabled() && (
-        <div className="flex justify-center">
-          <div ref={turnstileRef} />
-        </div>
-      )}
+
       <div className={`flex flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between ${isDark ? "text-white/80" : "text-[#3F3F3F]"}`}>
         <button
           type="submit"
-          disabled={isSubmitting}
           className={`inline-flex px-8 py-3 text-xs font-medium uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-70 disabled:cursor-not-allowed ${
             isDark
               ? "border border-white bg-transparent text-white hover:bg-white hover:text-[#5D5838] focus-visible:outline-white"
@@ -346,32 +273,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
         </p>
       </div>
       {status ? <p className={statusClassName(status.includes("Thank you"))}>{status}</p> : null}
-      {isTurnstileEnabled() && (
-        <>
-          <Script
-            src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-            async
-            defer
-            onLoad={() => {
-              if (typeof window !== "undefined" && window.turnstile && turnstileRef.current && !turnstileWidgetIdRef.current) {
-                try {
-                  const widgetId = window.turnstile.render(turnstileRef.current, {
-                    sitekey: TURNSTILE_SITE_KEY,
-                    callback: () => {},
-                    "error-callback": () => {
-                      setStatus("Captcha verification failed. Please try again.");
-                    },
-                  });
-                  turnstileWidgetIdRef.current = widgetId;
-                  setTurnstileLoaded(true);
-                } catch (error) {
-                  console.error("Turnstile render error:", error);
-                }
-              }
-            }}
-          />
-        </>
-      )}
+
     </form>
   );
 }
