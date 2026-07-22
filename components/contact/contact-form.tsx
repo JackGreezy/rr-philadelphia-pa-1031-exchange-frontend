@@ -216,7 +216,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
           {errors.name ? <span className={errorClassName}>{errors.name}</span> : null}
         </label>
         <label className={labelClassName}>
-          Previously Completed a 1031 Exchange?
+          Have you completed a 1031 exchange before?
           <select className={inputClassName(false)} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
         </label>
         <label className={labelClassName}>
@@ -230,7 +230,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
           {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
         </label>
         <label className={labelClassName}>
-          Phone
+          Phone Number
           <input
             type="tel"
             value={formData.phone}
@@ -252,7 +252,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
 
       </div>
       <label className={labelClassName}>
-        What Should We Know?
+        Notes
         <textarea className={inputClassName(!!errors.details)} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
         {errors.details ? <span className={errorClassName}>{errors.details}</span> : null}
       </label>
