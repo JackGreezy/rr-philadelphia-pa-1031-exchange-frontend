@@ -136,7 +136,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
         formDataToSend.append("cf-turnstile-response", token);
       }
 
-      const response = await fetch("/api/lead", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: formDataToSend,
         headers: {
