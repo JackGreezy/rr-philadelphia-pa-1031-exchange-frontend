@@ -8,7 +8,6 @@ import {
   CONTACT_EMAIL,
   BUSINESS_HOURS,
   HAS_STAFFED_OFFICE,
-  OFFICE_ADDRESS,
   OFFICE_ADDRESS_FULL,
   SITE_URL,
   PRIMARY_CITY,
@@ -70,7 +69,6 @@ export function SiteFooter() {
               {CONTACT_EMAIL}
             </a>
             <p className="text-[#3F3F3F]">{BUSINESS_HOURS}</p>
-            <p className="text-[#3F3F3F]">{HAS_STAFFED_OFFICE ? OFFICE_ADDRESS : "Serving clients across Pennsylvania."}</p>
           </div>
         </div>
         <div>
@@ -165,8 +163,8 @@ export function SiteFooter() {
           </p>
           <div className="overflow-hidden border border-[#5D5838]/10">
             <iframe
-              title={`${SITE_NAME} Office Location - ${OFFICE_ADDRESS_FULL}`}
-              aria-label={`${SITE_NAME} office location at ${OFFICE_ADDRESS_FULL}`}
+              title="Office location map"
+              aria-label="Office location map"
               src={`https://maps.google.com/maps?q=${encodeURIComponent(OFFICE_ADDRESS_FULL)}&output=embed`}
               loading="lazy"
               className="h-48 w-full"
@@ -193,4 +191,3 @@ export function SiteFooter() {
     </footer>
   );
 }
-

@@ -16,7 +16,6 @@ import {
   PHONE_DISPLAY,
   PHONE_E164,
   HAS_STAFFED_OFFICE,
-  OFFICE_ADDRESS,
 } from "../lib/config/site";
 import { faqPageSchema, baseWebSiteSchema, organizationSchema, contactPointSchema } from "../lib/schema";
 
@@ -758,4 +757,3 @@ export default function HomePage() {
     </>
   );
 }
-
