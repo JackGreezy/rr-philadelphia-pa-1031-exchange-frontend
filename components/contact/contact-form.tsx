@@ -216,20 +216,6 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
           {errors.name ? <span className={errorClassName}>{errors.name}</span> : null}
         </label>
         <label className={labelClassName}>
-          Have you completed a 1031 exchange before?
-          <select className={inputClassName(false)} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
-        </label>
-        <label className={labelClassName}>
-          Email
-          <input
-            type="email"
-            value={formData.email}
-            onChange={updateField("email")}
-            className={inputClassName(!!errors.email)}
-            placeholder="name@example.com" name="email" required/>
-          {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
-        </label>
-        <label className={labelClassName}>
           Phone Number
           <input
             type="tel"
@@ -242,6 +228,20 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
             className={inputClassName(!!errors.phone)}
             placeholder="(###) ###-####" name="phone" required/>
           {errors.phone ? <span className={errorClassName}>{errors.phone}</span> : null}
+        </label>
+        <label className={labelClassName}>
+          Email
+          <input
+            type="email"
+            value={formData.email}
+            onChange={updateField("email")}
+            className={inputClassName(!!errors.email)}
+            placeholder="name@example.com" name="email" required/>
+          {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
+        </label>
+        <label className={labelClassName}>
+          Have you completed a 1031 exchange before?
+          <select className={inputClassName(false)} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
         </label>
 
 
