@@ -4,6 +4,7 @@ import { locationsBatch01 } from "../../data/batches/locations/batch-01";
 import { locationsBatch02 } from "../../data/batches/locations/batch-02";
 import { locationsBatch03 } from "../../data/batches/locations/batch-03";
 import { locationsBatch04 } from "../../data/batches/locations/batch-04";
+import { locationsRichContent, type LocationRichSection } from "../../data/batches/locations/rich-content";
 
 export type Location = {
   slug: string;
@@ -34,6 +35,10 @@ export type Location = {
     expectedOutcome: string;
   };
   layoutKey?: string;
+  // Deep local-market content: 4-7 H2 sections + expanded FAQ set, additive to
+  // the short summary/highlights fields above and rendered in its own section
+  // on the location detail page.
+  richSections?: LocationRichSection[];
 };
 
 const baseLocations: Omit<Location, "mainDescription" | "popularPaths" | "exampleCapability" | "layoutKey">[] = [
@@ -1125,17 +1130,27 @@ const allLocationBatchData = {
 // Merge batch data into locations array
 export const locations: Location[] = baseLocations.map((location) => {
   const batchData = allLocationBatchData[location.slug as keyof typeof allLocationBatchData];
-  if (batchData) {
+  const richContent = locationsRichContent[location.slug];
+  const merged: Location = batchData
+    ? {
+        ...location,
+        mainDescription: batchData.mainDescription,
+        popularPaths: batchData.popularPaths as Location["popularPaths"],
+        exampleCapability: batchData.exampleCapability,
+        layoutKey: batchData.layoutKey,
+        // Merge FAQs if batch has additional ones
+        faqs: batchData.faqs && batchData.faqs.length > 0 ? batchData.faqs : location.faqs,
+      }
+    : (location as Location);
+
+  if (richContent) {
     return {
-      ...location,
-      mainDescription: batchData.mainDescription,
-      popularPaths: batchData.popularPaths as Location["popularPaths"],
-      exampleCapability: batchData.exampleCapability,
-      layoutKey: batchData.layoutKey,
-      // Merge FAQs if batch has additional ones
-      faqs: batchData.faqs && batchData.faqs.length > 0 ? batchData.faqs : location.faqs,
+      ...merged,
+      richSections: richContent.richSections,
+      // Deep, location-specific FAQ set supersedes the shorter batch/base FAQ list.
+      faqs: richContent.faqs.length > 0 ? richContent.faqs : merged.faqs,
     };
   }
-  return location as Location;
+  return merged;
 });
 

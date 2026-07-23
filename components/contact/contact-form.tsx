@@ -1,49 +1,31 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
-import { services } from "../../lib/data/services";
 import { PHONE_DISPLAY, CONTACT_EMAIL } from "../../lib/config/site";
 import { isTurnstileEnabled, TURNSTILE_SITE_KEY } from "../../lib/turnstile";
-
-const serviceNames = services.map((service) => service.name).sort((a, b) => a.localeCompare(b));
 
 type ContactFormProps = {
   variant?: "default" | "dark";
 };
 
 export function ContactForm({ variant = "default" }: ContactFormProps) {
-  const searchParams = useSearchParams();
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState("");
   const [formData, setFormData] = useState({
     name: "",
-    company: "",
     email: "",
     phone: "",
-    projectType: "",
-    property: "",
-    estimatedCloseDate: "",
-    city: "",
-    timeline: "",
-    details: "",
+    hasCompleted1031: false,
+    notes: "",
   });
 
-  const projectPrefill = useMemo(() => searchParams.get("projectType") || "", [searchParams]);
-
-  useEffect(() => {
-    if (projectPrefill) {
-      setFormData((prev) => ({ ...prev, projectType: projectPrefill }));
-      setTimeout(() => {
-        const element = document.getElementById("contact-form");
-        element?.scrollIntoView({ behavior: "smooth", block: "center" });
-      }, 100);
-    }
-  }, [projectPrefill]);
-
-  const updateField = (field: keyof typeof formData) => (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const updateField = (field: "name" | "email" | "phone" | "notes") => (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [field]: event.target.value }));
+  };
+
+  const updateHasCompleted1031 = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prev) => ({ ...prev, hasCompleted1031: event.target.checked }));
   };
 
   const validate = () => {
@@ -51,9 +33,6 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
     if (!formData.name.trim()) errors.name = "Name is required.";
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errors.email = "Enter a valid email.";
     if (!formData.phone.trim()) errors.phone = "Phone is required.";
-    if (!formData.projectType.trim()) errors.projectType = "Project type is required.";
-    if (!formData.timeline.trim()) errors.timeline = "Timeline is required.";
-    if (!formData.details.trim() || formData.details.trim().length < 40) errors.details = "Provide at least 40 characters of detail.";
     return errors;
   };
 
@@ -119,12 +98,10 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
     try {
       const formDataToSend = new FormData();
       formDataToSend.append("name", formData.name);
-      formDataToSend.append("company", formData.company);
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("projectType", formData.projectType);
-      formDataToSend.append("timeline", formData.timeline);
-      formDataToSend.append("details", formData.details);
+      formDataToSend.append("hasCompleted1031", formData.hasCompleted1031 ? "Yes" : "No");
+      formDataToSend.append("notes", formData.notes);
 
       if (isTurnstileEnabled() && turnstileWidgetIdRef.current && window.turnstile && window.turnstile.getResponse) {
         const token = window.turnstile.getResponse(turnstileWidgetIdRef.current);
@@ -152,15 +129,10 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
       setStatus("Thank you. A Philadelphia exchange advisor will respond shortly.");
       setFormData({
         name: "",
-        company: "",
         email: "",
         phone: "",
-        projectType: "",
-        property: "",
-        estimatedCloseDate: "",
-        city: "",
-        timeline: "",
-        details: "",
+        hasCompleted1031: false,
+        notes: "",
       });
       formRef.current?.reset();
 
@@ -203,7 +175,8 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
       id="contact-form"
       ref={formRef}
       className={formClassName}
-      noValidate action="/api/contact" method="post">
+      onSubmit={handleSubmit}
+      noValidate>
       <div className="grid gap-6 md:grid-cols-2">
         <label className={labelClassName}>
           Name
@@ -212,6 +185,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
             value={formData.name}
             onChange={updateField("name")}
             className={inputClassName(!!errors.name)}
+            autoComplete="name"
             placeholder="Full name" name="name" required/>
           {errors.name ? <span className={errorClassName}>{errors.name}</span> : null}
         </label>
@@ -226,6 +200,7 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
               setFormData((prev) => ({ ...prev, phone: value }));
             }}
             className={inputClassName(!!errors.phone)}
+            autoComplete="tel"
             placeholder="(###) ###-####" name="phone" required/>
           {errors.phone ? <span className={errorClassName}>{errors.phone}</span> : null}
         </label>
@@ -236,25 +211,32 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
             value={formData.email}
             onChange={updateField("email")}
             className={inputClassName(!!errors.email)}
+            autoComplete="email"
             placeholder="name@example.com" name="email" required/>
           {errors.email ? <span className={errorClassName}>{errors.email}</span> : null}
         </label>
-        <label className={labelClassName}>
-          Have you completed a 1031 exchange before?
-          <select className={inputClassName(false)} name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
-        </label>
-
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-
-        </div>
-
       </div>
+      <label className={`${labelClassName} flex-row items-center gap-3`}>
+        <input type="hidden" name="hasCompleted1031" value="No" />
+        <input
+          type="checkbox"
+          name="hasCompleted1031"
+          value="Yes"
+          checked={formData.hasCompleted1031}
+          onChange={updateHasCompleted1031}
+          className="h-4 w-4 shrink-0"
+        />
+        Have you completed a 1031 exchange before?
+      </label>
       <label className={labelClassName}>
         Notes
-        <textarea className={inputClassName(!!errors.details)} name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
-        {errors.details ? <span className={errorClassName}>{errors.details}</span> : null}
+        <textarea
+          className={inputClassName(false)}
+          name="notes"
+          rows={5}
+          value={formData.notes}
+          onChange={updateField("notes")}
+          placeholder="Share any exchange questions or context"></textarea>
       </label>
 
       <div className={`flex flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between ${isDark ? "text-white/80" : "text-[#3F3F3F]"}`}>

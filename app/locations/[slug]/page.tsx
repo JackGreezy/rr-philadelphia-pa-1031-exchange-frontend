@@ -131,6 +131,31 @@ export default async function LocationPage({ params }: LocationPageProps) {
             </aside>
           </div>
 
+          {/* Local Market Detail */}
+          {location.richSections && location.richSections.length > 0 && (
+            <section className="space-y-10">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.15em] text-[#5D5838]">Local Market Detail</p>
+                <h2 className="mt-3 text-2xl font-normal tracking-wide text-[#5D5838]">
+                  WHAT INVESTORS SHOULD KNOW ABOUT {location.name.toUpperCase()}
+                </h2>
+              </div>
+              <div className="space-y-10">
+                {location.richSections.map((section, index) => (
+                  <div key={section.heading ?? `intro-${index}`}>
+                    {section.heading && (
+                      <h3 className="text-lg font-semibold text-[#5D5838] mb-3">{section.heading}</h3>
+                    )}
+                    <div
+                      className="prose prose-sm max-w-none text-sm leading-relaxed text-[#3F3F3F] [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_p]:mb-3 [&_p:last-child]:mb-0"
+                      dangerouslySetInnerHTML={{ __html: section.html }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Popular Paths */}
           {location.popularPaths && location.popularPaths.length > 0 && (
             <section className="space-y-8">
