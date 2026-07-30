@@ -2,11 +2,81 @@ import type { ServiceItem } from "./types";
 
 export const servicesData: ServiceItem[] = [
   {
+    slug: "capital-gains-on-rental-property",
+    name: "Capital Gains on Rental Property",
+    short: "How capital gains tax applies when a Philadelphia, PA rental property sells, and how a 1031 exchange defers it.",
+    route: "/services/capital-gains-on-rental-property",
+    category: "Tax Planning",
+  },
+  {
+    slug: "inherited-property-capital-gains",
+    name: "Inherited Property Capital Gains",
+    short: "How the stepped up basis rule affects capital gains on inherited property in Philadelphia, PA, and how a 1031 exchange fits an heir's plans.",
+    route: "/services/inherited-property-capital-gains",
+    category: "Tax Planning",
+  },
+  {
+    slug: "passive-real-estate-income",
+    name: "Passive Real Estate Income",
+    short: "How Philadelphia, PA investors pursue passive real estate income, including 1031-eligible Delaware Statutory Trust structures.",
+    route: "/services/passive-real-estate-income",
+    category: "Investing",
+  },
+  {
     slug: "forward-exchange-structuring-philadelphia",
     name: "Forward Exchange Structuring Philadelphia",
     short: "Document forward exchanges with assignment agreements, escrow instructions, and compliance checkpoints in Philadelphia, PA.",
     route: "/services/forward-exchange-structuring-philadelphia",
     category: "Structures",
+  },
+  {
+    slug: "the-qualified-intermediary-role",
+    name: "The Qualified Intermediary Role",
+    short: "What a qualified intermediary does in a Philadelphia, PA 1031 exchange and how to choose one.",
+    route: "/services/the-qualified-intermediary-role",
+    category: "Guides",
+  },
+  {
+    slug: "what-is-an-nnn-lease",
+    name: "What Is an NNN Lease",
+    short: "A plain language explanation of an NNN lease for Philadelphia, PA investors considering a net lease 1031 exchange replacement property.",
+    route: "/services/what-is-an-nnn-lease",
+    category: "Asset Classes",
+  },
+  {
+    slug: "how-to-reduce-capital-gains-tax",
+    name: "How to Reduce Capital Gains Tax",
+    short: "Legitimate strategies Philadelphia, PA property owners use to reduce or defer capital gains tax, including the 1031 exchange.",
+    route: "/services/how-to-reduce-capital-gains-tax",
+    category: "Tax Planning",
+  },
+  {
+    slug: "reverse-1031-exchange-explained",
+    name: "Reverse 1031 Exchange Explained",
+    short: "How a reverse exchange and exchange accommodation titleholder structure work under Revenue Procedure 2000-37.",
+    route: "/services/reverse-1031-exchange-explained",
+    category: "Guides",
+  },
+  {
+    slug: "the-180-day-exchange-deadline",
+    name: "The One Hundred Eighty Day Exchange Deadline",
+    short: "How the one hundred eighty day closing deadline works in a Philadelphia, PA 1031 exchange.",
+    route: "/services/the-180-day-exchange-deadline",
+    category: "Guides",
+  },
+  {
+    slug: "capital-gains-on-investment-property",
+    name: "Capital Gains on Investment Property",
+    short: "A plain language look at capital gains exposure on investment real estate in Philadelphia, PA and how deferral works.",
+    route: "/services/capital-gains-on-investment-property",
+    category: "Tax Planning",
+  },
+  {
+    slug: "the-45-day-identification-period",
+    name: "The Forty Five Day Identification Period",
+    short: "How the forty five day identification deadline works in a Philadelphia, PA 1031 exchange.",
+    route: "/services/the-45-day-identification-period",
+    category: "Guides",
   },
   {
     slug: "multifamily-1031-identification-philadelphia",
@@ -44,20 +114,6 @@ export const servicesData: ServiceItem[] = [
     category: "Reporting",
   },
   {
-    slug: "the-45-day-identification-period",
-    name: "The Forty Five Day Identification Period",
-    short: "How the forty five day identification deadline works in a Philadelphia, PA 1031 exchange.",
-    route: "/services/the-45-day-identification-period",
-    category: "Guides",
-  },
-  {
-    slug: "the-180-day-exchange-deadline",
-    name: "The One Hundred Eighty Day Exchange Deadline",
-    short: "How the one hundred eighty day closing deadline works in a Philadelphia, PA 1031 exchange.",
-    route: "/services/the-180-day-exchange-deadline",
-    category: "Guides",
-  },
-  {
     slug: "what-is-boot-in-a-1031-exchange",
     name: "What Is Boot in a 1031 Exchange",
     short: "A plain-language explanation of cash boot and mortgage boot in a 1031 exchange.",
@@ -65,24 +121,10 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "the-qualified-intermediary-role",
-    name: "The Qualified Intermediary Role",
-    short: "What a qualified intermediary does in a Philadelphia, PA 1031 exchange and how to choose one.",
-    route: "/services/the-qualified-intermediary-role",
-    category: "Guides",
-  },
-  {
     slug: "like-kind-property-explained",
     name: "Like-Kind Property Explained",
     short: "What qualifies as like-kind real property in a 1031 exchange after the Tax Cuts and Jobs Act.",
     route: "/services/like-kind-property-explained",
-    category: "Guides",
-  },
-  {
-    slug: "reverse-1031-exchange-explained",
-    name: "Reverse 1031 Exchange Explained",
-    short: "How a reverse exchange and exchange accommodation titleholder structure work under Revenue Procedure 2000-37.",
-    route: "/services/reverse-1031-exchange-explained",
     category: "Guides",
   },
   {
@@ -100,20 +142,6 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "capital-gains-on-rental-property",
-    name: "Capital Gains on Rental Property",
-    short: "How capital gains tax applies when a Philadelphia, PA rental property sells, and how a 1031 exchange defers it.",
-    route: "/services/capital-gains-on-rental-property",
-    category: "Tax Planning",
-  },
-  {
-    slug: "capital-gains-on-investment-property",
-    name: "Capital Gains on Investment Property",
-    short: "A plain language look at capital gains exposure on investment real estate in Philadelphia, PA and how deferral works.",
-    route: "/services/capital-gains-on-investment-property",
-    category: "Tax Planning",
-  },
-  {
     slug: "home-sale-capital-gains",
     name: "Home Sale Capital Gains",
     short: "How capital gains tax works on a home sale in Philadelphia, PA and when the Section 121 exclusion applies instead of a 1031 exchange.",
@@ -125,13 +153,6 @@ export const servicesData: ServiceItem[] = [
     name: "Second Home Capital Gains Tax",
     short: "How capital gains tax applies to a second home or vacation property sale in Philadelphia, PA, and where a 1031 exchange fits.",
     route: "/services/second-home-capital-gains-tax",
-    category: "Tax Planning",
-  },
-  {
-    slug: "inherited-property-capital-gains",
-    name: "Inherited Property Capital Gains",
-    short: "How the stepped up basis rule affects capital gains on inherited property in Philadelphia, PA, and how a 1031 exchange fits an heir's plans.",
-    route: "/services/inherited-property-capital-gains",
     category: "Tax Planning",
   },
   {
@@ -149,24 +170,10 @@ export const servicesData: ServiceItem[] = [
     category: "Tax Planning",
   },
   {
-    slug: "how-to-reduce-capital-gains-tax",
-    name: "How to Reduce Capital Gains Tax",
-    short: "Legitimate strategies Philadelphia, PA property owners use to reduce or defer capital gains tax, including the 1031 exchange.",
-    route: "/services/how-to-reduce-capital-gains-tax",
-    category: "Tax Planning",
-  },
-  {
     slug: "how-to-invest-in-real-estate",
     name: "How to Invest in Real Estate",
     short: "An overview of active and passive real estate investment paths available to Philadelphia, PA investors, including 1031-eligible options.",
     route: "/services/how-to-invest-in-real-estate",
-    category: "Investing",
-  },
-  {
-    slug: "passive-real-estate-income",
-    name: "Passive Real Estate Income",
-    short: "How Philadelphia, PA investors pursue passive real estate income, including 1031-eligible Delaware Statutory Trust structures.",
-    route: "/services/passive-real-estate-income",
     category: "Investing",
   },
   {
@@ -219,13 +226,6 @@ export const servicesData: ServiceItem[] = [
     category: "Asset Classes",
   },
   {
-    slug: "what-is-an-nnn-lease",
-    name: "What Is an NNN Lease",
-    short: "A plain language explanation of an NNN lease for Philadelphia, PA investors considering a net lease 1031 exchange replacement property.",
-    route: "/services/what-is-an-nnn-lease",
-    category: "Asset Classes",
-  },
-  {
     slug: "self-storage-investing",
     name: "Self Storage Investing",
     short: "How self storage facilities work as a 1031 exchange replacement property class for Philadelphia, PA investors.",
@@ -266,6 +266,5 @@ export const servicesData: ServiceItem[] = [
     short: "How medical office buildings work as a 1031 exchange replacement property class for Philadelphia, PA investors.",
     route: "/services/medical-office-investing",
     category: "Asset Classes",
-  },
-];
+  },];
 

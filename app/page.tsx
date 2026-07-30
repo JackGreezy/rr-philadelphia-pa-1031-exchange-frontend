@@ -1,3 +1,4 @@
+import ExchangeIntentSection from "../components/ExchangeIntentSection";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -222,7 +223,7 @@ const FAQS: FAQ[] = [
       "Pennsylvania and Philadelphia transfer taxes continue to apply to conveyances inside an exchange. Proper tax stamping and payment at closing are required, and the amounts cannot be deferred through Section 1031.",
   },
   {
-    question: "Can I complete a reverse exchange?",
+    question: "Can you complete a reverse exchange?",
     answer:
       "Reverse exchanges are permitted when an exchange accommodation titleholder acquires the replacement property first, followed by the sale of the relinquished asset within 180 days. Documentation must meet Revenue Procedure 2000-37 standards.",
   },
@@ -705,7 +706,7 @@ export default function HomePage() {
           </div>
         </section>
 
-      </main>
+      <ExchangeIntentSection /></main>
 
       {jsonSchemas.map((schema, index) => (
         <script key={`schema-${index}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
