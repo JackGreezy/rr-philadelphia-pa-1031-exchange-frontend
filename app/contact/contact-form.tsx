@@ -178,29 +178,29 @@ function ContactForm() {
   };
 
   return (
-    <div id="contact-form" className="border border-white/10 bg-brand-charcoal/50 p-8">
+    <div id="contact-form" className="border border-white/25 bg-brand-charcoal/50 p-8">
       <form className="space-y-6" onSubmit={handleSubmit}>
         <fieldset disabled={status === "submitting"} className="space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <label htmlFor="name" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/60">Name <span className="text-brand-copper">*</span></label>
-              <input id="name" type="text" required value={formData.name} onChange={handleChange("name")} autoComplete="name" aria-describedby={errors.name ? "name-error" : undefined} aria-invalid={!!errors.name} className="w-full bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder-white/40 focus:border-brand-copper focus:outline-none transition-colors" placeholder="Your name" name="name"/>
+              <label htmlFor="name" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/85">Name <span className="text-brand-copper">*</span></label>
+              <input id="name" type="text" required value={formData.name} onChange={handleChange("name")} autoComplete="name" aria-describedby={errors.name ? "name-error" : undefined} aria-invalid={!!errors.name} className="w-full bg-transparent border border-white/45 px-4 py-3 text-sm text-white placeholder-white/65 focus:border-brand-copper focus:outline-none transition-colors" placeholder="Your name" name="name"/>
               {errors.name && <p id="name-error" className="mt-1 text-xs text-red-400">{errors.name}</p>}
             </div>
             <div>
-              <label htmlFor="phone" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/60">Phone Number <span className="text-brand-copper">*</span></label>
-              <input id="phone" type="tel" required value={formData.phone} onChange={handleChange("phone")} autoComplete="tel" aria-describedby={errors.phone ? "phone-error" : undefined} aria-invalid={!!errors.phone} className="w-full bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder-white/40 focus:border-brand-copper focus:outline-none transition-colors" placeholder="(555) 555-5555" name="phone"/>
+              <label htmlFor="phone" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/85">Phone Number <span className="text-brand-copper">*</span></label>
+              <input id="phone" type="tel" required value={formData.phone} onChange={handleChange("phone")} autoComplete="tel" aria-describedby={errors.phone ? "phone-error" : undefined} aria-invalid={!!errors.phone} className="w-full bg-transparent border border-white/45 px-4 py-3 text-sm text-white placeholder-white/65 focus:border-brand-copper focus:outline-none transition-colors" placeholder="(555) 555-5555" name="phone"/>
               {errors.phone && <p id="phone-error" className="mt-1 text-xs text-red-400">{errors.phone}</p>}
             </div>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <label htmlFor="email" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/60">Email <span className="text-brand-copper">*</span></label>
-              <input id="email" type="email" required value={formData.email} onChange={handleChange("email")} autoComplete="email" aria-describedby={errors.email ? "email-error" : undefined} aria-invalid={!!errors.email} className="w-full bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder-white/40 focus:border-brand-copper focus:outline-none transition-colors" placeholder="your@email.com" name="email"/>
+              <label htmlFor="email" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/85">Email <span className="text-brand-copper">*</span></label>
+              <input id="email" type="email" required value={formData.email} onChange={handleChange("email")} autoComplete="email" aria-describedby={errors.email ? "email-error" : undefined} aria-invalid={!!errors.email} className="w-full bg-transparent border border-white/45 px-4 py-3 text-sm text-white placeholder-white/65 focus:border-brand-copper focus:outline-none transition-colors" placeholder="your@email.com" name="email"/>
               {errors.email && <p id="email-error" className="mt-1 text-xs text-red-400">{errors.email}</p>}
             </div>
           </div>
-          <label className="flex cursor-pointer items-center gap-3 border border-white/20 px-4 py-4 text-sm text-white/80 transition-colors hover:border-brand-copper">
+          <label className="flex cursor-pointer items-center gap-3 border border-white/45 px-4 py-4 text-sm text-white/80 transition-colors hover:border-brand-copper">
             <input type="hidden" name="hasCompleted1031" value="No" />
             <input
               id="hasCompleted1031"
@@ -214,14 +214,14 @@ function ContactForm() {
             Have you completed a 1031 exchange before?
           </label>
           <div>
-            <label htmlFor="message" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/60">Notes</label>
-            <textarea id="message" value={formData.notes} onChange={handleChange("notes")} className="w-full bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder-white/40 focus:border-brand-copper focus:outline-none transition-colors resize-none" name="notes" rows={5} placeholder="Share any exchange questions or context"></textarea>
+            <label htmlFor="message" className="mb-2 block text-xs font-medium uppercase tracking-widest text-white/85">Notes</label>
+            <textarea id="message" value={formData.notes} onChange={handleChange("notes")} className="w-full bg-transparent border border-white/45 px-4 py-3 text-sm text-white placeholder-white/65 focus:border-brand-copper focus:outline-none transition-colors resize-none" name="notes" rows={5} placeholder="Share any exchange questions or context"></textarea>
           </div>
 
-          <button type="submit" className="w-full border border-brand-copper bg-brand-copper px-8 py-4 text-sm font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-brand-copper-light disabled:opacity-50 disabled:cursor-not-allowed">
+          <button type="submit" className="w-full border border-brand-copper bg-brand-copper px-8 py-4 text-sm font-medium uppercase tracking-widest text-brand-dark transition-all duration-300 hover:bg-brand-copper-light disabled:opacity-50 disabled:cursor-not-allowed">
             {status === "submitting" ? "Submitting..." : "Submit →"}
           </button>
-          <p className="text-xs text-white/40 text-center">Educational content only. Not tax or legal advice.</p>
+          <p className="text-xs text-white/70 text-center">Educational content only. Not tax or legal advice.</p>
           {feedback && (
             <p role="status" aria-live="polite" className={"text-sm text-center " + (status === "success" ? "text-green-400" : "text-red-400")}>{feedback}</p>
           )}
@@ -233,7 +233,7 @@ function ContactForm() {
 
 export function ContactFormWrapper() {
   return (
-    <Suspense fallback={<div className="border border-white/10 bg-brand-charcoal/50 p-8 text-white/60">Loading form...</div>}>
+    <Suspense fallback={<div className="border border-white/25 bg-brand-charcoal/50 p-8 text-white/85">Loading form...</div>}>
       <ContactForm />
     </Suspense>
   );
