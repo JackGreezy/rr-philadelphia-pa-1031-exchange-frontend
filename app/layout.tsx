@@ -42,11 +42,11 @@ const uiFont = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Qualified Intermediary Network Pennsylvania`,
+    default: "1031 Exchange Philadelphia | Replacement Solutions",
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes, identification strategy, and deadline discipline.",
+    "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
   keywords: [
     "1031 exchange",
     "1031 exchange Philadelphia",
@@ -94,9 +94,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${SITE_NAME} | Best Property Identification Experts in Philadelphia`,
+    title: "1031 Exchange Philadelphia | Replacement Solutions",
     description:
-      "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes, identification strategy, and deadline discipline.",
+      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
     url: SITE_URL,
     siteName: SITE_NAME,
     locale: "en_US",
@@ -112,9 +112,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Best Property Identification Experts in Philadelphia`,
+    title: "1031 Exchange Philadelphia | Replacement Solutions",
     description:
-      "Trusted 1031 exchange advisors helping Philadelphia investors defer capital gains through compliant processes, identification strategy, and deadline discipline.",
+      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
     images: [OG_IMAGE_URL],
     creator: "@1031philly",
   },
