@@ -85,7 +85,7 @@ const HOME_SERVICE_CARDS: FeaturedServiceCard[] = [
     slug: "forward-exchange-structuring-philadelphia",
   },
   {
-    title: "Reverse Exchange Coordination",
+    title: "Reverse Exchange Solutions",
     description:
       "Coordinate reverse exchanges with exchange accommodation titleholders, financing review, and IRS safe harbor compliance.",
     slug: "reverse-exchange-structuring-philadelphia",
@@ -319,9 +319,7 @@ export default function HomePage() {
               </span>
               <p className="ui-font text-sm uppercase tracking-[0.25em] text-white/90">Philadelphia Property Identification Experts</p>
               <h1 className="text-4xl font-normal tracking-wide text-white sm:text-5xl lg:text-6xl">FIND YOUR PERFECT 1031 EXCHANGE REPLACEMENT PROPERTIES</h1>
-              <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/90">
-                We identify the best replacement properties for your 1031 exchange across Philadelphia and Pennsylvania. Our team scours active and off-market listings, evaluates property fundamentals, and delivers compliant identification lists within your 45-day deadline.
-              </p>
+              <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/90">A Philadelphia owner may be selling apartments, mixed-use property, industrial space, or inherited real estate because the management or capital plan no longer fits. We turn the actual sale, equity, debt, income needs, control preferences, and deadline into a replacement search with primary and backup paths.</p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row" data-motion="fade-up" data-motion-delay="0.08">
                 <a
                   className="ui-font inline-flex items-center justify-center border border-white px-8 py-3 text-sm font-medium uppercase tracking-[0.15em] text-white transition-colors duration-200 hover:bg-white hover:text-[#5D5838] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -340,9 +338,7 @@ export default function HomePage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               {/* Text Content */}
               <div className="order-2 lg:order-1" data-motion="fade-up">
-                <p className="text-sm leading-relaxed text-[#3F3F3F]">
-                  Whether relocating your investment portfolio, acquiring a secondary property, or planning an in-state repositioning, 1031 Exchange Philadelphia is the top choice for investors and advisors who seek high quality representation and optimal results.
-                </p>
+                <p className="text-sm leading-relaxed text-[#3F3F3F]">A DST may give Philadelphia sellers access to professionally managed, institutional-grade property without personally handling tenants, maintenance, or renovations. Some offerings may begin around $100,000; current inventory, projected income, sponsor and asset risk, fees, leverage, illiquidity, investor eligibility, and suitability vary.</p>
                 <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">
                   We bring a wealth of knowledge of the Philadelphia market, strength in negotiation, and wisdom and persistence in working through any challenges encountered along the way.
                 </p>
@@ -474,7 +470,7 @@ export default function HomePage() {
             <div className="flex flex-col gap-4 text-center md:text-left md:flex-row md:items-end md:justify-between" data-motion="fade-up">
               <div>
                 <p className="ui-font text-xs font-medium uppercase tracking-[0.25em] text-[#5D5838]">Our Services</p>
-                <h2 className="mt-4 text-3xl font-normal tracking-wide text-[#5D5838] sm:text-4xl">EXCHANGE SERVICES</h2>
+                <h2 className="mt-4 text-3xl font-normal tracking-wide text-[#5D5838] sm:text-4xl">PHILADELPHIA 1031 EXCHANGE SOLUTIONS</h2>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#3F3F3F]">
                   Tailored engagements for institutional advisors, family offices, and private investors seeking disciplined Section 1031 execution.
                 </p>
@@ -494,7 +490,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
             <div className="mx-auto max-w-3xl text-center" data-motion="fade-up">
               <p className="ui-font text-xs font-medium uppercase tracking-[0.25em] text-[#5D5838]">Investment Categories</p>
-              <h2 className="mt-4 text-3xl font-normal tracking-wide text-[#5D5838] sm:text-4xl">ELIGIBLE PROPERTY TYPES</h2>
+              <h2 className="mt-4 text-3xl font-normal tracking-wide text-[#5D5838] sm:text-4xl">INCOME-FOCUSED PROPERTY WITHOUT THE MANAGEMENT</h2>
               <p className="mt-4 text-base leading-relaxed text-[#3F3F3F]">
                 Evaluate reinvestment options with due diligence checklists, cash flow modeling, and closing coordination tailored to each asset class.
               </p>
@@ -529,9 +525,7 @@ export default function HomePage() {
               })}
             </div>
             <div className="mt-8 text-center">
-              <Link className="ui-font text-sm font-medium uppercase tracking-[0.15em] text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="/property-types">
-                Explore all property types
-              </Link>
+              <Link className="ui-font text-sm font-medium uppercase tracking-[0.15em] text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="/contact?request=guide">Get Free Philadelphia 1031 Information</Link>
             </div>
           </div>
         </section>
@@ -611,9 +605,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8 text-center">
-              <Link className="ui-font text-sm font-medium uppercase tracking-[0.15em] text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="/tools">
-                View all tools
-              </Link>
+              <Link className="ui-font text-sm font-medium uppercase tracking-[0.15em] text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="/contact?request=properties">Request the Philadelphia Property List</Link>
             </div>
           </div>
         </section>
