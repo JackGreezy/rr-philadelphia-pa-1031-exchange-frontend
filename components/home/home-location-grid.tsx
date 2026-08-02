@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import type { Location } from "../../lib/data/locations";
 import { searchLocations, buildPrefillQuery } from "../../lib/search";
 import { SearchInput } from "../search-input";
-import { getLocationImageBasePath } from "../../lib/utils/images-client";
+import { getLocationImagePath } from "../../lib/utils/images-client";
 
 type FeaturedLocationCard = {
   name: string;
@@ -52,28 +52,17 @@ export function HomeLocationGrid({ featuredSlugs, locations, featuredCards }: Ho
         hasResults ? (
           <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filtered.map((location) => {
-              const imageBasePath = getLocationImageBasePath(location.slug);
+              const imagePath = getLocationImagePath(location.slug);
               return (
                 <article key={location.slug} className="group overflow-hidden bg-white text-center">
-                  {imageBasePath && (
+                  {imagePath && (
                     <div className="relative aspect-[4/3] w-full overflow-hidden">
                       <Image
-                        src={`${imageBasePath}.jpg`}
+                        src={imagePath}
                         alt={location.name}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          const currentSrc = target.src;
-                          const basePath = currentSrc.replace(/\.(webp|avif|jpg|jpeg|png)$/, '');
-                          const extensions = ['.jpg', '.avif', '.webp', '.jpeg', '.png'];
-                          const currentExt = currentSrc.match(/\.(webp|avif|jpg|jpeg|png)$/)?.[0];
-                          const currentIndex = extensions.indexOf(currentExt || '');
-                          if (currentIndex < extensions.length - 1) {
-                            target.src = `${basePath}${extensions[currentIndex + 1]}`;
-                          }
-                        }}
                       />
                     </div>
                   )}
@@ -112,32 +101,21 @@ export function HomeLocationGrid({ featuredSlugs, locations, featuredCards }: Ho
       ) : (
         <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {featuredCards.map((location) => {
-            const imageBasePath = getLocationImageBasePath(location.slug);
+            const imagePath = getLocationImagePath(location.slug);
             return (
               <Link
                 key={location.slug}
                 href={`/locations/${location.slug}`}
                 className="group overflow-hidden bg-white text-center"
               >
-                {imageBasePath && (
+                {imagePath && (
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
-                      src={`${imageBasePath}.jpg`}
+                      src={imagePath}
                       alt={location.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        const currentSrc = target.src;
-                        const basePath = currentSrc.replace(/\.(webp|avif|jpg|jpeg|png)$/, '');
-                        const extensions = ['.jpg', '.avif', '.webp', '.jpeg', '.png'];
-                        const currentExt = currentSrc.match(/\.(webp|avif|jpg|jpeg|png)$/)?.[0];
-                        const currentIndex = extensions.indexOf(currentExt || '');
-                        if (currentIndex < extensions.length - 1) {
-                          target.src = `${basePath}${extensions[currentIndex + 1]}`;
-                        }
-                      }}
                     />
                   </div>
                 )}

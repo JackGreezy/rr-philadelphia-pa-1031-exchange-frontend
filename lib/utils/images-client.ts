@@ -4,40 +4,40 @@
  */
 
 /**
- * Get the base image path for a location by slug (client-safe)
- * Returns the base path without extension - components should try multiple extensions
+ * Get the verified image path for a location by slug (client-safe).
+ * University City uses the closest available Philadelphia skyline asset until
+ * a dedicated neighborhood image is added.
  */
-export function getLocationImageBasePath(slug: string): string | null {
-  const nameMap: Record<string, string> = {
-    'center-city-philadelphia-pa': 'Center-City-Philadelphia-PA',
-    'university-city-philadelphia-pa': 'University-City-Philadelphia-PA',
-    'fishtown-philadelphia-pa': 'Fishtown-Philadelphia-PA',
-    'manayunk-philadelphia-pa': 'Manayunk-Philadelphia-PA',
-    'old-city-philadelphia-pa': 'Old-City-Philadelphia-PA',
-    'society-hill-philadelphia-pa': 'Society-Hill-Philadelphia-PA',
-    'bala-cynwyd-pa': 'Bala-Cynwyd-PA',
-    'king-of-prussia-pa': 'King-of-Prussia-PA',
-    'conshohocken-pa': 'Conshohocken-PA',
-    'fort-washington-pa': 'Fort-Washington-PA',
-    'wynnewood-pa': 'Wynnewood-PA',
-    'ardmore-pa': 'Ardmore-PA',
-    'narberth-pa': 'Narberth-PA',
-    'haverford-pa': 'Haverford-PA',
-    'bryn-mawr-pa': 'Bryn-Mawr-PA',
-    'wayne-pa': 'Wayne-PA',
-    'radnor-pa': 'Radnor-PA',
-    'media-pa': 'Media-PA',
-    'west-chester-pa': 'West-Chester-PA',
-    'doylestown-pa': 'Doylestown-PA',
-    'newtown-pa': 'Newtown-PA',
-    'langhorne-pa': 'Langhorne-PA',
-    'remote': 'Nationwide-Remote',
-    'wilmington-de': 'Wilmington-DE',
-    'trenton-nj': 'Trenton-NJ',
+export function getLocationImagePath(slug: string): string | null {
+  const imageMap: Record<string, string> = {
+    'center-city-philadelphia-pa': '/locations/1031-exchange-Center-City-Philadelphia-PA.jpg',
+    'university-city-philadelphia-pa': '/locations/1031-exchange-Center-City-Philadelphia-PA.jpg',
+    'fishtown-philadelphia-pa': '/locations/1031-exchange-Fishtown-Philadelphia-PA.avif',
+    'manayunk-philadelphia-pa': '/locations/1031-exchange-Manayunk-Philadelphia-PA.jpg',
+    'old-city-philadelphia-pa': '/locations/1031-exchange-Old-City-Philadelphia-PA.jpg',
+    'society-hill-philadelphia-pa': '/locations/1031-exchange-Society-Hill-Philadelphia-PA.jpg',
+    'bala-cynwyd-pa': '/locations/1031-exchange-Bala-Cynwyd-PA.jpg',
+    'king-of-prussia-pa': '/locations/1031-exchange-King-of-Prussia-PA.jpg',
+    'conshohocken-pa': '/locations/1031-exchange-Conshohocken-PA.jpg',
+    'fort-washington-pa': '/locations/1031-exchange-Fort-Washington-PA.jpg',
+    'wynnewood-pa': '/locations/1031-exchange-Wynnewood-PA.jpg',
+    'ardmore-pa': '/locations/1031-exchange-Ardmore-PA.jpg',
+    'narberth-pa': '/locations/1031-exchange-Narberth-PA.jpg',
+    'haverford-pa': '/locations/1031-exchange-Haverford-PA.jpg',
+    'bryn-mawr-pa': '/locations/1031-exchange-Bryn-Mawr-PA.jpg',
+    'wayne-pa': '/locations/1031-exchange-Wayne-PA.jpg',
+    'radnor-pa': '/locations/1031-exchange-Radnor-PA.jpg',
+    'media-pa': '/locations/1031-exchange-Media-PA.jpg',
+    'west-chester-pa': '/locations/1031-exchange-West-Chester-PA.jpg',
+    'doylestown-pa': '/locations/1031-exchange-Doylestown-PA.jpg',
+    'newtown-pa': '/locations/1031-exchange-Newtown-PA.jpg',
+    'langhorne-pa': '/locations/1031-exchange-Langhorne-PA.jpg',
+    'remote': '/locations/1031-exchange-Nationwide-Remote.webp',
+    'wilmington-de': '/locations/1031-exchange-Wilmington-DE.jpg',
+    'trenton-nj': '/locations/1031-exchange-Trenton-NJ.webp',
   };
 
-  const displayName = nameMap[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('-');
-  return `/locations/1031-exchange-${displayName}`;
+  return imageMap[slug] ?? null;
 }
 
 /**
@@ -60,4 +60,3 @@ export function getPropertyTypeImageBasePath(slug: string): string | null {
   const displayName = nameMap[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('-');
   return `/property-types/1031-exchange-${displayName}`;
 }
-

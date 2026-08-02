@@ -87,7 +87,7 @@ export function SiteHeader() {
   const toggleMobile = () => setMobileOpen((prev) => !prev);
 
   return (
-    <header className="!sticky !top-0 z-[9999] border-b border-[#5D5838]/10 bg-white/98 backdrop-blur" style={{ position: 'sticky', top: 0, zIndex: 9999 }}>
+    <header className="!sticky !top-0 z-[9999] border-b border-[#5D5838]/10 bg-white" style={{ position: 'sticky', top: 0, zIndex: 9999 }}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
         <div className="flex items-center">
           <Link href="/" className="flex items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]">
@@ -104,7 +104,7 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-1 text-sm lg:flex">
           <Link
             href="/"
-            className="px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+            className="px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
           >
             Home
           </Link>
@@ -118,7 +118,7 @@ export function SiteHeader() {
               aria-expanded={openMenu === "services"}
               aria-haspopup="true"
               onClick={() => setOpenMenu(openMenu === "services" ? null : "services")}
-              className="inline-flex items-center gap-1 px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+              className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
             >
               Services
               <svg className={`h-3 w-3 transition-transform ${openMenu === "services" ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -164,7 +164,7 @@ export function SiteHeader() {
               aria-expanded={openMenu === "locations"}
               aria-haspopup="true"
               onClick={() => setOpenMenu(openMenu === "locations" ? null : "locations")}
-              className="inline-flex items-center gap-1 px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+              className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
             >
               Locations
               <svg className={`h-3 w-3 transition-transform ${openMenu === "locations" ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -210,7 +210,7 @@ export function SiteHeader() {
               aria-expanded={openMenu === "tools"}
               aria-haspopup="true"
               onClick={() => setOpenMenu(openMenu === "tools" ? null : "tools")}
-              className="inline-flex items-center gap-1 px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+              className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
             >
               Resources
               <svg className={`h-3 w-3 transition-transform ${openMenu === "tools" ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -247,21 +247,31 @@ export function SiteHeader() {
           </div>
           <Link
             href="/about"
-            className="px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+            className="px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
           >
             About
           </Link>
           <Link
             href="/blog"
-            className="px-4 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
+            className="px-3 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838]"
           >
             Blog
           </Link>
         </nav>
         <div className="flex items-center gap-3">
           <a
-            className="hidden border border-[#5D5838] px-5 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:bg-[#5D5838] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838] md:inline-flex"
-            href="/contact#lead-form"
+            className="hidden items-center gap-2 whitespace-nowrap px-2 py-2 text-xs font-semibold tracking-[0.04em] text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838] lg:inline-flex"
+            href={`tel:${PHONE_E164}`}
+            aria-label={`Call a Philadelphia 1031 exchange expert at ${PHONE_DISPLAY}`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102A1.125 1.125 0 0 0 5.872 2.25H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>
+            {PHONE_DISPLAY}
+          </a>
+          <a
+            className="hidden border border-[#5D5838] px-5 py-2 text-xs font-medium uppercase tracking-[0.1em] text-[#5D5838] transition-colors hover:bg-[#5D5838] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838] lg:inline-flex"
+            href="/contact#contact-form"
           >
             Contact
           </a>
@@ -270,14 +280,15 @@ export function SiteHeader() {
             onClick={toggleMobile}
             aria-expanded={mobileOpen}
             aria-controls="mobile-navigation"
-            className="p-2 text-[#5D5838] transition-colors hover:text-[#7A7654] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838] lg:hidden"
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            className={`inline-flex h-11 w-11 items-center justify-center border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5D5838] lg:hidden ${mobileOpen ? "border-[#5D5838] bg-[#5D5838] text-white" : "border-[#5D5838]/30 text-[#5D5838] hover:border-[#5D5838]"}`}
           >
             {mobileOpen ? (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
@@ -287,9 +298,19 @@ export function SiteHeader() {
       {mobileOpen ? (
         <div
           id="mobile-navigation"
-          className="border-t border-[#5D5838]/10 bg-white px-6 py-8 text-sm text-[#1B1B1B] lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-[77px] z-[9998] overflow-y-auto overscroll-contain border-t border-[#5D5838]/10 bg-[#F8F7F4] text-sm text-[#1B1B1B] shadow-2xl lg:hidden"
         >
-          <div className="space-y-6">
+          <div className="mx-auto max-w-3xl px-6 py-7 sm:px-8">
+            <div className="mb-7 flex items-center justify-between border-b border-[#5D5838]/15 pb-5">
+              <div>
+                <p className="ui-font text-xs font-medium uppercase tracking-[0.2em] text-[#5D5838]">Philadelphia 1031 Exchange</p>
+                <p className="mt-1 text-sm text-[#3F3F3F]">One-stop exchange help and property options.</p>
+              </div>
+              <a href={`tel:${PHONE_E164}`} className="hidden border border-[#5D5838] px-4 py-2 text-xs font-semibold text-[#5D5838] sm:inline-flex">
+                Call {PHONE_DISPLAY}
+              </a>
+            </div>
+            <div className="grid gap-7 sm:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.15em] text-[#5D5838]">Services</p>
               <ul className="mt-3 space-y-1">
@@ -365,7 +386,7 @@ export function SiteHeader() {
                 </li>
               </ul>
             </div>
-            <div className="space-y-1 border-t border-[#5D5838]/10 pt-6">
+            <div className="space-y-1 border-t border-[#5D5838]/10 pt-6 sm:pt-5">
               <Link
                 href="/about"
                 onClick={() => setMobileOpen(false)}
@@ -381,7 +402,7 @@ export function SiteHeader() {
                 Blog
               </Link>
               <Link
-                href="/contact#lead-form"
+                href="/contact#contact-form"
                 onClick={() => setMobileOpen(false)}
                 className="mt-4 block bg-[#5D5838] px-5 py-3 text-center text-xs font-medium uppercase tracking-[0.1em] text-white"
               >
@@ -395,10 +416,10 @@ export function SiteHeader() {
                 Call {PHONE_DISPLAY}
               </a>
             </div>
+            </div>
           </div>
         </div>
       ) : null}
     </header>
   );
 }
-

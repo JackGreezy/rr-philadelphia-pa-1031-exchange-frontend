@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import type { Location } from "../../lib/data/locations";
 import { searchLocations, buildPrefillQuery } from "../../lib/search";
 import { SearchInput } from "../search-input";
-import { getLocationImageBasePath } from "../../lib/utils/images-client";
+import { getLocationImagePath } from "../../lib/utils/images-client";
 
 type LocationsBrowserProps = {
   locations: Location[];
@@ -35,39 +35,21 @@ export function LocationsBrowser({ locations }: LocationsBrowserProps) {
       {hasResults ? (
         <div className="grid gap-1 md:grid-cols-2 lg:grid-cols-3">
           {filtered.map((location) => {
-            const imageBasePath = getLocationImageBasePath(location.slug);
-            const imagePaths = imageBasePath ? [
-              `${imageBasePath}.jpg`,
-              `${imageBasePath}.avif`,
-              `${imageBasePath}.webp`,
-              `${imageBasePath}.jpeg`,
-              `${imageBasePath}.png`,
-            ] : [];
+            const imagePath = getLocationImagePath(location.slug);
             return (
               <Link
                 key={location.slug}
                 href={`/locations/${location.slug}`}
                 className="group overflow-hidden bg-white text-center"
               >
-                {imageBasePath && (
+                {imagePath && (
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
-                      src={imagePaths[0]}
+                      src={imagePath}
                       alt={location.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        const currentSrc = target.src;
-                        const basePath = currentSrc.replace(/\.(webp|avif|jpg|jpeg|png)$/, '');
-                        const extensions = ['.jpg', '.avif', '.webp', '.jpeg', '.png'];
-                        const currentExt = currentSrc.match(/\.(webp|avif|jpg|jpeg|png)$/)?.[0];
-                        const currentIndex = extensions.indexOf(currentExt || '');
-                        if (currentIndex < extensions.length - 1) {
-                          target.src = `${basePath}${extensions[currentIndex + 1]}`;
-                        }
-                      }}
                     />
                   </div>
                 )}

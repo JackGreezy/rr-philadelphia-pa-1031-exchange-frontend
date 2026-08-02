@@ -47,8 +47,6 @@ type FeaturedLocationCard = {
   slug: string;
 };
 
-const HERO_BADGES = ["Property Identification", "45-Day Deadline", "Market Analysis"];
-
 const FEATURES: Feature[] = [
   {
     title: "Local Compliance Expertise",
@@ -56,9 +54,9 @@ const FEATURES: Feature[] = [
       "Deep understanding of Pennsylvania transfer and recording taxes keeps your exchange documentation accurate at both the state and county levels.",
   },
   {
-    title: "IRS-Aligned Process",
+    title: "Exchange-Ready Process",
     description:
-      "Every exchange follows Treasury safe harbors, including written identification lists, escrow segregation, and Form 8824 reconciliation.",
+      "Build the exchange around written identification, safeguarded proceeds, and a clear file for the property owner’s tax and legal professionals.",
   },
   {
     title: "Comprehensive Property Identification",
@@ -66,9 +64,9 @@ const FEATURES: Feature[] = [
       "We identify replacement properties across Philadelphia and nationwide, evaluating market fundamentals, financing readiness, and compliance with IRS exchange rules.",
   },
   {
-    title: "Attorney and CPA Coordination",
+    title: "Attorney and CPA Team Alignment",
     description:
-      "Philadelphia real estate attorneys and tax advisors available for document review, risk briefings, and closing support.",
+      "Keep the property owner, qualified intermediary, attorney, CPA, lender, and closing team working from the same transaction plan.",
   },
   {
     title: "Deadline Discipline",
@@ -237,16 +235,16 @@ const faqSchema = faqPageSchema(FAQS);
 const jsonSchemas = [organizationSchema, baseWebSiteSchema, contactPointSchema, faqSchema];
 
 export const metadata: Metadata = {
-  title: "1031 Exchange Philadelphia | Replacement Solutions",
+  title: "1031 Exchange Philadelphia | One-Stop Solutions",
   description:
-    "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+    "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
   alternates: {
     canonical: `${SITE_URL}/`,
   },
   openGraph: {
-    title: "1031 Exchange Philadelphia | Replacement Solutions",
+    title: "1031 Exchange Philadelphia | One-Stop Solutions",
     description:
-      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+      "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
     url: `${SITE_URL}/`,
     siteName: SITE_NAME,
     images: [
@@ -262,9 +260,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Philadelphia | Replacement Solutions",
+    title: "1031 Exchange Philadelphia | One-Stop Solutions",
     description:
-      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+      "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
     images: [OG_IMAGE_URL],
   },
   robots: {
@@ -317,15 +315,21 @@ export default function HomePage() {
               >
                 Philadelphia skyline silhouette for 1031 Exchange Philadelphia hero.
               </span>
-              <p className="ui-font text-sm uppercase tracking-[0.25em] text-white/90">Philadelphia Property Identification Experts</p>
-              <h1 className="text-4xl font-normal tracking-wide text-white sm:text-5xl lg:text-6xl">FIND YOUR PERFECT 1031 EXCHANGE REPLACEMENT PROPERTIES</h1>
-              <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/90">A Philadelphia owner may be selling apartments, mixed-use property, industrial space, or inherited real estate because the management or capital plan no longer fits. We turn the actual sale, equity, debt, income needs, control preferences, and deadline into a replacement search with primary and backup paths.</p>
+              <p className="ui-font text-sm uppercase tracking-[0.25em] text-white/90">One Call. One Clear Exchange Plan.</p>
+              <h1 className="text-4xl font-normal tracking-wide text-white sm:text-5xl lg:text-6xl">ONE-STOP 1031 EXCHANGE SOLUTIONS IN PHILADELPHIA</h1>
+              <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/90">From the planned sale through qualified intermediary introductions, replacement-property selection, financing, diligence, and closing, Philadelphia owners get one clear path forward. Compare direct real estate and passive DST options, build backup choices, and keep every deadline visible.</p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row" data-motion="fade-up" data-motion-delay="0.08">
                 <a
                   className="ui-font inline-flex items-center justify-center border border-white px-8 py-3 text-sm font-medium uppercase tracking-[0.15em] text-white transition-colors duration-200 hover:bg-white hover:text-[#5D5838] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   href="#lead-form"
                 >
                   Start My Exchange
+                </a>
+                <a
+                  className="ui-font inline-flex items-center justify-center bg-white px-8 py-3 text-sm font-medium uppercase tracking-[0.12em] text-[#5D5838] transition-colors duration-200 hover:bg-[#F8F7F4] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  href={`tel:${PHONE_E164}`}
+                >
+                  Talk to an Expert&nbsp; {PHONE_DISPLAY}
                 </a>
               </div>
             </div>
@@ -338,22 +342,29 @@ export default function HomePage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               {/* Text Content */}
               <div className="order-2 lg:order-1" data-motion="fade-up">
-                <p className="text-sm leading-relaxed text-[#3F3F3F]">A DST may give Philadelphia sellers access to professionally managed, institutional-grade property without personally handling tenants, maintenance, or renovations. Some offerings may begin around $100,000; current inventory, projected income, sponsor and asset risk, fees, leverage, illiquidity, investor eligibility, and suitability vary.</p>
+                <p className="ui-font text-xs font-medium uppercase tracking-[0.25em] text-[#5D5838]">Passive Replacement Options</p>
+                <h2 className="mt-4 text-3xl font-normal tracking-wide text-[#5D5838] sm:text-4xl">LEAVE TENANTS, MAINTENANCE, AND RENOVATIONS BEHIND</h2>
+                <p className="mt-6 text-sm leading-relaxed text-[#3F3F3F]">A DST may give Philadelphia sellers access to professionally managed, institutional-grade property without personally handling tenants, maintenance, or renovations. Some offerings may begin around $100,000; current inventory, projected income, sponsor and asset risk, fees, leverage, illiquidity, investor eligibility, and suitability vary.</p>
                 <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">
-                  We bring a wealth of knowledge of the Philadelphia market, strength in negotiation, and wisdom and persistence in working through any challenges encountered along the way.
+                  Owners can compare available DST interests with direct real estate, net-lease property, and a taxable sale using the same income, control, liquidity, diversification, and management priorities.
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">
-                  Our reputation in the Philadelphia area real estate market is unsurpassed. Clients appreciate our savvy communication and problem-solving skills as well as our keen ability to negotiate smart deals.
+                  A free property list provides a practical starting point for reviewing current replacement possibilities before the 45-day identification period becomes urgent.
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-[#3F3F3F]">
-                  Investors, attorneys, and CPAs rely on our expert property identification services to find the best replacement properties within the 45-day deadline. We analyze market data, evaluate property fundamentals, and deliver compliant identification lists that meet IRS requirements.
-                </p>
-                <a
-                  href="/about"
-                  className="ui-font mt-8 inline-flex items-center justify-center border border-[#5D5838] px-8 py-3 text-sm font-medium uppercase tracking-[0.15em] text-[#5D5838] transition-colors duration-200 hover:bg-[#5D5838] hover:text-white"
-                >
-                  Learn More
-                </a>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href="/contact?request=properties#contact-form"
+                    className="ui-font inline-flex items-center justify-center bg-[#5D5838] px-7 py-3 text-sm font-medium uppercase tracking-[0.12em] text-white transition-colors duration-200 hover:bg-[#454326]"
+                  >
+                    Get a Free Property List
+                  </Link>
+                  <a
+                    href={`tel:${PHONE_E164}`}
+                    className="ui-font inline-flex items-center justify-center border border-[#5D5838] px-7 py-3 text-sm font-medium uppercase tracking-[0.12em] text-[#5D5838] transition-colors duration-200 hover:bg-[#5D5838] hover:text-white"
+                  >
+                    Free Consultation&nbsp; {PHONE_DISPLAY}
+                  </a>
+                </div>
               </div>
               
               {/* Image */}
@@ -386,23 +397,14 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <aside
-              className="mt-12 border-t border-[#5D5838]/20 pt-6 text-sm leading-relaxed text-[#3F3F3F]"
-              data-motion="fade-up"
-              data-motion-delay="0.12"
-            >
-              <p>
-                A 1031 exchange defers federal and state income tax on qualifying real property. It does not remove Philadelphia or Pennsylvania transfer taxes. Review the Pennsylvania Realty Transfer Tax guidance from{" "}
-                <a className="text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="https://www.revenue.pa.gov/TaxTypes/RTT/Pages/default.aspx" target="_blank" rel="noreferrer">
-                  Pennsylvania Department of Revenue
-                </a>{" "}
-                and the{" "}
-                <a className="text-[#5D5838] underline underline-offset-4 transition-colors hover:text-[#7A7654]" href="https://www.phila.gov/services/payments-assistance-taxes/realty-transfer-tax/" target="_blank" rel="noreferrer">
-                  Philadelphia Realty Transfer Tax requirements
-                </a>
-                .
-              </p>
-            </aside>
+            <div className="mt-12 text-center" data-motion="fade-up" data-motion-delay="0.12">
+              <Link
+                href="/contact?request=consultation#contact-form"
+                className="ui-font inline-flex items-center justify-center bg-[#5D5838] px-8 py-3 text-sm font-medium uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#454326]"
+              >
+                Get Free Exchange Guidance
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -440,26 +442,19 @@ export default function HomePage() {
                   data-motion="fade-up"
                   data-motion-delay={(index * 0.08).toFixed(2)}
                 >
-                  <span className="ui-font text-xs font-medium uppercase tracking-[0.25em] text-white/60">
-                    Step {(index + 1).toString().padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-4 text-xl font-normal tracking-wide">{step.title}</h3>
+                  <h3 className="text-xl font-normal tracking-wide">{step.title}</h3>
                   <p className="mt-4 text-sm leading-relaxed text-white/70">{step.description}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-12 text-center text-sm leading-relaxed text-white/70" data-motion="fade-up" data-motion-delay="0.24">
-              <p>
-                Learn more in{" "}
-                <a className="text-white underline underline-offset-4 transition-colors hover:text-white/80" href="https://www.irs.gov/forms-pubs/about-form-8824" target="_blank" rel="noreferrer">
-                  IRS Form 8824
-                </a>{" "}
-                and the{" "}
-                <a className="text-white underline underline-offset-4 transition-colors hover:text-white/80" href="https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips" target="_blank" rel="noreferrer">
-                  Like-Kind Property guidance
-                </a>
-                . See Rev. Proc. 2008-16 for vacation home safe harbor.
-              </p>
+            <div className="mt-12 text-center" data-motion="fade-up" data-motion-delay="0.24">
+              <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/80">First exchange or already under contract? An expert can walk through the sale, intermediary setup, replacement options, and closing timeline with you.</p>
+              <a
+                href={`tel:${PHONE_E164}`}
+                className="ui-font mt-6 inline-flex items-center justify-center bg-white px-8 py-3 text-sm font-medium uppercase tracking-[0.12em] text-[#5D5838] transition-colors hover:bg-[#F8F7F4]"
+              >
+                Talk to a 1031 Expert&nbsp; {PHONE_DISPLAY}
+              </a>
             </div>
           </div>
         </section>

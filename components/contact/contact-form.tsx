@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
-import { PHONE_DISPLAY, CONTACT_EMAIL } from "../../lib/config/site";
+import { PHONE_DISPLAY, PHONE_E164, CONTACT_EMAIL } from "../../lib/config/site";
 import { isTurnstileEnabled, TURNSTILE_SITE_KEY } from "../../lib/turnstile";
 
 type ContactFormProps = {
@@ -151,15 +151,15 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
 
   const isDark = variant === "dark";
   const formClassName = isDark
-    ? "space-y-6 border border-white/20 bg-white/5 p-8 backdrop-blur"
+    ? "space-y-6 border border-white/30 bg-[#1B1B1B]/70 p-6 shadow-2xl backdrop-blur-md sm:p-8"
     : "space-y-6 border border-[#5D5838]/10 bg-white p-8";
   const labelClassName = isDark
     ? "flex flex-col text-sm font-medium text-white"
     : "flex flex-col text-sm font-medium text-[#5D5838]";
   const inputClassName = (hasError: boolean) =>
     isDark
-      ? `mt-2 border px-4 py-3 text-sm text-white outline-none transition focus:border-white focus:ring-0 ${
-          hasError ? "border-red-400 bg-white/10" : "border-white/30 bg-white/10"
+      ? `mt-2 border px-4 py-3 text-sm text-white placeholder:text-white/45 outline-none transition focus:border-brand-copper focus:ring-0 ${
+          hasError ? "border-red-400 bg-white/10" : "border-white/35 bg-white/[0.08]"
         }`
       : `mt-2 border px-4 py-3 text-sm text-[#1B1B1B] outline-none transition focus:border-[#5D5838] focus:ring-0 ${
           hasError ? "border-red-400" : "border-[#5D5838]/20"
@@ -244,14 +244,16 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
           type="submit"
           className={`inline-flex px-8 py-3 text-xs font-medium uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-70 disabled:cursor-not-allowed ${
             isDark
-              ? "border border-white bg-transparent text-white hover:bg-white hover:text-[#5D5838] focus-visible:outline-white"
+              ? "border border-brand-copper bg-brand-copper text-[#1B1B1B] hover:border-white hover:bg-white focus-visible:outline-white"
               : "bg-[#5D5838] text-white hover:bg-[#454326] focus-visible:outline-[#5D5838]"
           }`}
         >
           {isSubmitting ? "Submitting..." : "Get Started Today"}
         </button>
-        <p className={isDark ? "text-xs text-white/60" : "text-xs text-[#6B6B6B]"}>
-          Educational content only. Not tax or legal advice. You may also reach us at {PHONE_DISPLAY} or {CONTACT_EMAIL}.
+        <p className={isDark ? "text-xs leading-relaxed text-white/70" : "text-xs leading-relaxed text-[#6B6B6B]"}>
+          Educational content only. Not tax or legal advice. Call{" "}
+          <a className="font-semibold underline underline-offset-4" href={`tel:${PHONE_E164}`}>{PHONE_DISPLAY}</a>{" "}
+          or email {CONTACT_EMAIL}.
         </p>
       </div>
       {status ? <p className={statusClassName(status.includes("Thank you"))}>{status}</p> : null}
@@ -259,5 +261,4 @@ export function ContactForm({ variant = "default" }: ContactFormProps) {
     </form>
   );
 }
-
 

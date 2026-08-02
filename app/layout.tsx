@@ -42,11 +42,11 @@ const uiFont = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "1031 Exchange Philadelphia | Replacement Solutions",
+    default: "1031 Exchange Philadelphia | One-Stop Solutions",
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+    "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
   keywords: [
     "1031 exchange",
     "1031 exchange Philadelphia",
@@ -94,9 +94,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "1031 Exchange Philadelphia | Replacement Solutions",
+    title: "1031 Exchange Philadelphia | One-Stop Solutions",
     description:
-      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+      "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
     url: SITE_URL,
     siteName: SITE_NAME,
     locale: "en_US",
@@ -112,9 +112,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Philadelphia | Replacement Solutions",
+    title: "1031 Exchange Philadelphia | One-Stop Solutions",
     description:
-      "Prepare a Philadelphia 1031 exchange before closing. Align the QI, deadlines, lender, property search, and backup replacement choices.",
+      "Get one-stop 1031 exchange help in Philadelphia, from the planned sale and QI introduction to direct property or DST options and closing support.",
     images: [OG_IMAGE_URL],
     creator: "@1031philly",
   },
