@@ -5,13 +5,11 @@
 
 /**
  * Get the verified image path for a location by slug (client-safe).
- * University City uses the closest available Philadelphia skyline asset until
- * a dedicated neighborhood image is added.
  */
 export function getLocationImagePath(slug: string): string | null {
   const imageMap: Record<string, string> = {
     'center-city-philadelphia-pa': '/locations/1031-exchange-Center-City-Philadelphia-PA.jpg',
-    'university-city-philadelphia-pa': '/locations/1031-exchange-Center-City-Philadelphia-PA.jpg',
+    'university-city-philadelphia-pa': '/locations/1031-exchange-University-City-Philadelphia-PA.jpg',
     'fishtown-philadelphia-pa': '/locations/1031-exchange-Fishtown-Philadelphia-PA.avif',
     'manayunk-philadelphia-pa': '/locations/1031-exchange-Manayunk-Philadelphia-PA.jpg',
     'old-city-philadelphia-pa': '/locations/1031-exchange-Old-City-Philadelphia-PA.jpg',
