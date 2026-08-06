@@ -159,6 +159,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="local-business-schema" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify(localBusinessSchema)}
         </Script>
+              <script src="/turnstile-contact.js" defer></script>
       </body>
     </html>
   );
